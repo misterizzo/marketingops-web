@@ -1,0 +1,27 @@
+.non-clickable {pointer-events: none;opacity: 0.5;}
+.woocommerce-account .page-title {display: none;}
+body .woocommerce-MyAccount-navigation-link a {background: #000;}
+body .woocommerce-MyAccount-content {padding: 50px !important;}
+body #n2-ss-952,
+body .video-slider {height: 700px;}
+.woocommerce {z-index: 9;position: relative;}
+.video-slider {position: relative;top: -230px;}
+#customer_login {margin-top: 46px;}
+.wpsm_tab_content.tabs .aiovg-responsive-container {background: transparent !important;}
+.aiovg-grid .aiovg-col .aiovg-title a {color: #fff;}
+body.woocommerce-account form.woocommerce-form-login p.form-row {float: unset !important;width: 100% !important;display: flex !important;flex-direction: row-reverse;justify-content: flex-end;flex-wrap: wrap;gap: 10px;}
+body.woocommerce-account form.woocommerce-form-login p.woocommerce-form-row.woocommerce-form-row--wide.form-row.form-row-wide {width: 100%;flex-direction: column;display: flex !important;}
+body.woocommerce-account form.woocommerce-form-login div#customer_login {padding: 0 20px;max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;flex-flow: row wrap;}
+body.woocommerce-account form.woocommerce-form-login .u-column1.col-1 {margin: 0;padding: 0 !important;width: calc(50% - 20px);}
+body.woocommerce-account form.woocommerce-form-login form.woocommerce-form.woocommerce-form-login.login {padding: 0;}
+body.woocommerce-account form.woocommerce-form-login label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {display: flex;width: fit-content;}
+body.woocommerce-account form.woocommerce-form-login button.woocommerce-button.button.woocommerce-form-login__submit {margin-right: 20px;}
+body.woocommerce-account form.woocommerce-form-login .woocommerce .col2-set::after {display: none;}
+body.woocommerce-account form.woocommerce-form-login .u-column2.col-2 {display: flex;flex-direction: column;width: calc(50% - 20px);}
+body.woocommerce-account form.woocommerce-form-login p.woocommerce-LostPassword.lost_password {margin: 0;}
+body.woocommerce-account form.woocommerce-form-login div.g-recaptcha {margin-bottom: 10px;}
+body.woocommerce-checkout .g-recaptcha {margin-bottom: 10px;}
+@media(max-width:768px){
+	body.woocommerce-account form.woocommerce-form-login .u-column2.col-2,
+	body.woocommerce-account form.woocommerce-form-login .u-column1.col-1 {width: 100%;}
+}

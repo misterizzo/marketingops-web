@@ -1,0 +1,397 @@
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-form-field .input input,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-form-field .input select{max-width: 350px !important;border-radius: 100px;border: none;margin-left: 0px;background-color: rgba(255, 255, 255, 0.5) !important;color: #242730;font-size: 14px;padding: 13px 145px 13px 20px !important;font-family: "open_sansregular";height: auto;margin: 0;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-form-field .input input::placeholder{color: #242730 !important;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .hs-error-msgs label {display: block;color: #fff;position: relative;bottom: 0px;margin-top: 5px}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .hs-error-msgs label{color: red;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-form-field label span{font-family: 'open_sanssemibold';font-style: normal;font-weight: normal;font-size: 14px;line-height: 19px;color: #242730;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-form-field label span.hs-form-required{background-image: url(/wp-content/themes/marketingops/images/svg/checkout_star.svg);background-position: center;background-repeat: no-repeat;text-indent: -10000px;overflow: hidden;width: 9px;height: 9px;background-size: contain;display: inline-block;margin-left: 3px;position: relative;top: -3px;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-form-field .input input,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-form-field .input select{padding: 8px 15px !important;background: #FBFBFB;border: 1px solid #E7EFEF;border-radius: 6px;width: 100%;max-width: 100% !important;font-size: 16px;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-form-field .input select{background-image: url('/wp-content/themes/marketingops/images/social_icons/down_arrow_edit_profile.svg');background-repeat: no-repeat;background-position: center right 14px;-webkit-appearance: none;-moz-appearance: none;-o-appearance: none;appearance: none;padding-right: 30px !important;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-richtext p{font-family: 'open_sansregular';font-weight: normal;font-size: 14px;line-height: 19px;color: #45474F;margin: 0;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 fieldset .hs-richtext p a {color: #C4338C;text-decoration: none;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .hs_submit {text-align: center;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .hs_submit .actions {padding: 0;margin: 30px 0 0;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .hs_submit .actions input {padding: 20px 34px;border: none;border-radius: 100px;font-family: 'open_sansregular';font-size: 16px;font-weight: normal;background: #FD4B7A;background: -webkit-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);background: -moz-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);background: linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-2 .hs_firstname,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-2 .hs_lastname,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .hs_email,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .hs_company,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .hs_website,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .hs_numemployees,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .hs_role_level,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .hs-dependent-field,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .hs_job_seeker_details,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .hs_job_seeker_details,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 .legal-consent-container {margin-top: 20px;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-2 ul.hs-error-msgs,
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .form-columns-1 ul.hs-error-msgs {list-style-type: none;font-size: 14px;margin-bottom: 0;padding-left: 0;}
+#hsForm_25c1bd21-2366-40ec-891a-f574f525aa34 .hs_error_rollup ul.hs-error-msgs {list-style-type: none;font-size: 16px;margin: 20px 0 20px 0;font-weight: bold;padding-left: 0;}
+
+/* Road to MOpza CSS Start */
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(5) input{border-radius:6px;border:1px solid var(--gray-stroke,#E7EFEF);background:rgba(255,255,255,.5);width:calc(100% - 11px);}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a .hs_firstname input {background-color: #FD4B7A;}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:first-child, 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(2), 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(3), 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(4) {
+    width: 25%;
+    display: inline-block;
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:first-child input, 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(2) input, 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(3) input,
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(4) input,
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(12) input, 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(5) select
+{
+    border-radius: 6px;
+    border: 1px solid var(--gray-stroke, #E7EFEF);
+    background: rgba(255, 255, 255, 0.50);
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(12){margin-bottom: 15px;}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(5) select{width: 99%;}
+
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(6) ul.no-list.hs-error-msgs.inputs-list label.hs-error-msg.hs-main-font-element,
+.hs_error_rollup label.hs-main-font-element {
+    position: relative;
+    margin: 0 0 15px;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(6) ul.no-list.hs-error-msgs.inputs-list {
+    position: relative;
+    margin: 0 0 15px;
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(12) input{width: 100%;}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:first-child label, 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(2) label, 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(3) label, 
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(4) label,
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(5) label,
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(12) label
+{
+    color: var(--text-main, #242730);
+    margin: 0 0 15px;
+font-family: "Open Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset{max-width: 99%;}
+.hs_road_to_mopza_dates ul.inputs-list.multi-container {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(5) {
+    width: 100%;
+    max-width: 100%;
+    margin:30px 0;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-2 span strong {
+    color: var(--Primary-text, #45474F);
+    font-family: futura lt;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 15px;
+    display: block;
+}
+
+.hs_road_to_mopza_dates #label-road_to_mopza_dates-1add613a-e32e-4eb5-a0fa-ed152f63164a span {
+    color: var(--Primary-text, #45474F);
+    font-family: "Futura LT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hs_road_to_mopza_dates ul.inputs-list.multi-container li label.hs-form-checkbox-display span {
+    color: var(--Primary-text, #45474F);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-2 {
+    max-width: 100%;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-2 ul.inputs-list {
+    list-style: none;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-2 ul.inputs-list li span {
+    color: var(--Primary-text, #45474F);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hs-fieldtype-booleancheckbox.field .hs-field-desc{
+    width: 100%;
+    color: var(--Primary-text, #45474F);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 15px;
+    padding-left: 33px;
+}
+.hs-fieldtype-booleancheckbox.field .hs-field-desc strong{width: 100%;
+    color: var(--Primary-text, #45474F);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a input[type=checkbox] {
+    position: relative;
+    border: 2px solid #E7EFEF;
+    border-radius: 9px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 .6em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 25px;
+    width: 25px;
+    -webkit-appearance: none;
+}
+  
+  #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a input[type=checkbox]:hover {
+    opacity: 1;
+  }
+  
+  #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a input[type=checkbox]:checked {
+    background: var(--horizontal-grad-1, linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%));
+    opacity: 1;
+    border-color:#fff;
+  }
+
+  #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid transparent;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+  }
+  #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a input[type=checkbox]:checked:before {
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    margin: -1px 1px 0 0px;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a input[type=checkbox] {
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.hs-fieldtype-booleancheckbox.field.hs-form-field {
+    position: relative;
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-2 ul.inputs-list li {
+    padding-left: 33px;
+}
+
+.hs_road_to_mopza_dates ul.inputs-list.multi-container li.hs-form-checkbox label.hs-form-checkbox-display {
+    padding-left: 35px;
+}
+
+.hs_road_to_mopza_dates ul.inputs-list.multi-container li.hs-form-checkbox {
+    position: relative;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(11), #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(12) {
+    width: 100%;
+    max-width: 100%;
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(11) label span {
+    color: var(--text-main, #242730);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 15px;
+    display: block;
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(11) textarea{
+border-radius: 6px;
+border: 1px solid var(--gray-stroke, #E7EFEF);
+background: rgba(255, 255, 255, 0.50);}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(12) .hs-richtext p{
+color: var(--Primary-text, #45474F);
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a .hs_submit.hs-submit input.hs-button.primary.large{
+display: flex;
+width: auto;
+padding: 20px 30px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 302px;
+background: var(--horizontal-grad-1, linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%));
+color: var(--pure-white, #FFF);
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 82%; /* 13.12px */
+}
+
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a .hs_submit.hs-submit {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(11) .input {
+    margin: 0;
+}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(11) .input input {
+    width: 100%;
+    margin: 0 0 15px;
+    border-radius: 6px;
+    border: 1px solid var(--gray-stroke, #E7EFEF);
+    background: rgba(255, 255, 255, .5);
+}
+ul.no-list.hs-error-msgs.inputs-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: red;
+}
+ul.no-list.hs-error-msgs.inputs-list label.hs-error-msg {
+    color: red !important;
+    position: absolute;
+    width: 100%;
+    word-break: break-word;
+    padding: 0 0px;
+}
+
+ul.no-list.hs-error-msgs.inputs-list li {
+    position: relative;
+}
+	
+@media (max-width: 767px) 
+{
+	.hs_road_to_mopza_dates ul.inputs-list.multi-container {
+        flex-wrap: wrap;
+    }	
+    .hs_road_to_mopza_dates ul.inputs-list.multi-container li.hs-form-checkbox {
+        position: relative;
+        width: 100%;
+        margin: 0 0 15px;
+    }
+    #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:first-child input, #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(2) input, #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(3) input, #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(4) select {
+        border-radius: 6px;
+        border: 1px solid var(--gray-stroke, #E7EFEF);
+        background: rgba(255, 255, 255, 0.50);
+        width: 100%;
+    }
+    #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:first-child, #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(2), #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(3), #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(4) {
+        width: 100%;
+        display: inline-block;
+    }
+    #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a .hs_submit.hs-submit input.hs-button.primary.large {
+        display: flex;
+        width: auto;
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 302px;
+        background: var(--horizontal-grad-1,linear-gradient(90deg,#FD4B7A -2.36%,#4D00AE 159.05%));
+        color: var(--pure-white,#FFF);
+        font-family: open sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144%;
+    }
+    fieldset.form-columns-1  .input{    margin-right: 0 !important;}
+    #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:first-child label, #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(2) label, #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(3) label, #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(4) label{margin:15px 0;}
+    #hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(5) input {
+    border-radius: 6px;
+    border: 1px solid var(--gray-stroke,#E7EFEF);
+    background: rgba(255,255,255,.5);
+    width: calc(100% - 0px);
+}
+
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1:nth-child(4) input {
+    width: 100%;
+}
+
+}
+
+
+
+
+/* Road to MOpza CSS End */
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-form-field .input input,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-form-field .input select{max-width: 350px !important;border-radius: 100px;border: none;margin-left: 0px;background-color: rgba(255, 255, 255, 0.5) !important;color: #242730;font-size: 14px;padding: 13px 145px 13px 20px !important;font-family: "open_sansregular";height: auto;margin: 0;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-form-field .input input::placeholder{color: #242730 !important;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .hs-error-msgs label {display: block;color: #fff;position: relative;bottom: 0px;margin-top: 5px}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .hs-error-msgs label{color: red;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-form-field label span{font-family: 'open_sanssemibold';font-style: normal;font-weight: normal;font-size: 14px;line-height: 19px;color: #242730;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-form-field label span.hs-form-required{background-image: url(/wp-content/themes/marketingops/images/svg/checkout_star.svg);background-position: center;background-repeat: no-repeat;text-indent: -10000px;overflow: hidden;width: 9px;height: 9px;background-size: contain;display: inline-block;margin-left: 3px;position: relative;top: -3px;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-form-field .input input,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-form-field .input select{padding: 8px 15px !important;background: #FBFBFB;border: 1px solid #E7EFEF;border-radius: 6px;width: 100%;max-width: 100% !important;font-size: 16px;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-form-field .input select{background-image: url('/wp-content/themes/marketingops/images/social_icons/down_arrow_edit_profile.svg');background-repeat: no-repeat;background-position: center right 14px;-webkit-appearance: none;-moz-appearance: none;-o-appearance: none;appearance: none;padding-right: 30px !important;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-richtext p{font-family: 'open_sansregular';font-weight: normal;font-size: 14px;line-height: 19px;color: #45474F;margin: 0;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b fieldset .hs-richtext p a {color: #C4338C;text-decoration: none;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .hs_submit {text-align: center;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .hs_submit .actions {padding: 0;margin: 30px 0 0;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .hs_submit .actions input {padding: 20px 34px;border: none;border-radius: 100px;font-family: 'open_sansregular';font-size: 16px;font-weight: normal;background: #FD4B7A;background: -webkit-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);background: -moz-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);background: linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-2 .hs_firstname,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-2 .hs_lastname,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .hs_email,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .hs_company,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .hs_website,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .hs_numemployees,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .hs_role_level,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .hs-dependent-field,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .hs_job_seeker_details,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .hs_job_seeker_details,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 .legal-consent-container {margin-top: 20px;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-2 ul.hs-error-msgs,
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .form-columns-1 ul.hs-error-msgs {list-style-type: none;font-size: 14px;margin-bottom: 0;padding-left: 0;}
+#hsForm_70585a5a-b8ca-49d6-841c-088c0de5170b .hs_error_rollup ul.hs-error-msgs {list-style-type: none;font-size: 16px;margin: 20px 0 20px 0;font-weight: bold;padding-left: 0;}

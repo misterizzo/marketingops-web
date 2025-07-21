@@ -1,0 +1,724 @@
+* {
+	outline: none !important;
+}
+
+/* For this gradient text | linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%) */
+.gradient-title,
+.gradient-title h2,
+.gradient-title h3,
+.register_page .register_content .elementor-widget-text-editor p a,
+body .moc-form-container #moc-registration-1 .moc-form-field-wrap.moc-custom-html p a,
+body .moc-form-container #moc-registration-1 .moc-form-field-wrap.moc-custom-html p a:after,
+.moc_is_cart_page .entry-title,
+.woocommerce-checkout .entry-title,
+.profile_setup .setup_container .setup_title h1,
+.searchjobs .job_search_row .searched_job_list .job_listings .mobile_filter_box .title_box h5,
+.email-otp .email-otp-container .form-container .colum-box p a {
+	background: #FA4A7A;
+	background: -webkit-linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
+	background: -moz-linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
+	background: linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
+
+/* For this gradient BG | linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%) */
+.directory_main_div .directory_result_div .members_directory .member-directory-pagination ul li span.current:after,
+nav.job-manager-pagination ul li span.current:after,
+.custom_pagination.pagination_container .blog-directory-pagination ul li span.current:after,
+.custom_pagination.pagination_container nav ul li span.current:after,
+.pricing_list_section .list_box.box_1 .elementor-widget-text-editor p a:after,
+.pricing_list_section .list_box.box_1 .elementor-widget-text-editor dir a:after,
+.summer_camp_text_content .elementor-widget-text-editor p a:after,
+.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .form-row.place-order button,
+.summer_camp_product_page .product_page_inner_section.product_add_to_cart .single_add_to_cart_button,
+.courses_product_page .courses_product_right_side .product_form button,
+.courses_product_page .courses_product_right_side .product_form a,
+.summer_camp_product_page .product_page_inner_section.product_add_to_cart form .quantity:after,
+.moc_is_job_post_form form p .button,
+.job-manager-form p .button,
+.cart_page_box .cart_page_container .cart_page_box .box_content .quantity:after,
+.custom_login_popup .custom_login_toolip_box .clt_box_content .clt_text a::after {
+	background: #FA4A7A;
+	background: -webkit-linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
+	background: -moz-linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
+	background: linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
+}
+
+/* For this gradient text | linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%) */
+.gradient-text,
+.subscribe_table .gradient_text,
+.partner_page_title h2,
+.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .elementor-heading-title,
+.profile_page .profile_content .content_box .box_about_content .show_more_btn a,
+.profile_page .profile_content .content_box .content_boxed .show_more_btn b.btn,
+.popup .popup_content .popup_form .form_box.box_btn button,
+.profile_page .profile_content .content_box .box_content.blog_contributons_section .content_boxes .boxes_title_and_content a,
+.moc_is_cart_page .entry-title,
+.woocommerce-checkout .entry-title,
+.no_bs_index .form_section .bs_form_content .bs_form_title h2 span,
+.no_bs_partner_title .elementor-widget-heading h2,
+.image_with_text .box_text_content .elementor-widget-heading h2,
+.summer_camp_image_gallery .summer_camp_image_gallery_container .summer_gallery_title h2,
+body .moc-form-container #moc-registration-1 .moc-form-field-wrap.moc-custom-html p a,
+.pricing_list_title .pricing_list_title_row .pricing_list_box h2,
+.pricing_list_section .list_box.box_1 .elementor-widget-text-editor p a.pricing_list_section .list_box.box_1 .elementor-widget-text-editor dir a,
+.summer_camp_text_content .elementor-widget-text-editor p a,
+.pricing_list_section .list_box.box_1 .box_1_box .elementor-widget-heading h2,
+.no_bs_martech_demo .no_bs_martech_title h2,
+.good_company_section .good_company_title h2,
+.partner_testimonials .partner_testimonials_boxed .elementor-widget-heading h2,
+.summer_camp_product_page .product_page_inner_section .elementor-widget-woocommerce-product-price .price span,
+.variable_subs_page.normal_product_page .product_page_inner_section form .woocommerce-variation-price .price span,
+.summer_camp_product_page .product_page_inner_section .product_ratings .woocommerce-product-rating .star-rating span:before,
+.summer_camp_product_page .product_page_inner_section .product_ratings .elementor-widget-star-rating .elementor-star-rating i::before,
+.moc_is_job_post_form .page-header h1,
+.become_partner_section_one .elementor-widget-heading h2,
+.membership_table .subscribe_table .table_head .pro_colum a,
+.summer_camp_product_page .product_page_inner_section.product_reviews .elementor-widget-post-comments .woocommerce-Reviews .comment-respond form .stars.selected a:not(.active)::before,
+.summer_camp_product_page .product_page_inner_section.product_reviews .elementor-widget-post-comments .woocommerce-Reviews .comment-respond form .stars.selected a.active::before,
+.mp_product .product_review .product_reviews .woocommerce-Reviews .comment-respond form .stars.selected a:not(.active)::before,
+.mp_product .product_review .product_reviews .woocommerce-Reviews .comment-respond form .stars.selected a.active::before,
+.courses_review .review_box_content .rating_star .star-rating__wrap input.star_input:hover ~ label.star:before,
+.courses_review .review_box_content .rating_star .star-rating__wrap input.star_input:checked ~ label.star:before,
+.courses_review .review_box_content .rating_star .star-rating__wrap label.active:before,
+.courses_review .review_box .customer_review .commentlist li .review_box_content .rating_star .star-rating__wrap label.active:before,
+.register_page .register_content h2,
+body .login_content .moc-form-container #moc-registration-1 .moc-form-field-wrap.moc-custom-html p a,
+.profile-success-section .profile-title .moc_non_decorate_heading,
+.membership-wrap .elementor-widget-heading h2,
+.new_arrival_section .elementor-widget-heading h2,
+.subscribe_plan_section .elementor-widget-heading h2,
+.subscription_testimonials .elementor-widget-heading h2,
+.shop_page_content .elementor-widget-heading h2 span,
+.woocommerce-lost-password .page-header h1,
+.forget_password_page .elementor-widget-heading h2,
+.resources_title .elementor-column h2 span,
+.resource_boxes_content .content_box .file_download p a,
+.founding_badge_title .founding_badge_title_row .elementor-widget-heading h2,
+.membership_section .membership_colum .elementor-widget-heading h2,
+.moc_top_bar .moc_top_bar_row .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover li a:hover,
+.moc_top_bar .moc_top_bar_row .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover li a:hover span,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .mobile_filter_box .reset_btn a,
+.mistakes_section_header .section_row .elementor-widget-heading h2 span,
+.subscription_details .details_container .subscription_header h3 span,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .platform_btns .img_name,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum h6.moc_main_platform,
+.give_away_banner_section .banner_text .elementor-widget-heading h2,
+.give_away_promo .icon_box.pink_title .elementor-icon-box-wrapper .elementor-icon-box-content h3,
+.marketingops-give-away-professionals.marketingops-three.member_page_section_two .marketingops-two-coum-box .marketingops-two-coum .elementor-heading-title,
+.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tabbing_content .tabbing_content_container .column_box a:hover,
+.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tabbing_content .tabbing_content_container .tab_box.active_tab a,
+.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .tabbing_content_details .tabbing_row .column_box .content_boxes .boxes_title_and_content a,
+.course_list .course_list_title_content .elementor-widget-wrap h2 span,
+.professor_signup_section_1 .section_text_row .elementor-widget-heading h2 .gradient_title,
+.professor_signup_section_3 .section_3_text_row .elementor-widget-heading h2,
+.professor_signup_section_4 .section_4_text_row .elementor-widget-text-editor .two_column .box_3 ul li,
+.professor_signup_section_5 .section_5_text_row .elementor-widget-heading h2,
+.single-sfwd-lessons .site-main .page-header h1,
+.single-sfwd-lessons .site-main .page-content .learndash .learndash-wrapper .ld-content-actions a.ld-primary-color,
+.learndash .learndash-wrapper .ld-course-status.ld-course-status-enrolled .ld-progress .ld-progress-heading .ld-progress-stats .ld-progress-percentage,
+.learndash-wrapper .ld-progress .ld-progress-heading .ld-progress-stats .ld-progress-percentage,
+.learndash-wrapper .ld-content-actions .ld-content-action .ld-course-step-back,
+.learndash .learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active,
+.learndash-cpt-sfwd-lessons .site-main .page-content .learndash .learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active,
+.learndash .learndash-wrapper .ld-item-list .ld-item-list-items .ld-item-list-item .ld-item-list-item-preview:hover a,
+.learndash .learndash-wrapper .ld-item-list .ld-item-list-items .ld-item-list-item .ld-item-details .ld-expand-button .ld-text,
+.learndash .learndash-wrapper .ld-item-list .ld-item-list-items .ld-item-list-item .ld-item-list-item-expanded .ld-table-list .ld-table-list-items a:hover,
+.learndash-wrapper .ld-course-navigation .ld-lesson-item.ld-is-current-lesson .ld-lesson-item-preview-heading,
+.learndash-wrapper .ld-course-navigation .ld-lesson-item.ld-is-current-lesson .ld-lesson-title,
+.learndash-wrapper .ld-status-unlocked,
+.learndash-wrapper .ld-course-navigation .ld-lesson-item-preview a.ld-lesson-item-preview-heading:hover,
+.learndash-wrapper .ld-course-navigation .ld-topic-row:hover .ld-topic-title,
+.learndash-wrapper .ld-course-navigation .ld-is-current-item .ld-topic-title,
+.learndash-wrapper .ld-table-list a.ld-table-list-item-preview:hover,
+.learndash-wrapper .ld-table-list a.ld-table-list-item-preview:hover .ld-status-icon .ld-icon:before,
+.learndash-wrapper .ld-button.ld-button-transparent,
+.course_lp_banner .banner_text .text_title h2,
+.course_lp_automation_game .banner_text h2 span,
+.learndash-wrapper .ld-status-icon .ld-icon.ld-icon-quiz:before,
+.annual_repo_banner_section .text_column .text_column_title h2,
+.courses_search_bar .elementor-widget-heading h2,
+.courses_product_page .courses_product_right_side .product_price .price span,
+.hiring_posr_free_section .post_free_column .elementor-widget-heading h2,
+.hiring_video_section .video_section_column.video_section_column_one .elementor-widget-heading h2,
+.dynamic_block_single_quote.annual_testimonials .testimonial_column .testimonial_column_inner_section .text_box .elementor-widget-text-editor h2,
+.dynamic_blocks_events_timing .events_timing_inner_section .events_timing_inner_title .elementor-widget-heading h4,
+.moc_top_bar .moc_top_bar_row .topbar_box a.elementor-menu-cart__toggle_button .elementor-button-icon i,
+.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login a.menu_cart i,
+.courses_review .review_box h3,
+.courses_review_success h2,
+.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-heading h2,
+.moc_mo_experience .moc_mo_ex_text_column .elementor-widget-heading h2,
+.moc_mo_member_program .moc_mo_mp_column .elementor-widget-heading h2,
+.custom_login_popup .custom_login_toolip_box .clt_box_content .clt_text a,
+.page-id-161517 .page-header h1,
+.page_not_found .page_not_found_text .title h2,
+.page_not_found .page_not_found_text .elementor-widget-text-editor a,
+.home_mops_apalooza .home_ma_text .author_member .author_content .elementor-widget-text-editor a,
+.single-product .woocommerce-notices-wrapper .woocommerce-info::before  {
+	background: #FA4A7A;
+	background: -webkit-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);
+	background: -moz-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);
+	background: -o-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);
+	background: linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
+
+/* For this gradient BG | linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%) */
+.btn.gradient_btn a,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .search_salary .job_types .irs .irs-bar,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .search_salary .job_types .irs .irs-handle,
+.quick_filter .quickvalues li input:checked~label,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .job-manager-filter ul li input:checked~label:after,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .job_types li input:checked~label:after,
+.profile_page .profile_content .content_box .content_boxed .input_checkbox input:checked~label:after,
+.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods input:checked~label:after,
+.common_filter_row .directory_search_form ul li input:checked~label:after,
+.job_search_page .job_search_row .jobsearch form .moc_conditional_checkbox input:checked~label:after,
+.page-id-161517 .form_box fieldset.fieldset-type-checkbox .field input:checked~small:after,
+.profile_page .profile_content .content_box .content_boxed .show_more_btn:after,
+.popup .popup_content .popup_form .form_box.box_btn:after,
+.profile_page .profile_content.edit_page .content_box .box_content.work_section .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum .colum_box.colum_box_4 .years_month span.moc-seprator,
+.blog_articles .articled_container.categories_tags .tag_box:hover,
+.blog_articles .articled_container.authore_tags .moc_tag_box:hover,
+.moc_is_cart_page .return-to-shop a,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals .wc-proceed-to-checkout a,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals .shop_table .shipping td form p button,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart_promo button,
+.woocommerce-checkout .woocommerce .checkout_coupon button,
+.profile_setup .setup_container .form_btn button,
+.good_company_section .request_partner_info_btn a,
+.no_bs_index .no_bs_container .no_bs_filter ul li a.active,
+.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content .btn.gradient_btn,
+.no_bs_martech .box_content .bs_btn a,
+.image_with_text .box_text_content .elementor-widget-button a,
+.pricing_list_section .list_box.box_1 .box_1_box .elementor-widget-button a,
+.membership_table .subscribe_table .table_body .table_tr .btn.gradient_btn,
+.blog_popup .contnet_box .popup_content a,
+.normal_product_page .product_page_inner_section form .variations tbody tr td .variable-items-wrapper li.selected:after,
+.comments-area .form-submit input,
+.resource_boxes_content .content_box .file_download p a:after,
+.resource_boxes_content .content_box .custom_btn.gradient_btn a,
+.woocommerce .woocommerce-MyAccount-content table a.button,
+.woocommerce .woocommerce-MyAccount-content a.button,
+.woocommerce .woocommerce-MyAccount-content .button,
+.woocommerce .woocommerce-order-details .order-again .button,
+.woocommerce-checkout .woocommerce #order_review #payment .form-row .button,
+.moc_top_bar .moc_top_bar_row .topbar_box .elementor-menu-cart__footer-buttons a.elementor-button--view-cart,
+.job_manager .job_manager_details .manager_container .content_box .box_btn a.gradient_btn,
+.moc_top_bar .moc_top_bar_row .topbar_box .profile_menu .elementor-profile-text .box_tag .tag.pro_tag,
+.moc_top_bar .moc_top_bar_row .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover .profile_menu_box_btn .profile_pro_btn a,
+.moc_preview_post_job main.site-main .moc_job_preview .job_listing_preview_title input.job-manager-button-submit-listing,
+.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-nav-btn a.gradient_btn,
+.mistakes_section_header .section_row .mistakes_inner_section .elementor-column.row_btn .btn.gradient_btn a,
+.mistakes_guest_share .inner_section_44 .inner_section_row .elementor-widget-button a,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .slider:before,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed input:checked+.slider,
+.marketingops-give-away .marketingops-two-content-box .marketingops-two-btn a,
+.marketingops-give-away .marketingops-two-image-box .marketingops-two-btn a,
+.profile_page .profile_name .moc_box.moc_copied,
+.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row.form_btn button.gradient_btn,
+.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .column_box.column_btn a .elementor-button-content-wrapper,
+.course_list .course_list_box_content .box_content .content_box a,
+.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .select2 .select2-selection .select2-selection__choice:first-of-type,
+.moc_is_job_post_form form fieldset .select2 .select2-selection, .job-manager-form fieldset .select2 .select2-selection .select2-selection__choice:first-of-type,
+.single-sfwd-courses .site-main .page-content .learndash .learndash-wrapper .ld-course-status .ld-course-status-segment .ld-course-status-action a,
+.learndash-cpt-sfwd-lessons .site-main .page-content .learndash .learndash-wrapper .ld-content-actions .ld-content-action form .learndash_mark_complete_button,
+.learndash .learndash-wrapper .ld-course-status.ld-course-status-enrolled .ld-progress .ld-progress-bar .ld-progress-bar-percentage,
+.learndash-wrapper .ld-progress .ld-progress-bar .ld-progress-bar-percentage,
+.learndash .learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active:after,
+.learndash-cpt-sfwd-lessons .site-main .page-content .learndash .learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active:after,
+.learndash .learndash-wrapper .ld-item-list .ld-item-list-actions .ld-expand-button,
+.learndash .learndash-wrapper .ld-item-list .ld-item-list-items .ld-item-list-item .ld-item-details .ld-expand-button .ld-icon-arrow-down,
+.learndash .learndash-wrapper .ld-item-list .ld-item-list-items .ld-item-list-item .ld-item-list-item-expanded .ld-table-list .ld-table-list-header,
+.learndash-cpt-sfwd-lessons .site-main .page-content .learndash .learndash-wrapper .ld-content-actions .ld-content-action .ld-button,
+.learndash .learndash-wrapper .ld-item-list .ld-item-list-items .ld-item-list-item a .ld-status-icon.ld-status-complete,
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading,
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-trigger,
+.learndash-wrapper .ld-status-complete,
+.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon,
+.learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress,
+.learndash-wrapper .ld-course-status .ld-status.ld-status-progress,
+.learndash-wrapper .ld-button,
+.learndash-wrapper .sfwd-mark-complete .learndash_mark_complete_button,
+.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items a,
+.learndash-wrapper .ld-table-list .ld-table-list-header,
+.moc_confirmation_popup .moc_confirmation_popup_content .box_btn .moc_confirmation_popup_yes,
+.entry_level_templates .templates_column .templates_inner_section .templates_job_row .elementor-widget-button a,
+.entry_level_templates .templates_column .templates_form_row .entry_level_form .form_container .form_row .form_checkbox_row .checkbox_row .input_checkbox input:checked~label:after,
+.entry_level_templates .templates_column .templates_form_row .entry_level_form .form_container .form_submit button,
+.woocommerce .woocommerce-order .woocommerce-order-downloads .download-file a,
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_button,
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_button2,
+.training_page_new .training_page_poster .elementor-widget-button a,
+.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr .link_btn:after,
+.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr .dot.pink_dot,
+.traning_mark_ops.training_first_section .moc_no_courses_found a,
+.traning_mark_ops_block .moc_no_courses_found a,
+.events_btn_section .elementor-widget-button a,
+.moc_top_bar .moc_top_bar_row .topbar_box a.elementor-menu-cart__toggle_button .elementor-button-icon .elementor-button-icon-qty,
+.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login a.menu_cart .cart_counter,
+.courses_product_page .courses_product_left_side .left_side_bottom_box .product_review .product_reviews .courses_review .review_box form .review_box_btn_textarea .form-submit input,
+.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-button a,
+.moc_mo_experience .moc_mo_ex_text_column a,
+.pyj_login_form fieldset .account-sign-in .pyj_login_form_btn a,
+.page_not_found .page_not_found_text .elementor-widget-text-editor a::after,
+.custom_slider .slick-dots li button::after,
+.home_mops_apalooza .home_ma_text .home_ma_text_button_is .ma_is_column .elementor-widget-button:last-of-type a,
+.variable_subs_page.normal_product_page .product_page_inner_section form .variations_button button.button {
+	background: #FA4A7A;
+	background: -webkit-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);
+	background: -moz-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);
+	background: linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);
+}
+
+/* For this gradient BG | linear-gradient(180deg, #F5F7F7 0%, rgba(241, 243, 244, 0) 89.71%) */
+.job_listing .single_job_listing .job_description,
+.no_bs_index .no_bs_container .container_box,
+.summer_camp_image_gallery .summer_camp_image_gallery_container,
+.product_related .elementor-widget-woocommerce-product-related .related.products::before,
+.entry_level_templates .templates_column .templates_inner_section .templates_job_row .elementor-widget-wrap::after {
+	background: #F5F7F7;
+	background: -webkit-linear-gradient(180deg, #F5F7F7 0%, rgba(241, 243, 244, 0) 89.71%);
+	background: -moz-linear-gradient(180deg, #F5F7F7 0%, rgba(241, 243, 244, 0) 89.71%);
+	background: linear-gradient(180deg, #F5F7F7 0%, rgba(241, 243, 244, 0) 89.71%);
+}
+
+/* For this gradient BG | linear-gradient(90deg, #FFB83F -14.18%, #FD4B7A 100%) */
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed a.gradient_btn:after,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed span.intermediate_btn:after,
+.moc_top_bar .moc_top_bar_row .topbar_box .profile_menu .elementor-profile-text .box_tag .tag {
+	background: #FFB83F;
+	background: -webkit-linear-gradient(90deg, #FFB83F -14.18%, #FD4B7A 100%);
+	background: -moz-linear-gradient(90deg, #FFB83F -14.18%, #FD4B7A 100%);
+	background: linear-gradient(90deg, #FFB83F -14.18%, #FD4B7A 100%);
+}
+
+/* For this gradient text  | linear-gradient(90deg, #FFB83F -14.18%, #FD4B7A 100%) */
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed a.gradient_btn span,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed span.intermediate_btn span,
+.founding_badge_title .founding_badge_title_row .orange_gradient h2,
+.give_away_promo .icon_box.orange_title .elementor-icon-box-wrapper .elementor-icon-box-content h3 {
+	background: #FFB83F;
+	background: -webkit-linear-gradient(90deg, #FFB83F -14.18%, #FD4B7A 100%);
+	background: -moz-linear-gradient(90deg, #FFB83F -14.18%, #FD4B7A 100%);
+	background: linear-gradient(90deg, #FFB83F -14.18%, #FD4B7A 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Hide element CSS */
+.loader_bg,
+.posts-newsletter .elementor-widget-wrap .elementor-element .elementor-element.elementor-widget-html br,
+.post_hiring_job:after,
+body .moc-form-container #moc-registration-1 .ppbs-headline,
+body .moc-form-container #moc-registration-1 .moc-form-field-wrap.moc-custom-html:after,
+.searchjobs .job_search_row .searched_job_list .job_listings .mobile_filter_box:after,
+.job_filters .mobile_filter,
+.searchjobs .job_search_row .searched_job_list .job_listings .mobile_filter_box:after,
+.searchjobs .job_search_row .searched_job_list .job_listings .mobile_filter_box .mobile_filter_title_box,
+.searched_job_list ul.job_listings .firstrow .comdetail h3:after,
+.profile_page .profile_content .content_box .content_boxed ul.social_icons li,
+.profile_page .profile_content .content_box .content_boxed ul.social_icons li span,
+.profile_page .profile_content .content_box .content_boxed ul.social_icons ul,
+.profile_page .profile_content.edit_page .content_box .box_content .sub_title_with_content .content_boxes .content_boxed hr:last-of-type,
+.profile_page .profile_content.edit_page .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_two_colum .range_slider .rangeslider__fill,
+.profile_page .profile_content.edit_page .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_two_colum .range_slider .rangeslider__handle:after,
+.profile_page .profile_content.edit_page .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_two_colum .range_slider .rangeslider__handle__value,
+.page-id-163319 .footer-newsletter,
+.cart_page_box .cart_page_container .cart_page_box .box_content .table_body .cart_item:last-of-type:after,
+.cart_page_box .cart_page_container .cart_page_box .box_content .table_price .subscription-details,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals h2,
+.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body h3,
+.checkout_page_box .cart_page_container .cart_page_box .box_content .form-row .select2-selection .select2-selection__arrow b,
+.profile_setup .setup_container .setup_form form .form_two_box .box_container .pic_box .pic_delete_button,
+.profile_setup .setup_container .setup_form form .form_two_box .box_container .pic_box.pic_here .pic_box_content_box,
+.custom-banner rs-static-layers,
+.marketingops-two .marketingops-two-boxes .elementor-container .elementor-column .elementor-counter .elementor-counter-number-prefix,
+.page-id-333 .footer-newsletter,
+.summer_camp_product_page .product_page_inner_section .woocommerce-product-rating .woocommerce-review-link,
+.summer_camp_product_page .product_page_inner_section.product_reviews .elementor-widget-post-comments .woocommerce-Reviews .commentlist .comment-text .meta .woocommerce-review__dash,
+.summer_camp_product_page .product_image .onsale,
+.moc_is_job_post_form form .fieldset-logged_in .field a:before,
+.marketingops-three.member_page_section_two:after,
+.single-no_bs_demo .page-header,
+.product_cat-templates .product_related,
+.resource_boxes_content .content_box .file_download p br,
+.moc_job_dashbpard .page-header,
+.woocommerce-view-subscription .page-header,
+.woocommerce-view-subscription .page-content .woocommerce-MyAccount-navigation {
+	display: none;
+}
+
+/* Other CSS */
+.no_bs_index .load_more_function a span,
+.good_company_section .request_partner_info_btn a .elementor-button-text,
+.image_with_text .box_text_content .elementor-widget-button a span,
+.no_bs_martech .box_content .bs_btn a span,
+.pricing_list_section .list_box.box_1 .box_1_box .elementor-widget-button a span,
+.pricing_list_section .list_box .points_list_btn a span,
+.become_partner_section_one .elementor-widget-button span,
+.mistakes_episodes .mistakes_episodes_section .episodes_container .box_btn a span,
+.give_away_banner_section .banner_text .banner_btn_section .banner_btn .elementor-widget-button a span,
+.marketingops-give-away .marketingops-two-content-box .marketingops-two-btn a span,
+.marketingops-give-away .marketingops-two-image-box .marketingops-two-btn a span,
+.professor_signup_section_1 .section_text_row .elementor-widget-button a span,
+.entry_level_templates .templates_column .templates_inner_section .templates_job_row .elementor-widget-button a span,
+.entry_level_templates .templates_column .templates_form_row .entry_level_form .form_container .form_submit button span,
+.training_page_new .training_page_poster .elementor-widget-button a span,
+.courses_product_page .courses_product_right_side .product_form a span,
+.dynamic_text_block .elementor-column .btn a span,
+.dynamic_block_left.entry_level_banner_section.annual_repo_banner_section .text_column .elementor-button span,
+.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-button a span,
+.moc_mo_experience .moc_mo_ex_text_column a span,
+.moc_mo_member_program .moc_mo_mp_column .moc_mo_mp_inner_section .inner_section_column .elementor-widget-button a span,
+.home_mops_apalooza .home_ma_text .home_ma_text_button_is .ma_is_column .elementor-widget-button:last-of-type a span,
+.marketingops .marketingops-btn a span {
+	flex-grow: initial;
+}
+
+.gradient-title,
+.gradient-title h2,
+.profile_setup .setup_container .setup_title h1,
+.partner_page_title h1,
+.no_bs_partner_title .elementor-widget-heading h2,
+.summer_camp_image_gallery .summer_camp_image_gallery_container .summer_gallery_title h2,
+.job_search_page .job_search_row .job_search_btn .elementor-button-wrapper,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .elementor-button-link,
+.job_search_page .job_search_row .searched_job_list .job_listings .posturjob_mobile,
+.profile_page .profile_content .content_box .box_about_content .show_more_btn a,
+.profile_page .moc_doing_edit_section .moc_required_field h5,
+.moc_doing_edit_section .moc_required_field h5,
+.moc_doing_edit_section .moc_required_field h6,
+.moc_is_cart_page .entry-title,
+.woocommerce-checkout .entry-title,
+.moc_common_related_posts .type-post .elementor-post__read-more,
+.no_bs_martech_demo .no_bs_martech_title h2,
+.good_company_section .good_company_title h2,
+.partner_testimonials .partner_testimonials_boxed .elementor-widget-heading h2,
+.moc_is_job_post_form .page-header h1,
+.summer_camp_product_page .product_page_inner_section .product_price .elementor-widget-wrap,
+.summer_camp_product_page .product_page_inner_section .product_ratings .elementor-widget-wrap,
+.become_partner_section_one .elementor-widget-heading h2,
+.new_arrival_section .elementor-widget-heading h2,
+.subscribe_plan_section .elementor-widget-heading h2,
+.subscription_testimonials .elementor-widget-heading h2,
+.woocommerce-lost-password .page-header h1,
+.forget_password_page .elementor-widget-heading h2,
+.shop_page_content .elementor-widget-heading h2,
+.resources_title .elementor-column h2,
+.founding_badge_title .founding_badge_title_row .elementor-widget-heading h2,
+.course_list .course_list_title_content .elementor-widget-wrap h2,
+.professor_signup_section_5 .section_5_text_row .elementor-widget-heading h2,
+.single-sfwd-lessons .site-main .page-header h1,
+.course_lp_banner .banner_text .text_title h2,
+.course_lp_automation_game .banner_text h2,
+.course_lp_automation_game .banner_text h2 span,
+.annual_repo_banner_section .text_column .text_column_title h2,
+.courses_search_bar .elementor-widget-heading h2,
+.hiring_posr_free_section .post_free_column .elementor-widget-heading h2,
+.hiring_video_section .video_section_column.video_section_column_one .elementor-widget-heading h2,
+.dynamic_block_single_quote.annual_testimonials .testimonial_column .testimonial_column_inner_section .text_box .elementor-widget-text-editor h2,
+.dynamic_blocks_events_timing .events_timing_inner_section .events_timing_inner_title .elementor-widget-heading h4,
+.moc_mo_member_program .moc_mo_mp_column .elementor-widget-heading h2,
+.page_not_found .page_not_found_text .title h2,
+.page_not_found .page_not_found_text .elementor-widget-text-editor a  {
+	width: auto;
+	display: inline-block;
+}
+
+.marketingops .marketingops_content_box .marketingops-btn,
+.justbg .marketingops-two .marketingops-two-content-box,
+.marketingops-two .marketingops-two-image-box,
+#marketingops-post-section .marketingops-four-boxes,
+.marketingops-six-section,
+.footer-newsletter,
+.footer-newsletter p,
+.footer-newsletter .elementor-widget-wrap .elementor-element:last-of-type,
+.posts-newsletter .elementor-widget-wrap .elementor-element .elementor-element .elementor-element:last-of-type,
+.footer-section .hubspot_header .elementor-image-box-wrapper .elementor-image-box-img,
+.custom-banner .slider_box_2 img,
+.section_box_1 .research-wrap .elementor-column:first-child .section_box_1_box .elementor-widget-container .elementor-button-link,
+.marketingops .marketingops_content_box .marketingops-btn:after,
+.marketingops-two .marketingops-two-content-box:after,
+.marketingops-two .marketingops-two-image-box:after,
+#marketingops-post-section .marketingops-four-boxes:nth-child(2):after,
+.marketingops-six-section:after,
+.marketingops img,
+.marketingops .marketingops-btn a .elementor-button-icon,
+.marketingops-two .marketingops-two-btn a .elementor-button-icon,
+.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .rightbtn a .elementor-button-icon,
+.marketingops-two .marketingops-two-boxes .elementor-container,
+.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image img,
+.marketingops-three .marketingops-two-coum-box .marketingops-two-coum,
+.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .rightbtn,
+.moc_common_related_posts .type-post .elementor-post__title,
+.moc_common_related_posts .type-post .elementor-post__title .pst__title_box a.title_post,
+.job_search_page,
+.job_search_page .job_search_row .jobsearch form .moc_input_field,
+.job_search_page .job_search_row .hrow .slick-dots li.slick-active button,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .search_salary .job_types,
+.job_search_page .job_search_row .searched_job_list .job_listings .posturjob_mobile .moc_posturjob-content-wrapper .moc_posturjob-icon,
+.searchjobs .job_search_row .jobsearch form .moc_jobs_count_value_div .moc_jobs_search_keyword,
+.member_directory_container .moc_members_count_value_div .moc_jobs_search_keyword,
+.searchjobs .job_search_row .searched_job_list .job_listings .job_filters .searchsalary,
+.post_featured_job .job_manager .job_listings li a .image img,
+.post_featured_job .job_manager .job_listings li .moc_job_listing_box_container .image img,
+.page-id-166115 .post_featured_job .job_manager .job_listings li .moc_job_listing_box_container .jobsmeta_view_position_btn,
+body .moc-form-container #moc-registration-1 .moc-form-field-wrap,
+body .moc-form-container #moc-registration-1 .moc-form-field-wrap.moc-custom-html p a,
+.quick_filter .quickvalues li,
+.common_filter_row .directory_search_form h3,
+.search_jobs .expandableCollapsibleDiv h3,
+.searchjobs .job_search_row .searched_job_list .job_listings .job_filters .search_jobs h3,
+.common_filter_row .directory_search_form ul li,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .job-manager-filter ul li,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .job_types li,
+.common_filter_row .directory_search_form ul li,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .job-manager-filter ul li,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .job_types li,
+.common_filter_row .directory_search_form ul li label,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .job-manager-filter ul li label,
+.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .job_types li label,
+.profile_page .profile_content .content_box .content_boxed .input_checkbox label,
+.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods label,
+.job_search_page .job_search_row .jobsearch form .moc_conditional_checkbox label,
+.directory_main_div .directory_result_div .members_directory .member-directory-pagination ul li span,
+.directory_main_div .directory_result_div .members_directory .member-directory-pagination ul li a,
+nav.job-manager-pagination ul li span,
+nav.job-manager-pagination ul li a,
+.directory_main_div .directory_result_div .members_directory .member-directory-pagination ul li span.current,
+nav.job-manager-pagination ul li span.current,
+.job_banner,
+.job_listing .single_job_listing .eachjobdetail .comapply .job_application,
+.job_listing .single_job_listing .job_description,
+.edit_page_section,
+.profile_page .profile_content .content_box .moc_not_changable_container,
+.profile_page .profile_content .content_box .box_about_content .show_more_btn,
+.profile_page .profile_content .content_box .box_about_content .show_more_btn a,
+.profile_page .profile_content .content_box .box_content,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed a.gradient_btn,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed a.gradient_btn span,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed span.intermediate_btn,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed span.intermediate_btn span,
+.profile_page .profile_content .content_box .box_about_content .sub_title_with_content .profile_img,
+.profile_page .profile_content .content_box .content_boxed .platform_content,
+.profile_page .profile_content .content_box .content_boxed .show_more_btn,
+.popup .popup_content .popup_form .form_box.box_btn,
+.profile_page .profile_content .content_box .content_boxed .show_more_btn b.btn,
+.popup .popup_content .popup_form .form_box.box_btn button,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed span.input_checkbox,
+.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods.profile_page .profile_content.edit_page .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_three_colum .colum_box:nth-child(3),
+.profile_page .profile_content.edit_page .content_box .box_content.work_section .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum .colum_box:nth-child(2),
+.profile_page .profile_content.edit_page .content_box .box_content.work_section .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum .colum_box.colum_box_5 .input_checkbox,
+.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .moc_social_links .deletesec,
+.profile_page .profile_content.edit_page .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_two_colum .range_slider .rangeslider__handle,
+.profile_page .profile_content .content_box .box_content.blog_contributons_section .content_boxes .boxes_svg_icon,
+.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .tabbing_content_details .tabbing_row .column_box .content_boxes .boxes_svg_icon,
+.profile_page .profile_content.edit_page .content_box .box_content.work_section .date_dropbox .dropbox_box,
+.profile_page .moc_doing_edit_section .moc_required_field h5,
+.moc_doing_edit_section .moc_required_field h5,
+.moc_doing_edit_section .moc_required_field h6,
+.popup .popup_content,
+.training_content .training_content_boxed .boxed_bg,
+.training_content .training_content_boxed .boxed_bg .training_bages .bages_svg_box,
+.training_content .training_content_boxed .boxed_bg .training_workshop_name .workshop_title,
+.blog_articles .articled_container.authore_tags .moc_tag_box span,
+.articled_blogs .blogs_box_container .blog_box,
+.articled_blogs .blogs_box_container .blog_box .box_img img,
+.articled_blogs .blogs_box_container .blog_box a,
+.custom_pagination.pagination_container .blog-directory-pagination ul li span,
+.custom_pagination.pagination_container .blog-directory-pagination ul li a,
+.custom_pagination.pagination_container .blog-directory-pagination ul li span.current,
+.custom_pagination.pagination_container nav ul li span,
+.custom_pagination.pagination_container nav ul li a,
+.custom_pagination.pagination_container nav ul li span.current,
+.cart_page_box .cart_page_container .cart_page_box .box_content .table_header,
+.cart_page_box .cart_page_container .cart_page_box .box_content .table_body,
+.cart_page_box .cart_page_container .cart_page_box .box_content .table_body .cart_item,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals .wc-proceed-to-checkout,
+.cart_page_box .cart_page_container .cart_page_box .box_content .table_image,
+.checkout_page_box .cart_page_container .cart_page_box .moc_checkout .checkout_review_order .order_row .review_order_img,
+.checkout_page_box .cart_page_container .cart_page_box .moc_checkout .checkout_review_order .order_row .review_order_img .order_img,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals table td,
+.checkout_page_box .cart_page_container .cart_page_box .moc_checkout .order_total .total_box,
+.moc_is_cart_page .return-to-shop a,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals .wc-proceed-to-checkout a,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals .shop_table .shipping td form p button,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals .wc-proceed-to-checkout .or_text,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals .wc-proceed-to-checkout .or_text span,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart_promo,
+.cart_page_box .cart_page_container .cart_page_box .box_content .cart_promo .coupon,
+.woocommerce-checkout .woocommerce .checkout_coupon .cart_promo,
+.woocommerce-checkout .woocommerce .checkout_coupon .cart_promo .coupon,
+.checkout_page_box .cart_page_container .cart_page_box .moc_checkout .order_total .total_box.order-total,
+.profile_setup .setup_container .setup_form form .form_two_box .box_container .pic_box .pic_box_text,
+.profile_setup .setup_container .setup_form form .form_two_box .box_container .pic_box,
+.profile_setup .setup_container .setup_form form .form_row .moc_required_field,
+.no_bs_index .form_section .bs_form_content .bs_form_box .form_row.required,
+.profile_setup .setup_container .setup_form form .form_two_box .box_container .pic_box .pic_delete_button svg,
+.email-otp .email-otp-container .form-container .colum-box-3 .circleTimer,
+.email-otp .email-otp-container .form-container .colum-box .box_container .otp-box .otp-inputs .otp-input-box,
+.email-otp .email-otp-container .form-container .colum-box .box_container .otp-box .otp-backspace a,
+.profile-success-section .elementor-widget-wrap,
+.partner_section .partner_section_box .partner_section_box_content_two ul li,
+.good_company_section,
+.partner_testimonials .partner_testimonials_boxed,
+.no_bs_partner_boxed,
+.no_bs_martech .box_content .bs_btn a .svg,
+.image_with_text .box_image .elementor-widget-image,
+.summer_camp_text_content .text_content_title_img h2:after,
+.summer_camp_text_content .text_content_title_img h2:before,
+.pricing_list_section .list_box.box_1 .elementor-widget-text-editor p a,
+.pricing_list_section .list_box.box_1 .elementor-widget-text-editor dir a,
+.summer_camp_text_content .elementor-widget-text-editor p a,
+.partner_section .partner_section_box .elementor-widget-wrap,
+.profile_setup,
+.no_bs_martech_demo_section_box .section_box_text .elementor-widget-text-editor ul li,
+.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods .payment_box .wc-upe-form .form-row,
+.moc_is_job_post_form form fieldset .required-field,
+.product_related .elementor-widget-woocommerce-product-related .related.products,
+.single-post .type-post .single_post_page .posts-newsletter p,
+.membership-wrap:before,
+.membership-wrap:after,
+.new_arrival_section .elementor-column,
+.new_arrival_section,
+.membership_table .subscribe_table .table_body .table_tr .table_info,
+.founding_badge_title .founding_badge_title_row .founding_badge_divider .elementor-widget-container,
+.shadow_box,
+.mistakes_section_header .row_text .elementor-widget-text-editor ul li,
+.mistakes_guest_share .inner_section_box .elementor-widget-text-editor ul li,
+.user_profile_blog .user_profile_left_side .blog_box_container .box_image_title .image_box .sub_title_with_content .profile_img,
+.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .form_row_select,
+.professor_signup_section_1 .section_text_row .elementor-widget-text-editor ul li,
+.professor_signup_section_4 .section_4_text_row .elementor-widget-text-editor ul li,
+.annual_testimonials.annual_testimonials_two,
+.entry_level_templates .templates_column .templates_form_row .entry_level_form .form_container .form_row .form_checkbox_row .checkbox_row .input_checkbox,
+.entry_level_templates .templates_column .templates_form_row .entry_level_form .form_container .form_row .form_checkbox_row .checkbox_row .input_checkbox label,
+.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods #stripe-payment-data .form-row.woocommerce-validated {
+	position: relative;
+}
+
+/* remove after live*/
+
+#wpadminbar {
+	z-index: 99999;
+	position: fixed;
+}
+
+/* remove after live*/
+
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	background-color: transparent;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Hide None */
+body.marketingops .desktop_btn {
+	margin-bottom: 0;
+}
+
+.mobview,
+.product_cat-events .moc_qty,
+.product_cat-events .quantity,
+.moc_not_logged_in_user .headerlogout,
+.moc_not_logged_in_user .moc_free_user_btn,
+.moc_not_logged_in_user .moc_pre_user_btn,
+.moc_free_membership_user .moc_join_now_btn,
+.moc_free_membership_user .moc_pre_user_btn,
+.moc_free_member_user .moc_free_user_btn,
+.moc_free_member_user .moc_pre_user_btn,
+.moc_paid_member_user .moc_join_now_btn,
+.moc_paid_member_user .moc_free_user_btn,
+.moc_is_admin_user .header_btn_btn,
+.moc_is_admin_user .moc_join_now_member_menu,
+.moc_not_logged_in_user .moc_top_bar_row,
+.moc_not_logged_in_user .custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login,
+.logged-in .header_account_btn .headsign .headerlogin,
+.outofstock .summer_camp_product_page .product_page_inner_section .product_price,
+.outofstock .summer_camp_product_page .product_page_inner_section .product_ratings,
+.user_profile_blog .user_profile_left_side .blog_box_container .box_image_title .image_box .title_with_btn h3,
+.single-sfwd-courses .site-main .page-header,
+.single-sfwd-lessons .site-main .learndash-wrapper .ld-lesson-status,
+.annual_repo_icon_with_text .elementor-container .elementor-container:after,
+.single-product div.product form.cart .quantity.hide_qty {
+	display: none !important;
+}
+
+.ui-datepicker {
+	z-index: 99 !important;
+}
+
+/*  Cookie Popup CSS */
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom:after,
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom::before {
+	content: "";
+	position: fixed;
+	background-color: rgba(0,0,0,.6);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom::before {
+	position: absolute;
+	z-index: 99999;
+	box-shadow: 0 -1px 3px #eaf0f6;
+	background-color: #fff;
+}
+
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner {
+	position: relative;
+	z-index: 99999;
+	max-width: 980px;
+}
+
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner #hs-eu-policy-wording h5:nth-child(2),
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner #hs-eu-policy-wording h5:nth-child(3) {
+	margin-top: 0px;
+}
+
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner #hs-eu-policy-wording h5:nth-child(3) {
+	margin-bottom: 20px;
+}
+
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner #hs-eu-policy-wording p {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner #hs-eu-cookie-disclaimer {
+	max-width: 540px;
+	margin-left: 0;
+}
+
+div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner #hs-en-cookie-confirmation-buttons-area {
+	margin-right: 0;
+	margin-top: -55px;
+}
+
+#hubspot-messages-iframe-container {
+	z-index: 99 !important;
+}

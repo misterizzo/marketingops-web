@@ -1,0 +1,480 @@
+.page-id-211739 .popup,
+.page-id-211739 .custom_login_popup {
+	display: none;
+}
+
+.first_section .first_section_column .sub_title,
+.first_section .first_section_column .first_inner_section .first_inner_column .page_content_title,
+.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-text-editor,
+.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-text-editor p {
+	margin-bottom: 0;
+}
+
+.first_section {
+	background-position: top left 18vw !important;
+}
+
+.first_section::after {
+	content: "";
+	width: 1102px;
+	max-width: 1102px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -128px;
+	right: 0; 
+	margin: 0 auto;
+	background-image: url("/wp-content/themes/marketingops/images/startup_page/startup_land_lp_page_bg.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 1;
+}
+
+.first_section::before {
+	content: "";
+	width: 100%;
+	max-width: 1060px;
+	height: 1060px;
+	z-index: 1;
+	position: absolute;
+	top: -253px;
+	bottom: 0;
+	left: 0px;
+	right: 0;
+	margin: 0 auto;
+	background-image: url("/wp-content/themes/marketingops/images/startup_page/startup_land_lp_page_bg_shadow.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.first_section .elementor-container::after {
+	content: "";
+	position: absolute;
+	top: 50px;
+	z-index: 0;
+	margin: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	max-width: 1178px;
+	height: 69px;
+	background-image: url('/wp-content/themes/marketingops/images/startup_page/startup_land_lp_page_title_shadow.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.first_section .elementor-container .elementor-container::after {
+	display: none;
+}
+
+.first_section .elementor-container .first_section_column {
+	z-index: 9;
+}
+
+.first_section .first_section_column .main_title {
+	margin-bottom: -10px;
+	position: relative;
+	z-index: 1;
+}
+
+.first_section .first_section_column .sub_title h2 {
+	font-family: "Inter", Open Sans !important;
+}
+
+.first_section .first_section_column .sub_title h2 span {
+	font-family: "Antry Sans", Open Sans;
+	text-decoration: underline;
+}
+
+.first_section .first_section_column .first_inner_section {
+	max-width: 657px;
+	margin: 35px auto 0;
+}
+
+.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-wrap {
+	justify-content: center;
+}
+
+.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-button {
+	margin: 25px 15px 25px 0;
+	width: auto;
+}
+
+.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-button a {
+	background: #1a2136;
+	background: -webkit-linear-gradient(90deg, #1a2136 0%, #1c3159 71.7%, #182a4b 100%);
+	background: -moz-linear-gradient(90deg, #1a2136 0%, #1c3159 71.7%, #182a4b 100%);
+	background: linear-gradient(90deg, #1a2136 0%, #1c3159 71.7%, #182a4b 100%);
+	border-radius: 100px;
+	max-width: 272px;
+	width: 272px;
+	padding: 15px 20px;
+}
+
+.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-button a span,
+.mops_takes_section .mops_takes_column .elementor-widget-button a span {
+	flex-grow: initial;
+}
+
+.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-button.border_btn a {
+	background-image: none;
+	border: 1px solid #FFFFFF;
+	width: 240px;
+}
+
+.first_section .first_section_column .first_inner_section .first_inner_column .mops_page_content_title {
+	margin-bottom: 5px;
+}
+
+.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-text-editor .elementor-widget-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 2px;
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product {
+	margin-top: 25px;
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_img {
+	background-color: #1a2136;
+	border-top-left-radius: 56px;
+	border-bottom-left-radius: 56px;
+	padding: 45px 32px 45px;
+	position: relative;
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_text {
+	padding: 45px 32px 45px;
+	background-color: #1a2136;
+	position: relative;
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_text:last-of-type {
+	border-top-right-radius: 56px;
+	border-bottom-right-radius: 56px;
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-column .elementor-widget-wrap {
+	align-items: center;
+	align-content: center;
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-column .elementor-widget-wrap .elementor-icon-list-items {
+	justify-content: center;
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-column .elementor-widget-wrap .elementor-icon-list-text {
+	max-width: 235px;
+	width: calc(100% - 70px);
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_text::after {
+	content: "";
+	background-image: url("/wp-content/themes/marketingops/images/mopsapalooza/dots_line.svg");
+	width: 9px;
+	height: calc(100% + 4px);
+	background-position: top left;
+	background-repeat: repeat;
+	position: absolute;
+	top: -4px;
+	left: 0px;
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_img::after,
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_text::before {
+	content: "";
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #131419;
+	background: -webkit-radial-gradient(93.38% 84.23% at 98.82% 0%, #131419 0%, rgba(19, 20, 25, 0) 100%);
+	background: -moz-radial-gradient(93.38% 84.23% at 98.82% 0%, #131419 0%, rgba(19, 20, 25, 0) 100%);
+	background: radial-gradient(93.38% 84.23% at 98.82% 0%, #131419 0%, rgba(19, 20, 25, 0) 100%);
+}
+
+.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_text::before {
+	opacity: 0.23;
+	transform: rotate(-180deg);
+	width: 299px;
+	height: 315px;
+	top: initial;
+	bottom: 0;
+	left: 4px;
+	background: #3b4a72;
+	background: -webkit-radial-gradient(92.47% 83.4% at 98.82% 0%, #3b4a72 0%, rgba(59, 74, 114, 0) 100%);
+	background: -moz-radial-gradient(92.47% 83.4% at 98.82% 0%, #3b4a72 0%, rgba(59, 74, 114, 0) 100%);
+	background: radial-gradient(92.47% 83.4% at 98.82% 0%, #3b4a72 0%, rgba(59, 74, 114, 0) 100%);
+}
+
+.mops_takes_section {
+	background-image: url('/wp-content/themes/marketingops/images/startup_page/startup_land_lp_page_bg_two.svg');
+	background-position: center bottom 40px;
+	background-repeat: no-repeat;
+}
+
+.mops_takes_section .mops_takes_column .elementor-widget-heading {
+	margin-bottom: 32px;
+	max-width: 550px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mops_takes_section .mops_takes_column .elementor-widget-button a {
+	max-width: 233px;
+	width: 100%;
+	border-radius: 100px;
+	padding: 15px 20px;
+	background: #3b4a72;
+	background: -webkit-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+	background: -moz-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+	background: linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+}
+
+.mops_takes_section .mops_takes_column .elementor-widget-heading,
+.mops_takes_section .mops_takes_column .elementor-widget-button,
+.mops_startup_participate_section .mops_startup_participate_column {
+	position: relative;
+	z-index: 3;
+}
+
+.mops_takes_section .mops_takes_column .mops_takes_cake_img img {
+	margin-left: 30px;
+	margin-top: -163px;
+	margin-bottom: -265px;
+}
+
+.mops_startup_copyrights .mops_startup_copyrights_column .elementor-widget-text-editor {
+	max-width: 1057px;
+	margin: 0 auto;
+}
+
+.mops_startup_copyrights .mops_startup_copyrights_column .elementor-widget-text-editor p {
+	margin-bottom: 0;
+}
+
+.mops_startup_copyrights .mops_startup_copyrights_column .elementor-widget-text-editor p strong {
+	color: #FA4A7C;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 1024px) {
+	.page-id-211739 #hubspot-messages-iframe-container {
+		bottom: 100px !important;
+	}
+
+	.first_section .elementor-container .elementor-container::after,
+	.first_section .elementor-container .elementor-container::before {
+		display: none;
+	}
+
+	.first_section {
+		overflow: hidden;
+	}
+
+	.first_section::after {
+		left: 0;
+		width: 100%;
+		height: 538px;
+		top: -85px;
+		background-image: url(/wp-content/themes/marketingops/images/startup_page/mobile_images/earth.svg);
+		background-size: 515px;
+		background-position: center;
+	}
+
+	.first_section .elementor-container {
+		padding-bottom: 10px;
+	}
+
+	.first_section .elementor-container::after,
+	.first_section .elementor-container::before {
+		content: "";
+		position: absolute;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+
+	.first_section .elementor-container::after {
+		width: 110px;
+		height: 166px;
+		left: initial;
+		top: initial;
+		right: 0;
+		bottom: 0;
+		background-image: url(/wp-content/themes/marketingops/images/startup_page/mobile_images/space_man.png);
+	}
+
+	.first_section .elementor-container::before {
+		width: 185px;
+		height: 138px;
+		left: -82px;
+		bottom: 10px;
+		background-image: url(/wp-content/themes/marketingops/images/startup_page/mobile_images/freeze_earth.png);
+	}
+
+	.first_section .first_section_column .page_title {
+		max-width: 415px;
+		margin: 0 auto;
+		text-transform: uppercase;
+	}
+
+	.first_section .first_section_column .page_title h2 {
+		background: #1A2136;
+		background: -webkit-linear-gradient(90deg, #1A2136 -0.02%, #1B3058 49.94%, #1A2136 100.05%);
+		background: -moz-linear-gradient(90deg, #1A2136 -0.02%, #1B3058 49.94%, #1A2136 100.05%);
+		background: linear-gradient(90deg, #1A2136 -0.02%, #1B3058 49.94%, #1A2136 100.05%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+
+	.first_section .first_section_column .sub_title h2 {
+		max-width: 318px;
+		margin: 0 auto;
+		line-height: 18px !important;
+		font-weight: 500 !important;
+	}
+
+	.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-button {
+		margin: 0px 0 15px;
+	}
+
+	.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-button.border_btn {
+		margin: 30px 0 0 0;
+		position: relative;
+		z-index: 9;
+	}
+
+	.first_section .first_section_column .first_inner_section {
+		max-width: 365px;
+		margin: 15px auto 0;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-column .elementor-widget-wrap ul li {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		text-align: center;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-column .elementor-widget-wrap ul li .elementor-icon-list-icon svg {
+		margin: 0;
+	}
+
+	.first_section .first_section_column .mops_page_content_title h2,
+	.first_section .first_section_column .mops_page_content_content {
+		color: #fff !important;
+	}
+
+	.first_section .first_section_column .main_title {
+		margin-bottom: -20px;
+	}
+
+	.first_section .first_section_column .mops_page_content_title {
+		margin-top: 90px;
+		margin-bottom: 15px !important;
+	}
+
+	.first_section .first_section_column .mops_page_content_content {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+
+	.first_section .first_section_column .first_inner_section .first_inner_column .elementor-widget-text-editor .elementor-widget-container ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.first_section .first_section_column .main_title {
+		margin-bottom: 0;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_img,
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_img::after {
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 56px;
+		border-top-left-radius: 56px;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_text:last-of-type,
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_text::before {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 56px;
+		border-bottom-left-radius: 56px;
+		overflow: hidden;
+		left: 0;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_text::after {
+		background-image: url('/wp-content/themes/marketingops/images/mopsapalooza/vertical_dots_line_new.svg');
+		width: 100%;
+		height: 9px;
+		top: -5px;
+		left: 0;
+		background-repeat: repeat space;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-column .elementor-widget-wrap .elementor-icon-list-text {
+		width: calc(100% - 80px);
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.mops_takes_section .mops_takes_column .mops_takes_cake_img img {
+		margin-left: 0;
+		margin-top: -15%;
+		margin-bottom: -50%;
+	}
+
+	.first_section .elementor-container::after {
+		right: -30px;
+	}
+
+	.mops_takes_section .mops_takes_column .elementor-widget-heading {
+		max-width: 295px;
+	}
+
+	.mops_takes_section .mops_takes_column .elementor-widget-heading h2 {
+		line-height: 29px !important;
+	}
+}
+
+@media only screen and (max-width: 376px) {
+	.first_section::after {
+		top: -90px;
+	}
+
+	.first_section .elementor-container .first_section_column {
+		padding: 0 !important;
+	}
+
+	.first_section .first_section_column .page_title h2 {
+		font-size: 38px!important;
+		line-height: 43px!important;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-container .ma_ps_product_img {
+		padding: 25px;
+	}
+
+	.mops_startup_participate_section .mops_startup_participate_column .ma_ps_product .elementor-column .elementor-widget-wrap .elementor-icon-list-text {
+		width: calc(100% - 75px);
+	}
+}

@@ -1,0 +1,409 @@
+/* Max Quries | 1199px */
+@media only screen and (max-width: 1199px) {
+	/* Mops Community Section CSS */
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box .elementor-widget-text-editor a,
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box .elementor-widget-text-editor p a {
+		font-size: 14px;
+		line-height: 19px;
+	}
+	
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box .elementor-widget-button {
+		position: relative;
+		right: 0 !important;
+		bottom: initial;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin-top: 15px;
+		display: none;
+	}
+
+	/* Community Couter Section CSS */
+	.community_counter .elementor-container .cc_text_column .marketingops-two-boxes .elementor-container {
+		gap: 45px;
+	}
+}
+
+/* Max Quries | 1024px */
+@media only screen and (max-width: 1024px) {
+	/* Global CSS */
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box .elementor-widget-text-editor p br,
+	.dont_run_alone::before {
+		display: none;
+	}
+
+	/* Banner CSS */
+	.new_banner.custom-banner rs-slide .banner_img {
+		/* width: 100% !important;
+		height: initial !important; */
+		max-width: 100% !important;
+	}
+
+	/* Mops Apalooza */
+	.new_home_mops.home_mops_apalooza .home_ma_image {
+		max-width: calc(100% - 250px);
+		margin-left: -110px;
+		margin-right: -120px;
+	}
+
+	/* Mops Community Section CSS */
+	.mops_community,
+	.home_mops_apalooza {
+		margin-top: 0 !important;
+	}
+
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box > .elementor-widget-wrap {
+		padding: 20px;
+	}
+
+	/* Don't Run Alone CSS */
+	.dont_run_alone .dra_text_column {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/* Mops Program Links CSS */
+	.mops_program_link .mops_program_column .mops_prog_links .links_row .links_box .links_title {
+		margin-bottom: 20px;
+	}
+
+	.mops_program_link .mops_program_column .mops_prog_links .links_row .links_box .link_box_content {
+		max-width: 100%;
+		padding-left: 0;
+		gap: 5px;
+	}
+
+	/* Community Couter Section CSS */
+	.community_counter > .elementor-container {
+		padding: 33px 30px 25px 30px;
+	}
+}
+
+/* Max Quries | 991px */
+@media only screen and (max-width: 991px) {
+	/* Banner CSS */
+	.custom-banner rs-layer-wrap rs-mask-wrap {
+		top: 0 !important;
+	}
+
+	/* Mops Apalooza */
+	.new_home_mops.home_mops_apalooza .home_ma_image {
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/* Mops Community Section CSS */
+	.mops_community .mops_com_column .mops_community_content > .elementor-container {
+		justify-content: center;
+	}
+
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box {
+		width: calc(50% - 15px);
+	}
+
+	/* Social Proof CSS */
+	.social_proof .elementor-container {
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.social_proof .sp_column {
+		max-width: 100%;
+		width: calc(50% - 23px);
+	}
+
+	/* Community Couter Section CSS */
+	.community_counter {
+		padding: 50px 15px 175px 15px !important;
+		margin-bottom: 63px;
+	}
+
+	.community_counter .elementor-container .cc_text_column .marketingops-two-boxes .elementor-container {
+		gap: 15px;
+	}
+
+	.community_counter .elementor-container .cc_image_column {
+		max-width: 375px;
+		margin-bottom: 0;
+		margin-top: 0;
+		bottom: -173px;
+		right: -100px;
+		position: absolute;
+	}
+
+	.community_counter .elementor-container .cc_text_column {
+		max-width: calc(100% - 200px);
+	}
+
+	/* Become Pro Section CSS */
+	.become_pro {
+		padding-bottom: 0 !important;
+	}
+
+	.become_pro .text_column {
+		padding-left: 20px;
+	}
+
+	.become_pro .text_column .elementor-widget-icon-list ul {
+		column-gap: 15px;
+		row-gap: 20px;
+	}
+
+	.become_pro .text_column .elementor-widget-button {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin-top: 30px;
+	}
+
+	/* Joureny Free Section */
+	.joureny_free_section .text_column {
+		padding-right: 20px;
+	}
+}
+
+/* Max Quries | 767px */
+@media only screen and (max-width: 767px) {
+	/* Global CSS */
+	.mops_community::after,
+	.mops_community::before,
+	.become_pro::after {
+		display: none;
+	}
+
+	/* Banner CSS */
+	.marketingops .new_banner.custom-banner rs-layer.banner_title {
+		font-size: 28px !important;
+		line-height: 39px !important;
+	}
+
+	/* Mops Community Section CSS */
+	.mops_community .mops_com_column .com_title {
+		margin-bottom: 5px;
+	}
+
+	.mops_community .mops_com_column .com_title h1 span {
+		font-size: 16px;
+	}
+
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box .elementor-widget-icon-list {
+		margin-bottom: 15px;
+	}
+
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box .elementor-widget-icon-list ul li .elementor-icon-list-icon {
+		width: 45px;
+		height: 45px;
+		padding: 6px;
+	}
+
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box .elementor-widget-icon-list ul li .elementor-icon-list-text {
+		max-width: calc(100% - 45px);
+	}
+
+	.new_home_mops.home_mops_apalooza .home_ma_text .home_ma_text_button_is .ma_is_column .elementor-widget-button:last-of-type a {
+		max-width: 175px;
+		padding: 12px 5px;
+	}
+
+	/* Don't Run Alone CSS */
+	.dont_run_alone .dra_text_column .dra_title span {
+		font-size: 21px;
+		color: #6D7B83;
+		display: inline-block;
+    	width: 100%;
+		line-height: 29.27px;
+	}
+
+	/* Social Proof CSS */
+	.social_proof .elementor-container {
+		gap: 10px;
+	}
+
+	.social_proof .sp_column,
+	.social_proof .sp_column.sp_column_one .elementor-widget-text-editor .elementor-widget-container {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.social_proof .sp_column.sp_column_one,
+	.joureny_free_section .text_column .elementor-widget-button {
+		order: 2;
+	} 
+
+	.social_proof .sp_column.sp_column_two,
+	.joureny_free_section .text_column .dra_title {
+		order: 1;
+	}
+
+	.social_proof .sp_column.sp_column_three,
+	.joureny_free_section .text_column .elementor-widget-image {
+		order: 3;
+	}
+
+	.joureny_free_section .text_column .elementor-widget-text-editor {
+		order: 4;
+		margin: 0;
+	}
+
+	/* Community Couter Section CSS */
+	.community_counter .elementor-container .cc_image_column {
+		bottom: -173px;
+		right: -125px;
+	}
+
+	/* Become Pro Section CSS */
+	.become_pro .text_column {
+		padding-left: 0;
+		max-width: 100%;
+		margin-top: 22px;
+	}
+
+	.become_pro .text_column .dra_title {
+		margin-bottom: 20px;
+	}
+
+	/* Joureny Free Section */
+	.joureny_free_section .text_column,
+	.joureny_free_section .text_column .elementor-widget-wrap {
+		padding-right: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.joureny_free_section .text_column .elementor-widget-image {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	/* Mops Program Links CSS */
+	.mops_program_link .mops_program_column .mops_prog_links .links_row .links_box .link_box_content .box_row {
+		max-width: calc(50% - 3px);
+	}
+
+	.footer-newsletter p {
+		text-align: center;
+	}
+	
+	
+}
+
+/* Max Quries | 575px */
+@media only screen and (max-width: 575px) {
+	/* Banner CSS */
+	.marketingops .new_banner.custom-banner rs-layer.banner_content br {
+		display: none !important;
+	}
+
+	.marketingops .new_banner.custom-banner rs-layer .mobile_active,
+	.marketingops .new_banner.custom-banner rs-layer.banner_content .mobile_active {
+		display: block !important;
+	}
+
+	.marketingops .new_banner.custom-banner rs-layer.banner_img img {
+		width: 446px !important;
+		bottom: 50px;
+		right: 76px;
+	}
+
+	/* Mops Community Section CSS */
+	.mops_community .mops_com_column .mops_community_content {
+		margin-bottom: 5px;
+	}
+
+	.mops_community .mops_com_column .mops_community_content > .elementor-container {
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.mops_community .mops_com_column .mops_community_content .mops_com_content_box,
+	.mops_community .mops_com_column .mops_community_content.two_box .mops_com_content_box {
+		max-width: 100%;
+		width: 100%;
+	}
+	.marketingops-five .marketingops-five-row .elementor-section .elementor-column{
+		margin-bottom: 15px;
+	}
+	.community_counter .elementor-container .cc_image_column img{    margin-right: -116px;}
+	.community_counter{overflow: hidden;margin-bottom: 0 !important;padding: 50px 15px 205px 15px !important;}
+	.become_pro_column ul li .elementor-icon-list-text{padding-left: 3px !important;}
+	.marketingops-five{margin-bottom: 25px !important;}
+
+	/* Don't Run Alone CSS */
+	.dont_run_alone .dra_text_column .dra_title h2 {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.dont_run_alone .dra_text_column .dra_title h2 span {
+		max-width: 270px;
+	}
+
+	.dont_run_alone .dra_text_column .dra_image {
+		margin-bottom: 0;
+		position: relative;
+		right: -9vw;
+	}
+
+	/* Community Couter Section CSS */
+	.community_counter > .elementor-container {
+		padding: 33px 20px 140px 20px;
+	}
+
+	.community_counter .elementor-container .cc_text_column {
+		max-width: 100%;
+	}
+
+	.community_counter .elementor-container .cc_text_column .marketingops-two-boxes .elementor-container {
+		gap: 31px;
+		row-gap: 20px;
+		max-width: 310px;
+		justify-content: flex-start;
+		margin-left: 0;
+	}
+
+	.community_counter .elementor-container .cc_text_column .marketingops-two-boxes .elementor-column:first-of-type {
+		order: 3;
+	}
+
+	.community_counter .elementor-container .cc_text_column .marketingops-two-boxes .elementor-column:nth-of-type(2) {
+		order: 1;
+		width: calc(50% - 1px);
+	}
+
+	.community_counter .elementor-container .cc_text_column .marketingops-two-boxes .elementor-column:nth-of-type(3) {
+		order: 2;
+	}
+
+	.community_counter .elementor-container .cc_image_column {
+		bottom: -225px;
+		right: 0;
+		left: 0;
+	}
+
+	/* Become Pro Section CSS */
+	.become_pro .image_column,
+	.become_pro .image_column img {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.become_pro .text_column .elementor-widget-icon-list ul {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/* Gift Membership CSS */
+	.gift_memberhip::after {
+		background-image: url('/wp-content/themes/marketingops/images/new_homepage/gift_membership/gift_member_ship_mobile_bg.svg');
+	}
+
+	/* Mops Program Links CSS */
+	.mops_program_link .mops_program_column .mops_prog_links .links_row .links_box .link_box_content .box_row {
+		max-width: 100%;
+	}
+}

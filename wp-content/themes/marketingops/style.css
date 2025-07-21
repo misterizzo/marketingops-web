@@ -1,0 +1,40 @@
+/*
+Theme Name:     MarketingOps
+Theme URI:      https://marketingops.com/
+Template:       hello-elementor
+Author:         Adarsh Verma Updated.
+Author URI:     https://vermadarsh.me/
+Description:    A custom theme built by the Adarsh Verma.
+Version:        1.0
+License:        GNU General Public License v3.0 (or later)
+License URI:    https://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+@import url("./css/font-face.css");
+/* @import url("./css/gradient_global.css"); */
+/* @import url("./css/moc-design-one.css"); */
+/* @import url("./css/moc-design-two.css"); */
+/* @import url("./css/media.css"); */
+
+
+
+.annual_repo_spon .elementor-container {justify-content: flex-end;}
+.annual_repo_spon .spon_title {max-width: 270px !important;align-items: center;}
+.mops_state-of-the-marketing-ops-professional-research-2023_page .footer-newsletter {display: none;}
+.mops_state-of-the-marketing-ops-professional-research-2023_page main#content {margin-bottom: 80px;}
+.annual_repo_banner_section.newhomeannualsection .img_column:after {top: -35px;right: -65px;}
+.annual_repo_banner_section.newhomeannualsection .img_column:before {display:none;}
+.mops_strategists_page header.page-header {display: none;}
+
+.single-strategists header.page-header {display: none;}
+.marketingopsbookmainboxuserimg img {border-radius: 50%;}
+a.booksesionbtnlink:hover {color: #fff;}
+
+@media (max-width: 767px) {
+    .annual_repo_banner_section .text_column:after {background-image: url('/wp-content/themes/marketingops/images/annual_repo/banner_blur_top.png');width: 534px;height: 509px;top: 65px;right: -189px;content: '';position: absolute;}
+    .annual_repo_spon .elementor-container {justify-content: center;}
+    .mops_state-of-the-marketing-ops-professional-research-2023_page .footer-newsletter {display: block;}
+    .mops_state-of-the-marketing-ops-professional-research-2023_page main#content {margin-bottom: 0px;}
+    .annual_repo_banner_section.newhomeannualsection .img_column:before,.annual_repo_banner_section.newhomeannualsection .text_column:after {display:none;}
+    .annual_repo_banner_section.newhomeannualsection .text_column .text_column_title h2 {max-width: 100%;}
+}

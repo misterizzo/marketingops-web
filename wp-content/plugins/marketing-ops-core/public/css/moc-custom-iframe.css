@@ -1,0 +1,240 @@
+@font-face {font-family: 'open_sansregular';src: url('/wp-content/themes/marketingops/fonts/opensans-regular-webfont.woff2') format('woff2'),url('/wp-content/themes/marketingops/fonts/opensans-regular-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'open_sansbold';src: url('/wp-content/themes/marketingops/fonts/opensans-bold-webfont.woff2') format('woff2'),url('/wp-content/themes/marketingops/fonts/opensans-bold-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'open_sanssemibold';src: url('/wp-content/themes/marketingops/fonts/opensans-semibold-webfont.woff2') format('woff2'),url('/wp-content/themes/marketingops/fonts/opensans-semibold-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 {position: relative;z-index: 2;width: 350px !important;padding-bottom: 5px;margin: 0px auto 0px;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a p,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 p {margin-bottom: 2px;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a label,
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .hs_error_rollup,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 label,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .hs_error_rollup {display: none;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .submitted-message p,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .submitted-message p {font-size: 19px;color: #FFF;font-family: 'open_sansbold';}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .hs-input,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .hs-input,
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-form-field .input input,
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-form-field .input select,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field .input input,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field .input select,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field .input input,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-field .input select {max-width: 350px !important;border-radius: 100px;border: none;margin-left: 0px;background-color: rgba(255, 255, 255, 0.5) !important;color: #242730;font-size: 14px;padding: 13px 145px 13px 20px !important;font-family: "open_sansregular";height: auto;margin: 0;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .hs-input::placeholder,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .hs-input::placeholder,
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-form-field .input input::placeholder,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field .input input::placeholder,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-field .input input::placeholder {color: #242730 !important;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .actions,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .actions {padding: 0;margin: 0;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .hs_submit,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .hs_submit {position: absolute;top: 0;right: 0;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .hs-button,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .hs-button {width: 135px;max-width: 135px;border-radius: 100px;margin-left: -50px;background-color: #fff !important;border-color: #fff !important;color: #45474F !important;font-family: "open_sansregular" !important;padding: 15px 10px;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a ul.no-list.hs-error-msgs,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 ul.no-list.hs-error-msgs {position: absolute;}
+form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .hs-error-msgs label,
+form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .hs-error-msgs label,
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 .hs-error-msgs label,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 .hs-error-msgs label,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 .hs-error-msgs label {display: block;color: #fff;position: relative;bottom: 0px;margin-top: 5px}
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 .hs-error-msgs label,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 .hs-error-msgs label,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 .hs-error-msgs label {color: red;}
+.hbspt-form .submitted-message p {color: #fff;margin: 0 !important;position: relative;top: -6px;}
+.hbspt-form .submitted-message.hs-form-65486be6-a304-4801-bbb9-119fc7d88f24,
+.hbspt-form .submitted-message.hs-form-bb6cf5b3-5075-4578-9bd1-47ef92782965 {margin-top: 9px;}
+.hbspt-form .submitted-message.hs-form-65486be6-a304-4801-bbb9-119fc7d88f24 p,
+.hbspt-form .submitted-message.hs-form-bb6cf5b3-5075-4578-9bd1-47ef92782965 p {color: #000;margin-bottom: 15px !important;}
+.hbspt-form .submitted-message.hs-form-65486be6-a304-4801-bbb9-119fc7d88f24 p:last-of-type,
+.hbspt-form .submitted-message.hs-form-bb6cf5b3-5075-4578-9bd1-47ef92782965 p:last-of-type {margin-bottom: 0 !important;}
+.hbspt-form .hs-form-d45649a0-e8a4-4d47-a5ed-9b17ab97e8ef.submitted-message p,
+.hbspt-form .submitted-message.hs-form-1cca2347-cba4-4404-9b08-d8b4bb880383 p {color: #000;text-align: center;}
+.hbspt-form .submitted-message.hs-form-1cca2347-cba4-4404-9b08-d8b4bb880383 p {top: 0;margin-bottom: 20px !important;display: inline-block;margin-top: 15px !important;}
+.mops-iframe-btn {height: auto !important;}
+.mops-iframe-btn iframe body {background: transparent !important;}
+/* Annual Report 2022 - Form - CSS */
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-form-field label span,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field label span,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-field label span {font-family: 'open_sanssemibold';font-style: normal;font-weight: normal;font-size: 14px;line-height: 19px;color: #242730;}
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-form-field label span.hs-form-required,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field label span.hs-form-required,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-field label span.hs-form-required {background-image: url('/wp-content/themes/marketingops/images/svg/checkout_star.svg');background-position: center;background-repeat: no-repeat;text-indent: -10000px;overflow: hidden;width: 9px;height: 9px;background-size: contain;display: inline-block;margin-left: 3px;position: relative;top: -3px;}
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-form-field .input input,
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-form-field .input select,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field .input input,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field .input select,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-field .input input {padding: 8px 15px !important;background: #FBFBFB;border: 1px solid #E7EFEF;border-radius: 6px;width: 100%;max-width: 100% !important;font-size: 16px;}
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-form-field .input select,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-field .input select {background-image: url('/wp-content/themes/marketingops/images/social_icons/down_arrow_edit_profile.svg');background-repeat: no-repeat;background-position: center right 14px;-webkit-appearance: none;-moz-appearance: none;-o-appearance: none;appearance: none;padding-right: 30px !important;}
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-richtext p,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-richtext p,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field .hs-field-desc,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-richtext p,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-field .hs-field-desc {font-family: 'open_sansregular';font-weight: normal;font-size: 14px;line-height: 19px;color: #45474F;margin: 0;}
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 fieldset .hs-richtext p a,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-richtext p a,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-richtext p a {color: #C4338C;text-decoration: none;}
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 .hs_submit .actions,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 .hs_submit .actions,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 .hs_submit .actions,
+#hsForm_1cca2347-cba4-4404-9b08-d8b4bb880383 .hs_submit .actions {padding: 0;margin: 30px 0 0;}
+#hsForm_bb6cf5b3-5075-4578-9bd1-47ef92782965 .hs_submit .actions input,
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 .hs_submit .actions input,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 .hs_submit .actions input,
+#hsForm_0f63a4d2-6500-46aa-8f6d-acf161411482 .hs_submit .actions input,
+#hsForm_1cca2347-cba4-4404-9b08-d8b4bb880383 .hs_submit .actions input {padding: 20px 34px;border: none;border-radius: 100px;font-family: 'open_sansregular';font-size: 16px;font-weight: normal;background: #FD4B7A;background: -webkit-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);background: -moz-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);background: linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);}
+/* Course Pre Registration Page - Form - CSS */
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 fieldset .hs-form-field .hs-field-desc,
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-field .hs-field-desc {margin: -2px -2px 8px;}
+#hsForm_a427ccb2-7ff1-49c6-9518-cd1179301457 .hs_submit .actions {text-align: right;}
+/* Entry Level Page - Form - CSS */
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset.form-columns-2 {margin: 0 -10px;max-width: initial;}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset.form-columns-2 .hs-form-field {padding: 0 10px;}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-checkbox label {position: relative;margin-bottom: 12px;}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-checkbox label input {opacity: 0;position: absolute;margin: 0;left: 0;right: 0;width: 25px;height: 25px;text-align: left;z-index: 99;top: 50%;transform: translateY(-50%);}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-checkbox label span {font-family: 'open_sansregular';font-size: 14px;color: #45474F;height: 25px;display: flex;align-items: center;padding-left: 35px;}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-checkbox label span:after {content: "";position: absolute;left: 0;top: 50%;transform: translateY(-50%);width: 25px;height: 25px;background: rgba(246, 247, 247, 0.5);border: 1px solid #E7EFEF;box-sizing: border-box;border-radius: 6px;}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-checkbox label span:before {content: "";position: absolute;left: 5px;top: 50%;transform: translateY(-50%);width: 15px;height: 15px;background-image: url('/wp-content/themes/marketingops/images/svg/true_checkbox.svg');background-repeat: no-repeat;background-size: contain;opacity: 0;z-index: 9;}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-checkbox label span:before {z-index: 1;}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-checkbox label input:checked~span:after {border-radius: 6px;background: #FA4A7A;background: -webkit-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);background: -moz-linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);background: linear-gradient(90deg, #FD4B7A -2.36%, #4D00AE 159.05%);}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 fieldset .hs-form-checkbox label input:checked~span:before {opacity: 1;}
+#hsForm_65486be6-a304-4801-bbb9-119fc7d88f24 .hs_submit .actions {margin-top: 6px;}
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e h1,
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e p,
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e span,
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e .hs-input {color: #fff;}
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e .field {margin-bottom: 10px;}
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e input.hs-button.primary.large {padding: 20px 34px;border: none;border-radius: 100px;font-family: 'open_sansregular';font-size: 16px;font-weight: 400;background: #fd4b7a;background: -webkit-linear-gradient(90deg,#FD4B7A -2.36%,#4D00AE 159.05%);background: -moz-linear-gradient(90deg,#FD4B7A -2.36%,#4D00AE 159.05%);background: linear-gradient(90deg,#FD4B7A -2.36%,#4D00AE 159.05%);}
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e fieldset .hs-richtext p a {color: #c4338c;text-decoration: none;}
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e .actions {margin-top: 0px;margin-bottom: 10px;padding: 0 0px;}
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e fieldset.form-columns-1 .input {margin-right: 0px;}
+.hsForm_01e3aae5-fc1f-4e62-bc15-f50922c27a5e fieldset.form-columns-2 .input {margin-right: 0px;}
+#accelevents_widget_selector_embed_script_95587f5d-b0e4-4f1b-87f5-8075dbb8bf72 .widget-checkout-button .widget-logo-footer .powered-by-container {display: none !important;}
+#hsForm_1add613a-e32e-4eb5-a0fa-ed152f63164a fieldset.form-columns-1 {width: 25%;float: left;}
+#banner-0 .frame-content__inner .frame-content__content .frame-content__text p {font-family: 'open_sansregular';}
+
+
+#banner-0 .frame-content__inner .frame-content__content .frame-content__text p{font-family: 'open_sansregular';font-size: 16px;font-weight: 400;line-height: 21.79px;color: rgb(69, 71, 79);}
+#sp-accept {border: none;color: #ffffff;background-image: linear-gradient(90deg, #D33B93 -2.36%, #FE7054 100%);border-radius: 100px 100px 100px 100px;background-color: transparent;fill: #fff;text-align: center;transition: all .3s;font-family: 'open_sansregular';font-weight: 400;font-size: 16px;}
+#sp-decline,#sp-customize{border:none;background-color: transparent;border-radius: 100px;font-family: 'open_sansregular';font-size: 16px;font-weight: 400;line-height: 82%;fill: #242730;color: #fff;background: #242730;transition: all .3s;}
+.sp-branding{font-family: 'open_sansregular';font-size: 12px;font-weight: 400;line-height: 21.79px;color: rgb(69, 71, 79);}
+
+@media only screen and (max-device-width: 575px) {
+	form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a,
+	form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 {width: 100% !important;}
+	form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .hs-input,
+	form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .hs-input {max-width: 100% !important;}
+	form#hsForm_740aad36-90a2-4d3d-8a22-13669ae2cf1a .hs-button,
+	form#hsForm_69d7745b-7ffa-484f-ac1d-4687c6d18652 .hs-button {margin-left: 0;}
+}
+@media screen and ( max-width: 767px ) {
+	#accelevents_widget_selector_embed_script_95587f5d-b0e4-4f1b-87f5-8075dbb8bf72 .stepper-main.stepper-mobile-view .step-block .container .step-wizards.step-wizard-line {padding-top: 0 !important;}
+}
+@media screen and ( max-width: 991px ) {
+	#accelevents_widget_selector_embed_script_95587f5d-b0e4-4f1b-87f5-8075dbb8bf72 .ticket-steps-div .select-tickets {padding: 24px 0 0 0 !important;}
+}
+
+
+
+
+
+#elementor-popup-modal-235138 .dialog-close-button {
+    display: flex;
+    border: solid 1px #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #000;
+    top: 5px;
+    right: 5px;
+    z-index: 9;
+}
+
+.elementor-location-popup .elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-content {
+    padding: 15px;
+    border: solid 1px #c3c3c3 !important;
+    border-radius: 15px;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_firstname.hs-firstname.hs-fieldtype-text.field.hs-form-field {
+    width: 49% !important;
+    float: left;
+    margin: 5px 0;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_lastname.hs-lastname.hs-fieldtype-text.field.hs-form-field {
+    width: 49%;
+    float: right;
+    margin: 5px 0;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_email.hs-email.hs-fieldtype-text.field.hs-form-field {
+    width: 49%;
+    float: left;
+    margin: 5px 0;
+}
+
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_jobtitle.hs-jobtitle.hs-fieldtype-text.field.hs-form-field {
+    width: 49%;
+    float: right;
+    margin: 5px 0;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_company.hs-company.hs-fieldtype-text.field.hs-form-field {
+    width: 49%;
+    float: left;
+    margin: 5px 0;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_numemployees.hs-numemployees.hs-fieldtype-select.field.hs-form-field {
+    width: 49%;
+    float: right;
+    margin: 5px 0;
+}
+
+@media (max-width: 767px) 
+{
+
+    #hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_firstname.hs-firstname.hs-fieldtype-text.field.hs-form-field {
+    width: 100% !important;
+    float: left;
+    margin: 5px 0;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_lastname.hs-lastname.hs-fieldtype-text.field.hs-form-field {
+    width: 100%;
+    float: right;
+    margin: 5px 0;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_email.hs-email.hs-fieldtype-text.field.hs-form-field {
+    width: 100%;
+    float: left;
+    margin: 5px 0;
+}
+
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_jobtitle.hs-jobtitle.hs-fieldtype-text.field.hs-form-field {
+    width: 100%;
+    float: right;
+    margin: 5px 0;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_company.hs-company.hs-fieldtype-text.field.hs-form-field {
+    width: 100%;
+    float: left;
+    margin: 5px 0;
+}
+
+#hsForm_6609b966-7cf4-4ceb-8e7b-4c1432612919 .hs_numemployees.hs-numemployees.hs-fieldtype-select.field.hs-form-field {
+    width: 100%;
+    float: right;
+    margin: 5px 0;
+}
+
+
+}

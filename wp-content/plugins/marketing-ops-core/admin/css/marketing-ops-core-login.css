@@ -1,0 +1,89 @@
+body.login div#login h1 a {background-image: url('/wp-content/uploads/2022/08/cropped-cropped-logo_inst.png');width: 400px;background-size: contain;background-position: center;}
+.login .g-recaptcha {transform: scale(0.89);transform-origin: left;margin: 0 0 15px;}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {transition: background-color 5000s ease-in-out 0s;-webkit-text-fill-color: #6D7B83 !important;}
+
+@media only screen and ( min-width: 1200px ) {
+	.register_page.elementor-section.elementor-section-boxed > .elementor-container {max-width: 990px;}
+	.elementor-section .elementor-container {display: flex;margin-right: auto;margin-left: auto;position: relative;}
+}
+@media ( min-width: 768px ) {
+	.elementor-column.elementor-col-50, .elementor-column[data-col="50"] {width: 50%;}
+	.elementor-column {position: relative;min-height: 1px;display: flex;}
+}
+.register_page.login_page {background-image: url('/wp-content/themes/marketingops/images/login_page/login_bg_blur_image_2.png');background-position: left -30px top -160px;background-repeat: no-repeat;background-size: contain;overflow: initial;margin-top: 0px;margin-bottom: 0px;padding: 13% 0;}
+.login .register_page.login_page.loginformnew{padding:100px 0;}
+section.loginformnew .register_page.login_page{ padding: 85px 0px 50px 0px;}    
+section.loginformnew form#loginform input#user_login,
+section.loginformnew form#loginform input#user_pass {padding: 23px 70px 23px 20px !important;border: 1px solid #E7EFEF !important;border-radius: 6px;color: #45474F !important;font-size: 16px !important;background: rgba(246, 247, 247, 0.5) !important;position: relative;margin-bottom: 0 !important;}
+section.loginformnew form#loginform input#user_login:after,
+section.loginformnew form#loginform input#user_pass:after {content: "";background-image: url('/wp-content/themes/marketingops/images/svg/star.svg') !important;width: 9px;height: 9px;position: absolute;top: 6px;right: 6px;}
+section.loginformnew form#loginform input#user_login {background-image: url('/wp-content/themes/marketingops/images/svg/at_icon.svg') !important;background-position: top 20px right 20px !important;background-repeat: no-repeat !important;padding-right: 0;padding-bottom: 0;margin-bottom: 25px;}
+section.loginformnew form#loginform input#user_pass {background-image: url('/wp-content/plugins/marketing-ops-core/public/images/password_unhide_icon.svg') !important;background-position: top 23px right 20px !important;background-repeat: no-repeat !important;padding-right: 0;padding-bottom: 0;margin-bottom: 25px;background-size: 40px 40px !important;}
+section.loginformnew form#loginform label {margin: 0 0 15px;}
+section.loginformnew p.login-submit {max-width: 220px;width: 100%;margin-bottom: 25px;padding: 20px;background: #F8F9F9;border: 1px solid rgba(231, 239, 239, 0.75);border-radius: 100px;margin: 0;display: inline-block;}
+section.loginformnew input#wp-submit {padding: 18px 40px;border-radius: 100px !important;background: #292A30 !important;max-width: 180px;width: 100% !important;position: relative !important;background-image: url('/wp-content/themes/marketingops/images/svg/right_arrow.svg') !important;background-repeat: no-repeat !important;background-position: top 26px right 23px !important;text-indent: -5px;color: #fff;border: none;background-position: top 26px right 48px !important;}
+section.loginformnew .register_page .register_content.login_content .elementor-widget-heading h2 {font-weight: 700;font-size: 25px;line-height: 34px;margin-bottom: 15px;}
+.elementor-column.elementor-col-50.elementor-top-column.elementor-element.elementor-element-ea2a0bd.register_img {order: 2;}
+.loginformnew div#login {max-width: 402px;width: 100% !important;padding: 0 !important;}
+.login form {margin-top: 0 !important;margin-left: 0 !important;padding: 0 !important;font-weight: 400 !important;overflow: hidden;background: transparent;border: 1px solid transparent !important;box-shadow: none !important;}
+section.loginformnew form#loginform label {margin: 10px 0 15px;color: #6D7B83;font-size: 16px;margin-bottom: 15px;font-weight: 500;}
+.user-pass-wrap.google-recaptcha-wrap {margin: 20px 0;}
+.privacy-policy-page-link{display: none !important;}
+#login form p.submit {text-align: left;margin: 0;width: 100%;display: flex;}
+#login form p.submit {text-align: left;margin: 0;width: 100%;display: flex;max-width: 180px;width: 100%;margin-bottom: 25px;padding: 20px;background: #F8F9F9;border: 1px solid rgba(231, 239, 239, 0.75);border-radius: 100px;}
+.login form .forgetmenot {display: block;width: 100%;}
+.login .button.wp-hide-pw {border: solid 1px red;position: absolute;top: 23px;right: 22px;opacity: 0;}
+#login form input[type=checkbox]:focus, 
+#login form input[type=color]:focus, 
+#login form input[type=date]:focus, 
+#login form input[type=datetime-local]:focus, 
+#login form input[type=datetime]:focus, 
+#login form input[type=email]:focus, 
+#login form input[type=month]:focus, 
+#login form input[type=number]:focus, 
+#login form input[type=password]:focus, 
+#login form input[type=radio]:focus, 
+#login form input[type=search]:focus, 
+#login form input[type=tel]:focus, 
+#login form input[type=text]:focus, 
+#login form input[type=time]:focus, 
+#login form input[type=url]:focus, 
+#login form input[type=week]:focus, 
+#login form select:focus, textarea:focus {border-color:transparent !important;box-shadow: none !important;outline: none !important;}
+#login form p.forgetmenot {margin-bottom: 0;margin: 15px 0;padding: 0;}
+.forgetmenot {position: relative;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.forgetmenot input[type="checkbox"] {position: relative;width: 50px;height: 20px;-webkit-appearance: none;background: #c6c6c6;outline: none;border-radius: 20px;box-shadow: none;transition: 0.7s;margin: 0 15px 0 10px;border: none;}
+.forgetmenot input:checked[type="checkbox"] {background: linear-gradient(100deg, #FD4B7A 0%, #4D00AE 100%);}
+.forgetmenot input[type="checkbox"]:before {content: '';position: absolute;width: 25px;height: 25px;border-radius: 20px;top: -3px;left: 0;background: #fff;transform: scale(1.1);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);transition: .5s;margin: 0 0px;}
+.forgetmenot input:checked[type="checkbox"]:before {left: 30px;}
+#login form p.forgetmenot{margin-bottom:0;margin:15px 0;padding:0;}
+.forgetmenot{position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}
+.forgetmenot input[type="checkbox"]{position:relative;width:50px;height:20px;-webkit-appearance:none;background:#c6c6c6;outline:none;border-radius:20px;box-shadow:none;transition:0.7s;margin:0 15px 0 10px;border:none;}
+.forgetmenot input:checked[type="checkbox"]{background:linear-gradient(100deg,#FD4B7A 0%,#4D00AE 100%);}
+.forgetmenot input[type="checkbox"]:before{content:'';position:absolute;width:25px;height:25px;border-radius:20px;top:-3px;left:0;background:#fff;transform:scale(1.1);box-shadow:0 2px 5px rgba(0,0,0,0.2);transition:.5s;margin:0 0px;}
+.forgetmenot input:checked[type="checkbox"]:before{left:30px;  /* top: -3px; */}
+@media (min-width:992px) and (max-width:1199px){
+	.login .register_page.login_page.loginformnew .elementor-container.elementor-column-gap-default{display:flex;padding:0 30px;}
+	.login .loginformnew div#login{max-width:320px;width:100%!important;padding:0!important;}
+	body.login div#login h1 a{background-image:url('/wp-content/uploads/2022/08/cropped-cropped-logo_inst.png');max-width:400px;background-size:contain;background-position:center;width:100%;}
+	body.login img.attachment-large.size-large.wp-image-165577{width:auto;height:auto;max-width:100%;}
+}
+@media (min-width:768px) and (max-width:991px){
+	.login .register_page.login_page.loginformnew .elementor-container.elementor-column-gap-default{display:flex;padding:0 30px;}
+	.login .loginformnew div#login{max-width:320px;width:100%!important;padding:0!important;}
+	body.login div#login h1 a{background-image:url('/wp-content/uploads/2022/08/cropped-cropped-logo_inst.png');max-width:400px;background-size:contain;background-position:center;width:100%;}
+	body.login img.attachment-large.size-large.wp-image-165577{width:auto;height:auto;max-width:100%;}
+}
+@media (max-width:767px){
+	.login .register_page.login_page.loginformnew .elementor-container.elementor-column-gap-default{display:flex;flex-wrap:wrap;}
+	.login .register_page.login_page.loginformnew .elementor-column.elementor-col-50.elementor-top-column.elementor-element{order:1;padding:0 15px;}
+	.elementor-column.elementor-col-50.elementor-top-column.elementor-element.elementor-element-ea2a0bd.register_img{order:2!important;width:100%;}
+	.login .register_page.login_page.loginformnew .elementor-widget-container img{max-width:227px;height:auto;margin:0 auto;display:flex;}
+	#login form p.submit{margin:0 auto 50px;}
+	body.login div#login h1 a{background-image:url('/wp-content/uploads/2022/08/cropped-cropped-logo_inst.png');max-width:400px;width:80%;background-size:contain;background-position:center;}
+	.login .g-recaptcha{transform:scale(0.89);transform-origin:left;margin:0 0 15px;}
+}

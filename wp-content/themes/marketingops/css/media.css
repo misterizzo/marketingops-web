@@ -1,0 +1,5334 @@
+@media only screen and (min-width: 1320px) {
+	.footer_custom .footer_logo_box {
+		margin-right: 79px;
+	}
+
+	.footer_custom .footer_nav {
+		width: auto !important;
+		margin-right: 29px !important;
+	}
+
+	.footer_custom .footer_nav:last-child {
+		margin-right: 0 !important;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.elementor-section.elementor-section-boxed > .elementor-container {
+		max-width: 1190px;
+	}
+
+	.section_box_1.elementor-section.elementor-section-boxed > .elementor-container,
+	.marketingops-five.elementor-section.elementor-section-boxed > .elementor-container {
+		max-width: 1320px;
+	}
+
+	.elementor-section.elementor-section-boxed > .elementor-container .elementor-container,
+	.section_box_1.elementor-section.elementor-section-boxed > .elementor-container .elementor-container,
+	.marketingops-five.elementor-section.elementor-section-boxed > .elementor-container .elementor-container {
+		max-width: 100%;
+	}
+
+	.register_page.elementor-section.elementor-section-boxed > .elementor-container {
+		max-width: 990px;
+	}
+
+	.page-template-profile_view .page .page-content,
+	.woocommerce-checkout .site-main .page-content {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	.no_bs_index_boxed .elementor-container,
+	.summer_camp_image_gallery .elementor-container {
+		max-width: 1280px !important;
+	}
+
+	.pricing_list_section .elementor-container {
+		max-width: 1220px !important;
+	}
+
+	.no_bs_martech_demo_section_box .elementor-container {
+		max-width: 1015px !important;
+	}
+
+	.become_partner_section_one .elementor-container {
+		max-width: 1100px !important;
+	}
+
+	.membership_section .elementor-container {
+		max-width: 1210px !important;
+		justify-content: center;
+	}
+
+	/* Product Page CSS */
+	.product-template-default .site-main {
+		max-width: 1215px;
+		padding: 0 15px;
+	}
+
+	.professor_signup_section_1 .elementor-container,
+	.professor_signup_section_3 .elementor-container {
+		max-width: 978px !important;
+	}
+
+	.professor_signup_section_2 .elementor-container {
+		max-width: 1098px !important;
+	}
+
+	.professor_signup_section_4 .elementor-container {
+		max-width: 1005px !important;
+		left: 60px;
+	}
+
+	.professor_signup_section_4 .elementor-container .elementor-container {
+		left: 0;
+		max-width: 100% !important;
+	}
+
+	.single-sfwd-courses .site-main,
+	.single-sfwd-lessons .site-main {
+		max-width: 1190px !important;
+		padding: 0 0px 0 12px;
+	}
+
+	.annual_repo_progress_section .elementor-container,
+	.annual_testimonials .elementor-container,
+	.entry_level_templates .elementor-container {
+		max-width: 1028px !important;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.custom-header .header_menu {
+		width: 62% !important;
+	}
+
+	.moc_not_logged_in_user .header_account_btn,
+	.moc_not_logged_in_user .header_btn_btn {
+		display: flex;
+	}
+
+	.moc_not_logged_in_user .custom-header .header_menu {
+		width: 60% !important;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu {
+		max-width: 617px;
+		margin: 0 auto;
+	}
+
+	.moc_top_bar .moc_top_bar_row .topbar_box:first-of-type {
+		max-width: calc(100% - 160px);
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li {
+		margin-right: 8px;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li.menu-item:last-of-type,
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li:last-of-type {
+		margin-right: 0;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li a {
+		padding: 15px 0;
+		margin: 0 0;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li a span.menu-image-title {
+		padding-left: 5px;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li a .menu-image {
+		padding: 0;
+		max-width: 25px;
+		opacity: 0;
+		transition: all 1s ease-in-out;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li a.elementor-item-active .menu-image {
+		opacity: 1;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li a .sub-arrow {
+		display: none;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li:hover a,
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li.current-menu-parent a {
+		color: #45474F;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li:hover a .menu-image,
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li.current-menu-parent:hover a .menu-image {
+		opacity: 1;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li.current-menu-parent a .menu-image {
+		opacity: 0;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li ul {
+		left: -18px !important;
+		top: 34px !important;
+		width: max-content !important;
+		max-width: 617px !important;
+		padding: 20px 19px 25px;
+		box-shadow: 0px 20px 40px rgb(0 0 0 / 3%);
+		border-radius: 21px;
+		border-top-left-radius: 0;
+		overflow: hidden;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li ul li {
+		padding: 0 !important;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li ul li a {
+		border: none !important;
+		padding: 0 !important;
+		font-family: "Open Sans";
+		font-weight: 400;
+		font-size: 14px;
+		line-height: initial;
+		color: #c4338c;
+		position: relative;
+		background-color: transparent !important;
+		margin-bottom: 10px;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li ul li.current-menu-item a {
+		text-decoration: underline;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li ul li:last-of-type a {
+		margin-bottom: 0;
+	}
+
+	.custom-header .header_menu .elementor-widget-nav-menu nav ul li ul li a:before {
+		content: "";
+		height: 7px;
+		width: 7px;
+		background: #c4338c;
+		display: inline-block;
+		margin-right: 15px;
+		border-radius: 100%;
+	}
+
+	.custom-header .moc_top_bar_row {
+		width: 22% !important;
+	}
+
+	.custom-header .moc_top_bar_row .elementor-widget-wrap {
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	.custom-header .header_account_btn,
+	.custom-header .header_btn_btn {
+		width: auto !important;
+	}
+
+	.custom-header .header_btn_btn .elementor-element-populated {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.footer-newsletter {
+		margin-bottom: -9%;
+	}
+
+	.job_search_page .job_search_row .elementor-widget-wrap,
+	.searchjobs .elementor-widget-wrap {
+		width: calc(100% - 30px);
+		padding: 25px 70px !important;
+		margin: 0 auto;
+	}
+
+	.searchjobs .directory_result_div .elementor-widget-wrap {
+		width: 100% !important;
+	}
+
+	.product_related .elementor-widget-woocommerce-product-related .related.products {
+		padding: 20px 15px 0;
+	}
+
+	.product_related .elementor-widget-woocommerce-product-related .related.products::before {
+		left: -15px;
+		right: -15px;
+	}
+
+	/* Course Pre-Register LP Page CSS - Start */
+	.course_lp_automation_game .banner_text .banner_text_number {
+		left: 0;
+	}
+
+	.course_lp_automation_game .banner_text .banner_text_number .banner_text_content .elementor-widget-wrap {
+		padding: 0 0 0 15px;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.custom-header .header_btn_btn a {
+		padding: 10px 14px !important;
+	}
+
+	.footer-newsletter::after {
+		background: linear-gradient(90deg, #ffb83f -28.92%, #fd4b7a 35.54%, #4d00ae 100%);
+		left: 0;
+		border-radius: 0;
+		border-top-right-radius: 40px;
+		width: 100%;
+	}
+
+	.footer-newsletter .elementor-widget-wrap .elementor-element .elementor-element.elementor-column {
+		right: 0;
+	}
+
+	.job_detail_section .jobsmeta {
+		margin-bottom: -18px;
+	}
+
+	.searchjobs .job_search_row .searched_job_list .job_listings .job_listings .jobsmeta li {
+		margin-bottom: 25px;
+	}
+
+	.marketingops-three .elementor-container {
+		justify-content: center;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image {
+		width: 35%;
+		margin-right: 0;
+		margin-top: -120px;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image img {
+		width: 100%;
+		right: 0;
+		z-index: 0;
+	}
+
+	.job_detail_section .jobsmeta_container {
+		height: auto;
+	}
+
+	.job_detail_section .jobsmeta_view_position_btn,
+	.page-id-166115 .post_featured_job .job_manager .job_listings li .moc_job_listing_box_container .jobsmeta_view_position_btn {
+		display: block;
+		opacity: 1;
+	}
+
+	/* Dust CSS Start */
+	.section_box_1 .research-wrap .elementor-column:first-child .section_box_1_box .elementor-widget-container .elementor-button-link {
+		background-image: none;
+	}
+
+	.marketingops .marketingops_content_box .marketingops-btn:after,
+	.marketingops-two .marketingops-two-content-box:after,
+	.marketingops-two .marketingops-two-image-box:after,
+	#marketingops-post-section .marketingops-four-boxes:nth-child(2):after,
+	.marketingops-six-section:after {
+		display: none !important;
+	}
+
+	/* Dust CSS End */
+	.cart_page_box .cart_page_container .cart_page_box .box_content .cart_item:hover .table_image.moc_month_class:after,
+	.cart_page_box .cart_page_container .cart_page_box .box_content .cart_item:hover .table_image.moc_year_class:after,
+	.cart_page_box .cart_page_container .cart_page_box .box_content .cart_item:hover .table_image.moc_month_class:before,
+	.cart_page_box .cart_page_container .cart_page_box .box_content .cart_item:hover .table_image.moc_year_class:before,
+	.cart_page_box .cart_page_container .cart_page_box .box_content .cart_item:hover .table_image.moc_month_class a:after,
+	.cart_page_box .cart_page_container .cart_page_box .box_content .cart_item:hover .table_image.moc_year_class a:after,
+	.subscription_body .cart_page_container .box_content .box_body .body_content.empty_div {
+		display: none;
+	}
+
+	/* Partners Page CSS */
+	.good_company_section:before {
+		top: -23%;
+		width: 120px;
+		height: 361px;
+	}
+
+	.good_company_section:after {
+		width: 122px;
+		height: 373px;
+		bottom: -280px;
+	}
+
+	.good_company_section .elementor-container {
+		justify-content: center;
+	}
+
+	.good_company_section .boxed_content {
+		padding: 0 15px;
+	}
+
+	.good_company_section .boxed_content .box_content.bottom_div {
+		margin-top: 10px;
+		margin-bottom: 48px;
+	}
+
+	.good_company_section .boxed_content .box_content a {
+		width: 155px;
+		height: 155px;
+		padding: 45px;
+	}
+
+	/* NO BS Index */
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content .content_container {
+		padding: 30px 15px;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content .bs_content_text {
+		margin-bottom: 0;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content .btn,
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content .btn.gradient_btn {
+		margin-top: 15px;
+	}
+
+	/* Job Posting Page CSS */
+	.membership_section .membership_colum.membership_colum.membership_colum_one .elementor-widget-heading .elementor-widget-container {
+		padding-left: 30px;
+		margin-right: -30px;
+	}
+
+	.product_related .elementor-widget-woocommerce-product-related .related.products {
+		padding: 25px 30px 0;
+	}
+
+	.product_related .elementor-widget-woocommerce-product-related .related.products::before {
+		left: 0;
+		right: 0;
+	}
+
+	.new_arrival_section .elementor-column:before {
+		left: 10px;
+		right: 10px;
+	}
+
+	.new_arrival_section .elementor-column .elementor-widget-wrap {
+		padding: 25px 20px;
+	}
+
+	.woocommerce-checkout .select2-container--open .select2-dropdown {
+		margin-top: -44px;
+	}
+
+	.shadow_box:after {
+		width: 150px;
+		height: 307px;
+	}
+
+	.shadow_box.shadow_up:after {
+		top: 150px;
+	}
+
+	.shadow_box.shadow_down:after {
+		bottom: 50px;
+	}
+
+	.shadow_box.shadow_up.shadow_up_2:after {
+		top: -60px;
+	}
+
+	/* Job Dashboard Page CSS */
+	.job_manager .job_manager_details .manager_container .content_box .box_text {
+		max-width: calc(20% - 12px) !important;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_5 {
+		margin-right: 0;
+		padding-right: 0;
+		border: none;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_btn {
+		margin-top: 15px;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_btn,
+	.job_manager .job_manager_details .manager_container .content_box .box_btn .btn_container {
+		max-width: 100%;
+		justify-content: flex-end;
+	}
+
+	.job_manager .job_manager_details .job_detail_section .jobsmeta {
+		margin-bottom: 0;
+	}
+
+	/* Subscription View Page CSS */
+	.subscription_body .cart_page_container .box_content.related_section .box_body .box_row {
+		padding-bottom: 15px;
+	}
+
+	.subscription_body .cart_page_container .box_content.related_section .box_body .box_row:last-of-type {
+		padding-bottom: 0;
+	}
+
+	.subscription_body .cart_page_container .box_content .box_body .body_content,
+	.subscription_body .cart_page_container .box_content.related_section .box_body .body_content {
+		width: 33.33% !important;
+		padding-bottom: 0 !important;
+	}
+
+	.subscription_body .cart_page_container .box_content.related_section .box_body .body_content.box_4 {
+		width: calc(100% - 140px) !important;
+	}
+
+	.subscription_body .cart_page_container .box_content.related_section .box_body .body_content.box_5 {
+		width: auto !important;
+	}
+
+	.subscription_body .cart_page_container .box_content .box_body .body_content .box_btn .btn {
+		max-width: 130px;
+		width: 130px;
+	}
+
+	.subscription_body .cart_page_container .box_content.related_section .box_body .body_content.box_5 .box_btn {
+		align-items: self-end;
+	}
+
+	/* Give Away Page CSS */
+	.give_away_banner_section .elementor-container {
+		flex-wrap: wrap;
+	}
+
+	.give_away_banner_section .banner_text {
+		max-width: 100%;
+	}
+
+	.give_away_banner_section .banner_text .elementor-widget-wrap {
+		width: 100%;
+	}
+
+	.give_away_banner_section .banner_image .elementor-widget-wrap {
+		padding: 0 0px 0 15px;
+	}
+
+	/* Professor Signup CSS - Start */
+	.professor_signup_section_1 .elementor-background-overlay {
+		width: 100%;
+		left: 0;
+	}
+
+	.professor_signup_section_2 .section_2_text_row {
+		margin-left: 0;
+		left: 0;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row {
+		width: calc(100% - 420px);
+		right: 0;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .image_row {
+		width: calc(100% - 300px) !important;
+	}
+
+	/* User Profile Page CSS */
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link div {
+		align-items: flex-start;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link label {
+		top: 10px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link .input_box {
+		justify-content: flex-end;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link .input_box .input_boxes {
+		max-width: calc(100% - 0px);
+		padding-right: 0;
+		margin-bottom: 10px;
+		align-items: center;
+	}
+
+	/* Annual Report 2022 Page CSS - Start */
+	.annual_repo_progress_section .progress_section .progress_section_title h2,
+	.annual_testimonials.annual_testimonials_two .testimonial_column,
+	.annual_testimonials.annual_testimonials_three .testimonial_column {
+		left: 0px;
+	}
+
+	.annual_testimonials.annual_testimonials_two .elementor-container {
+		justify-content: center;
+	}
+
+	.annual_testimonials.annual_testimonials_three .elementor-container {
+		justify-content: flex-end;
+	}
+
+	.dynamic_block_with_form .elementor-container {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.dynamic_blocks_one.annual_repo_banner_section .text_column .elementor-widget-text-editor p {
+		margin: 0 0 15px;
+	}
+	.dynamic_blocks_one.dynamic_block_with_form.entry_level_banner_section.annual_repo_banner_section .text_column .elementor-widget-text-editor p {
+		margin: 0 auto 15px;
+	}
+	
+	/* Iframe Popup */
+	.moc_iframe_popup .iframe_video {
+		padding: 20px 33px 0;
+	}
+	.moc_iframe_popup .iframe_video,
+	.moc_iframe_popup .iframe_video .popup_video,
+	.moc_iframe_popup .iframe_video iframe {
+		height: auto;
+	}
+
+	.moc_iframe_popup .iframe_video .popup_close {
+		right: 5px;
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	/* Footer Bottom Tooltip */
+	.custom_login_popup {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 9999;
+		margin-bottom: 0 !important;
+	}
+
+	.custom_login_popup .custom_login_toolip_box,
+	.custom_login_popup .custom_login_toolip_box .clt_box_content,
+	.custom_login_popup .custom_login_toolip_box .clt_box_content a {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 0 10px;
+	}
+
+	.custom_login_popup .custom_login_toolip_box .clt_box_content {
+		background-color: #fff;
+		border-radius: 10px;
+		border: 1px solid rgba(231, 239, 239, 0.75);
+		box-shadow: 0px 0 5px rgba(0, 0, 0, 0.3);
+		position: relative;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		width: auto;
+		padding: 0;
+		padding-right: 20px;
+	}
+
+	.custom_login_popup .custom_login_toolip_box .clt_box_content a {
+		padding: 13px 15px 10px;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		width: 100%;
+		gap: 10px;
+	}
+
+	.custom_login_popup .custom_login_toolip_box .clt_box_content .popup_close {
+		position: absolute;
+		width: 15px;
+		height: 18px;
+		top: -10px;
+		right: -10px;
+		background-color: #fff;
+		border: 1px solid rgba(231, 239, 239, 0.75);
+		box-shadow: 0px 0 5px rgba(0, 0, 0, 0.3);
+		border-radius: 100%;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.custom_login_popup .custom_login_toolip_box .clt_box_content .popup_close svg {
+		width: 15px;
+		height: 15px;
+	}
+
+	.custom_login_popup .custom_login_toolip_box .clt_box_content .clt_img {
+		max-width: 40px;
+		width: 100%;
+	}
+
+	.custom_login_popup .custom_login_toolip_box .clt_box_content .clt_text a {
+		color: #000;
+		font-size: 16px;
+		position: relative;
+	}
+
+	/* Header CSS */
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown:hover .menu_hover,
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover:before,
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover:after,
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover li:after,
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul .normal_menu li a img {
+		display: none;
+	}
+
+	.custom-header .elementor-container {
+		justify-content: space-between;
+	}
+
+	.custom-header .header_logo_boxed {
+		width: 230px !important;
+		margin-right: 0;
+		order: 1;
+	}
+
+	.custom-header .header_menu {
+		width: initial !important;
+		order: 4;
+	}
+
+	.custom-header .header_menu .responsive_menu .menu_bar {
+		background-color: #fff;
+		border-radius: 100px;
+		font-size: 28px;
+		padding: 12px;
+		outline: none !important;
+		box-shadow: none !important;
+		height: 52px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover {
+		position: absolute;
+		z-index: 999;
+		top: -2px;
+		right: -2px;
+		width: 235px;
+		padding-left: 25px;
+		padding-right: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-radius: 30px;
+		background-color: #fff;
+		box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+		max-height: initial;
+		overflow: hidden;
+		display: none;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_header span {
+		font-family: "Futura LT";
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 29px;
+		color: #45474f;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_header span.active-menu {
+		cursor: pointer;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_header span .sub-arrow {
+		display: none;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_header .menu_close_bar {
+		background-color: transparent;
+		width: 21px;
+		height: 20px;
+		padding: 0;
+		font-size: initial;
+		font-weight: initial;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		transition: height 0.5s ease-in-out;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul .normal_menu {
+		max-height: calc(100vh - 40vh);
+		overflow-y: auto;
+		overflow-x: hidden;
+		transition: max-height 0.5s ease-in-out;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li {
+		margin: 25px 0;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-nav-btn {
+		margin-top: 0;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li a {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #45474f;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul .normal_menu li a span {
+		padding: 0 15px 0 0;
+		position: relative;
+		display: inline-block;
+		width: auto;
+		max-width: 100%;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul .normal_menu li.menu-item-has-children a span:after {
+		content: "\f0d7";
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		font-size: 16px;
+		top: 2px;
+		position: absolute;
+		right: 0;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.has-sub-menu--open a span:after {
+		transform: rotate(180deg);
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.has-sub-menu--open a.nav-item,
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul .normal_menu li.menu-item-has-children.has-sub-menu--open a span:after {
+		color: #c4338c;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li ul {
+		position: relative;
+		padding: 40px 0 15px;
+		display: none;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li ul:before,
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li ul:after {
+		content: "";
+		background-image: url("/wp-content/themes/marketingops/images/svg/menu_dropdown_shadow.svg");
+		position: absolute;
+		left: -15px;
+		right: -15px;
+		height: 25px;
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li ul:before {
+		top: 20px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li ul:after {
+		bottom: -10px;
+		transform: rotate(180deg);
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li ul li {
+		position: relative;
+		margin: 0 0 10px 0;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li ul li:after {
+		content: "";
+		width: 7px;
+		height: 7px;
+		background: #45474f;
+		position: absolute;
+		left: 0;
+		top: 10px;
+		border-radius: 100%;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li ul li a {
+		font-weight: 600;
+		font-size: 13px;
+		padding-left: 22px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-nav-btn .btn_container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-nav-btn a {
+		font-family: "Open Sans";
+		font-weight: 600;
+		font-size: 16px;
+		color: #45474f;
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-nav-btn a.gradient_btn {
+		color: #fff;
+		padding: 12px 30px;
+		border-radius: 100px;
+		margin: 0;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		margin: -10px -10px 0 -15px;
+		border-top: 1px solid #edf3f3;
+		padding-top: 10px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login a.menu_cart {
+		background: #f5f5f5;
+		border-radius: 100%;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login a.menu_cart i {
+		font-size: 28px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login a.menu_cart .cart_counter {
+		top: 10px;
+		right: 8px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box {
+		width: 100%;
+		max-width: calc(100% - 55px);
+		margin-left: 5px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover {
+		display: block !important;
+		max-height: initial;
+		top: 100%;
+		white-space: initial;
+		box-shadow: none;
+		border-radius: 0;
+		width: 235px;
+		padding-top: 0;
+		transition: top 0.5s ease-in-out;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover.profile-menu--open {
+		top: 50px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown.active_menu .menu_hover {
+		display: block;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover li .profile_menu_box {
+		border-top: 1px solid #edf3f3;
+		padding-top: 10px;
+	}
+
+	.custom-header .header_menu .responsive_menu .r_menu_hover .hover_menu_body nav ul li.menu-user-login .menu_login_container .topbar_box .top_bar_user_profile .user_profile_icon.nav_dropdown .menu_hover li a span.text {
+		max-width: initial;
+		width: auto;
+		padding: 0;
+	}
+
+	/* Home Banner CSS */
+	.custom-banner rs-slides .custom-banner-row {
+		padding-top: 20px !important;
+	}
+
+	.custom-banner rs-layer-wrap rs-loop-wrap rs-mask-wrap rs-layer img {
+		max-width: 510px !important;
+		width: 100% !important;
+		height: initial !important;
+		top: -50%;
+		right: -50px;
+		bottom: initial;
+		transform: translateY(80%);
+	}
+
+	.custom-banner .slider_box_2 img {
+		position: relative !important;
+		top: -100px;
+		left: 0;
+		max-width: 560px !important;
+		height: auto !important;
+	}
+
+	.home_mops_apalooza .home_ma_image {
+		max-width: calc(100% - 250px);
+		margin-left: -110px;
+		margin-right: -120px;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li {
+		width: calc(100% - 30px);
+	}
+
+	.page-id-162331 .footer-newsletter {
+		margin-top: 0;
+	}
+
+	.quick_filter .quickfilter_container {
+		max-width: calc(100% - 200px);
+		width: 100%;
+		margin-bottom: -10px;
+	}
+
+	.quick_filter .quickfilter_container .quickvalues {
+		max-width: calc(100% - 110px);
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.quick_filter .quickfilter_container .quicktitle,
+	.quick_filter .quickfilter_container .quickvalues li {
+		margin-bottom: 10px;
+	}
+
+	.searched_job_list ul.job_listings .firstrow .comdetail {
+		max-width: calc(100% - 45px);
+	}
+
+	.searched_job_list ul.job_listings .firstrow .all_jobtypes {
+		width: 100%;
+		max-width: 100%;
+		margin-top: 20px !important;
+		justify-content: flex-start;
+	}
+
+	.searched_job_list ul.job_listings .firstrow .all_jobtypes li {
+		margin-left: 0;
+		margin-right: 8px;
+	}
+
+	.marketingops-three .marketingops-two-coum-box,
+	.membership_section .membership_colum {
+		max-width: 100%;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image {
+		width: 32%;
+	}
+
+	.marketingops-three .marketingops-two-coum-box #testimonial_container {
+		margin-top: 0;
+	}
+
+	.marketingops-three .marketingops-two-coum-box #testimonial_container:after {
+		display: none;
+	}
+
+	.marketingops-three .marketingops-two-coum-box #testimonial_container .elementor-container {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 40px;
+		border-bottom-right-radius: 40px;
+		box-shadow: 0px 140px 200px rgba(0, 0, 0, 0.1);
+	}
+
+	.marketingops-four {
+		padding-bottom: 50px !important;
+	}
+
+	.marketingops-four .elementor-widget-posts .elementor-posts-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.moc_common_related_posts .elementor-widget-posts .elementor-posts-container .elementor-post {
+		padding-bottom: 30px;
+	}
+
+	.moc_common_related_posts .elementor-widget-posts .elementor-posts-container .elementor-post:last-of-type {
+		padding-bottom: 0;
+	}
+
+	.membership_section .membership_colum .elementor-col-50 {
+		width: 50%;
+		align-items: center;
+	}
+
+	/* Job Posting Page CSS */
+	.membership_section .membership_colum .title_box .elementor-widget-container,
+	.membership_section .membership_colum .text_box .elementor-widget-container {
+		padding-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+	}
+
+	.membership_section .membership_colum .elementor-widget-image .elementor-widget-container {
+		text-align: left;
+	}
+
+	/* Login Page CSS */
+	.register_page.login_page {
+		background-image: none;
+		padding: 20px 0px 0px 0px !important;
+	}
+
+	.register_page.login_page:before,
+	.register_page.login_page:after {
+		display: none;
+	}
+
+	/* Member Page CSS */
+	.membership_section .membership_colum .elementor-widget-image {
+		margin-top: 30px;
+	}
+
+	.membership_section .membership_colum.membership_colum.membership_colum_one .elementor-widget-heading .elementor-widget-container {
+		padding-left: 0;
+		margin-right: 0;
+		margin-top: 30px;
+	}
+
+	.products_section .products {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	/* User Profile Page CSS */
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tabbing_content .tabbing_content_container .column_box {
+		padding: 0 15px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tabbing_content .tabbing_content_container {
+		padding: 0;
+	}
+
+	/* Course Pre-Register LP Page CSS - Start */
+	.course_lp_banner .banner_text,
+	.course_lp_automation_game .banner_text {
+		max-width: calc(100% - 370px);
+		padding-right: 15px;
+	}
+
+	.course_lp_banner .banner_form,
+	.course_lp_automation_game .banner_form {
+		max-width: 370px;
+	}
+
+	.course_lp_banner .banner_form .form_inner_section,
+	.course_lp_automation_game .banner_form .form_inner_section,
+	.course_lp_automation_game .banner_form .elementor-widget-wrap {
+		padding: 20px 15px 30px;
+	}
+
+	/* Annual Report 2022 Page CSS - Start */
+	/* Annual Report 2022 Page CSS - Start */
+	.annual_repo_banner_section {
+		padding-top: 10px !important;
+		padding-bottom: 50px !important;
+	}
+
+	.annual_repo_banner_section .text_column {
+		max-width: 100%;
+		padding: 0;
+		position: relative;
+		z-index: 99;
+	}
+
+	.annual_repo_banner_section .img_column {
+		max-width: 100%;
+		margin-top: 50px;
+	}
+
+	.annual_repo_banner_section .text_column .elementor-widget-text-editor p {
+		max-width: 100%;
+	}
+
+	.annual_repo_icon_with_text .elementor-container {
+		padding: 20px 15px;
+	}
+
+	.annual_repo_icon_with_text {
+		margin-top: 0;
+		padding: 0 10px;
+	}
+
+	.annual_repo_icon_with_text .icon_box_container .icon_box_title {
+		margin-bottom: 15px;
+	}
+
+	/* Hiring Page CSS */
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum {
+		max-width: calc(35% - 8px);
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.free_colum,
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.pro_colum,
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.lifetime_colum {
+		max-width: calc(21% - 3px);
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.role_colum,
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.annual_colum {
+		max-width: calc(31% - 0px);
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_heading h2 {
+		font-size: 24px;
+		line-height: 35px;
+	}
+
+	.hiring_program_offer.subscribe_plan_section .membership_table .subscribe_table .table_head a {
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr .body_colum {
+		padding: 5px 5px 5px 10px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr:last-of-type .body_colum {
+		border-bottom-left-radius: 20px !important;
+		border-bottom-right-radius: 30px !important;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_head .head_colum {
+		border-top-left-radius: 20px !important;
+		border-top-right-radius: 20px !important;
+	}
+
+	.dynamic_blocks_one.dynamic_block_with_form.annual_repo_banner_section {
+		padding-bottom: 0 !important;
+	}
+
+	/* Forget Page */
+
+	.forget_password_page .elementor-container {
+		text-align: center;
+		justify-content: center;
+		gap: 50px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.forget_password_page .form_text_part {
+		margin-right: 0;
+	}
+
+	/* MOP Job Post Product Page CSS */
+	.mop_job_post .courses_product_page .courses_product_left_side {
+		max-width: 500px;
+		padding-right: 40px;
+	}
+
+	.mop_job_post .courses_product_page .courses_product_right_side {
+		max-width: calc(100% - 500px);
+	}
+}
+
+@media only screen and (max-width: 991px) {
+
+	div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner #hs-en-cookie-confirmation-buttons-area {
+		margin-top: 0;
+	}
+
+	div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom #hs-eu-cookie-confirmation-inner #hs-eu-cookie-disclaimer {
+		max-width: 100%;
+	}
+
+	.page-id-162337 .site-main {
+		max-width: 800px;
+	}
+
+	.woocommerce-checkout .site-main .page-content {
+		padding: 0 10px;
+	}
+
+	.footer-newsletter {
+		padding: 50px 0 120px;
+		margin-bottom: -12%;
+	}
+
+	.custom-banner {
+		z-index: 99;
+	}
+
+	.custom-banner rs-layer-wrap rs-mask-wrap {
+		top: 60px !important;
+	}
+
+	.custom-banner .custom-banner-row h2 {
+		font-size: 40px !important;
+		line-height: initial !important;
+	}
+
+	.custom-banner .custom-banner-row p {
+		margin-bottom: 0px;
+		max-width: 320px !important;
+	}
+
+	.custom-banner .custom-banner-row .rev-btn {
+		padding: 12px 15px !important;
+		height: initial !important;
+		line-height: initial !important;
+		font-size: 14px !important;
+		width: 230px !important;
+		background-position: top 17px right 55px;
+		text-indent: -20px;
+		margin-top: 15px;
+	}
+
+	.home_mops_apalooza .elementor-container {
+		justify-content: center;
+	}
+
+	.home_mops_apalooza .home_ma_image {
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.home_mops_apalooza .home_ma_image .elementor-widget-image {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;	
+	}
+
+	.home_mops_apalooza .home_ma_image img {
+		width: 550px;
+		max-width: 550px;
+	}
+
+	.home_mops_apalooza .home_ma_text .author_member .author_content .elementor-widget-text-editor br{
+		display: none;
+	}
+
+	.job_search_page .job_search_row .jobsearch form input#search_keywords,
+	body .member_directory_container input[type="search"] {
+		padding: 23px 190px 23px 85px !important;
+	}
+
+	.job_search_page .job_search_row .jobsearch form input[type="submit"],
+	body .member_directory_container .member_search_form__submit {
+		max-width: 150px;
+	}
+
+	.job_detail_section {
+		padding: 15px 20px 20px;
+	}
+
+	.quick_filter .quickfilter_container {
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.quick_filter .sortbycontainer {
+		justify-content: flex-start;
+	}
+
+	.footer_custom .footer_social .elementor-social-icons-wrapper .elementor-icon {
+		width: auto;
+		margin-right: 12px;
+	}
+
+	.footer_custom .footer_social .elementor-social-icons-wrapper span:last-of-type .elementor-icon {
+		margin-right: 0px;
+	}
+
+	.footer_custom .footer_social .elementor-social-icons-wrapper .elementor-icon i {
+		font-size: 22px;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail {
+		flex-wrap: wrap;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comdetails {
+		max-width: calc(100% - 150px);
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comapply {
+		margin-top: 30px;
+	}
+
+	.job_listing .single_job_listing .job_description {
+		padding: 30px 30px 0;
+	}
+
+	.job_listing .single_job_listing .job_description:after,
+	.single-post .type-post .elementor-widget-theme-post-content .posts-newsletter:after,
+	.single-post .type-post .elementor-widget-theme-post-content .posts-newsletter:before,
+	.course_lp_testimonial::after,
+	.course_lp_automation_game::after,
+	.annual_repo_banner_section .img_column:after,
+	.annual_repo_banner_section .img_column:before,
+	.annual_testimonials.annual_testimonials_two:after,
+	.annual_testimonials.annual_testimonials_two:before,
+	.annual_repo_need_report:after,
+	.annual_repo_need_report:before,
+	.moc_mo_experience::after,
+	.moc_mo_membership::after,
+	.moc_mo_member_program::after {
+		display: none;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .marketingops-two-coum,
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image {
+		width: 100%;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .elementor-widget-wrap {
+		padding-right: 40px;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image .elementor-widget-image {
+		text-align: right;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image img {
+		max-width: 290px;
+	}
+
+	.job_detail_section .jobsmeta {
+		margin-bottom: -10px;
+		max-width: 100%;
+	}
+
+	.footer_custom .footer_para p {
+		max-width: 100%;
+	}
+
+	.footer-section {
+		padding-top: 90px !important;
+	}
+
+	.footer_custom .footer_logo_box {
+		order: 2;
+		margin-top: 30px;
+		width: 100% !important;
+	}
+
+	.footer_custom .footer_nav {
+		width: 25% !important;
+		order: 1;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comapply .application_details {
+		left: 0;
+		right: initial;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comapply .application_details:after,
+	.job_listing .single_job_listing .eachjobdetail .comapply .application_details:before {
+		left: 70px;
+	}
+
+	.section_box_1 .access_section .research-wrap .section_box_1_box .elementor-button-wrapper a,
+	.section_box_1 .access_section .research-wrap .section_box_1_box .elementor-button-wrapper a span {
+		font-size: 20px;
+		line-height: initial;
+	}
+
+	.marketingops-two-boxes .elementor-widget-container .elementor-counter .elementor-counter-number-wrapper {
+		font-size: 35px;
+	}
+
+	.marketingops-three {
+		padding-bottom: 0 !important;
+	}
+
+	.marketingops-six .marketingops-six-section .elementor-column {
+		display: none;
+	}
+
+	.marketingops-six .marketingops-six-section .section-box {
+		width: 33.33%;
+		display: block !important;
+	}
+
+	.post_featured_job .job_manager .job_listings li {
+		width: 50%;
+	}
+
+	.posts-newsletter .elementor-widget-wrap {
+		padding: 40px 35px !important;
+	}
+
+	.posts-newsletter .elementor-widget-wrap .elementor-widget-wrap {
+		padding: 0 !important;
+	}
+
+	.job_search_page .job_search_row .elementor-widget-wrap,
+	.searchjobs .elementor-widget-wrap {
+		padding: 25px 30px !important;
+	}
+
+	.page-id-161519 .footer-newsletter {
+		margin-top: 0px;
+	}
+
+	.profile_page .profile_content .content_box {
+		width: 100% !important;
+		margin-bottom: 30px;
+		order: 2;
+	}
+
+	.profile_page .profile_content .content_box.box_right {
+		order: 1;
+	}
+
+	.profile_page .profile_content .content_box:first-of-type,
+	.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum.none_content .colum_box a.btn {
+		margin-bottom: 0;
+	}
+
+	.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum .colum_box a.btn {
+		margin-bottom: 10px;
+	}
+
+	.profile_page .profile_content .content_box .box_content.box_avatar_content,
+	.profile_page .profile_content .content_box .box_content.box_badge_content {
+		text-align: center;
+	}
+
+	/* Cart CSS */
+	.cart_page_box .cart_page_container .cart_page_box,
+	.cart_page_box .cart_page_container .cart_page_box:last-of-type {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.training_content .training_content_boxed,
+	.checkout_page_box .cart_page_container .cart_page_box .box_content .form-row,
+	.woocommerce-edit-address .woocommerce-MyAccount-content form .woocommerce-address-fields .woocommerce-address-fields__field-wrapper .form-row {
+		width: 100%;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box {
+		order: 2;
+		margin-top: 30px;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box:last-of-type {
+		order: 1;
+		margin-top: 0px;
+	}
+
+	.post_featured_job {
+		position: relative;
+		z-index: 1;
+		margin-bottom: -60px;
+	}
+
+	/* Partners Page CSS */
+	.partner_section .partner_section_box {
+		padding: 0 10px;
+	}
+
+	.partner_section .partner_section_box .elementor-widget-wrap {
+		padding: 30px 15px !important;
+	}
+
+	.partner_section .partner_section_box .elementor-widget-text-editor p {
+		margin-bottom: 0;
+	}
+
+	.good_company_section .boxed_content .box_content.bottom_div {
+		margin-top: -38px;
+		margin-bottom: 50px;
+	}
+
+	.good_company_section .boxed_content .box_content a {
+		width: 110px;
+		height: 110px;
+		padding: 25px;
+	}
+
+	.partner_section .partner_section_box .partner_section_box_content_two ul {
+		margin: 0;
+	}
+
+	/* NO BS Index */
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content {
+		max-width: 50%;
+	}
+
+	.partner_section .partner_section_box.box_one .elementor-widget-wrap:after {
+		width: 44px;
+		height: 44px;
+	}
+
+	/* Summer Camp Page CSS */
+	.image_with_text .box_left {
+		width: 100%;
+		padding: 70px 15px 0;
+		order: 2;
+	}
+
+	.image_with_text .box_image,
+	.pricing_list_section .list_box.box_4,
+	.faq_section .faq_section_row .faq_box_section .faq_box,
+	.image_with_text .box_text_content .box_text_content_one_box,
+	.pricing_list_section .list_box.box_1 .elementor-widget-text-editor p,
+	.pricing_list_section.pricing_list_sectio_two .list_box.box_1 .elementor-widget-text-editor dir {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.image_with_text .box_text_content .elementor-widget-wrap {
+		flex-direction: column;
+	}
+
+	.image_with_text .box_image .elementor-widget-image {
+		display: inline-block;
+		width: auto;
+	}
+
+	.image_with_text .box_text_content .elementor-widget-button,
+	.image_with_text .box_text_content .box_text_content_two_box {
+		margin-right: auto;
+		margin-left: 0;
+	}
+
+	.pricing_list_section .list_box .list_box_content {
+		padding: 20px 15px 10px !important;
+	}
+
+	.pricing_list_section .list_box .list_member_points .points_list_boxed .points_list ul {
+		padding: 15px 15px 0;
+	}
+
+	.pricing_list_section .list_box.box_1 {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.pricing_list_section .list_box {
+		width: 50%;
+	}
+
+	.faq_section .faq_section_row .faq_box_section .faq_box .elementor-image-box-img {
+		width: 80px;
+	}
+
+	.faq_section .faq_section_row .faq_box_section .faq_box h3 {
+		height: auto !important;
+	}
+
+	.summer_camp_text_content .elementor-column .elementor-widget-wrap {
+		padding: 0 15px 100px !important;
+	}
+
+	.pricing_list_section .list_box {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box .box_content .cart-collaterals .cart_totals table td .woocommerce-remove-coupon,
+	.checkout_page_box .cart_page_container .cart_page_box .moc_checkout .order_total .total_box span .woocommerce-remove-coupon {
+		position: relative;
+		bottom: 0px;
+	}
+
+	/* Job Posting Page CSS */
+	.moc_is_job_post_form .site-main {
+		margin-top: 20px;
+	}
+
+	.marketingops-three.member_page_section_two .marketingops-two-coum-box .marketingops-two-coum {
+		order: 1;
+	}
+
+	.marketingops-three.member_page_section_two .marketingops-two-coum-box .marketingops-two-coum .elementor-heading-title,
+	.membership-wrap .elementor-widget-heading h2 {
+		-webkit-text-fill-color: transparent;
+		text-fill-color: transparent;
+		opacity: 1;
+	}
+
+	.marketingops-three.member_page_section_two .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image {
+		order: 2;
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+	}
+
+	.marketingops-three.member_page_section_two .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image .elementor-widget-image {
+		text-align: left;
+	}
+
+	/* Subscribe Page CSS */
+	.membership_table {
+		overflow: hidden;
+	}
+
+	.membership_table .subscribe_table {
+		padding: 45px 15px 30px;
+	}
+
+	.products_section .products .product a h2 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.products_section .products .product a span {
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_filter ul {
+		padding: 10px 0 0 0px;
+	}
+
+	/* Resources page Design */
+	.resources_title::after {
+		width: 339px;
+		height: 434px;
+	}
+
+	.resource_boxes_content_one:after {
+		width: 419px;
+		height: 611px;
+		top: 170px;
+	}
+
+	.resource_boxes_content_two:after {
+		width: 339px;
+		height: 434px;
+		bottom: -282px;
+	}
+
+	/* Founding Members Page Design */
+	.founding_badge_content {
+		padding-bottom: 0 !important;
+	}
+
+	.founding_badge_content .elementor-column {
+		padding: 0 15px 20px;
+		max-width: 50%;
+	}
+
+	.founding_community_section .content_box {
+		max-width: 50%;
+		padding-bottom: 30px;
+	}
+
+	/* Job Dashboard Page CSS */
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_1 {
+		max-width: 60px !important;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_2,
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_3,
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_4,
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_5 {
+		max-width: 144px !important;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_4 {
+		margin-right: 0;
+		padding-right: 0;
+		border: none;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_5 {
+		max-width: 219px !important;
+		border-right: 1px solid #edf3f3;
+		margin-right: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		border-top: 1px solid #edf3f3;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_btn {
+		margin-top: 0;
+		max-width: calc(100% - 219px);
+		border-top: 1px solid #edf3f3;
+		padding-top: 15px;
+		margin-left: -15px;
+	}
+
+	/* Mistakes Page CSS */
+	.mistakes_episodes .mistakes_episodes_section .episodes_container .episodes_box {
+		max-width: 50%;
+	}
+
+	.mistakes_episodes .mistakes_episodes_section .episodes_container .episodes_box .box_image img {
+		width: 100%;
+		height: auto;
+	}
+
+	.mistakes_guest_share .inner_section_44 {
+		position: relative;
+	}
+
+	/* Give Away Page CSS */
+	.give_away_promo .promo_section_colum:first-of-type {
+		margin-top: 80px;
+	}
+
+	.give_away_promo .promo_section_colum .icon_box.orange_title {
+		bottom: 60px;
+		right: 10px;
+	}
+
+	.give_away_promo .promo_section_colum .elementor-widget-wrap .elementor-widget-heading h2 {
+		width: 450px;
+	}
+
+	.marketingops-give-away-professionals:after,
+	.professor_signup_section_1::after {
+		display: none !important;
+	}
+
+	.marketingops-two .marketingops-two-boxes .elementor-col-33 {
+		width: 50%;
+	}
+
+	.marketingops-two .marketingops-two-boxes .elementor-col-33:last-of-type {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	/* User Profile Page CSS */
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tabbing_content .tabbing_content_container .column_box {
+		padding: 0 12px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tabbing_content .tabbing_content_container {
+		flex-wrap: nowrap;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_two_column_row .form_row {
+		max-width: 100%;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_two_column_row .form_two_column_row .form_row:first-of-type select,
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_two_column_row .form_two_column_row .form_row:last-of-type input {
+		border: 1px solid #e7efef;
+		border-radius: 6px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .column_box.column_btn {
+		text-align: center;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row.form_btn {
+		margin-bottom: -15px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row.form_btn button {
+		margin-bottom: 20px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link label {
+		top: 0;
+		margin-bottom: 10px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link .input_box {
+		max-width: 100%;
+		padding-left: 0;
+		bottom: 0;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link .input_box input {
+		max-width: 100% !important;
+	}
+
+	/* Professor Signup CSS - Start */
+	.professor_signup_section_1 {
+		padding-bottom: 0 !important;
+	}
+
+	.professor_signup_section_1 .elementor-background-overlay {
+		border-bottom-left-radius: 0;
+		width: calc(100% - 32px);
+		border-top-right-radius: 120px;
+	}
+
+	.professor_signup_section_2 .section_2_text_row,
+	.professor_signup_section_2 .section_2_three_column_row {
+		width: 100% !important;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row {
+		margin-top: 40px;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .elementor-container {
+		justify-content: center;
+	}
+
+	.professor_signup_section_3 .section_3_text_row {
+		padding-left: 50px;
+	}
+
+	.professor_signup_section_4 .section_4_text_row {
+		max-width: calc(100% - 225px);
+		padding-right: 15px;
+	}
+
+	.professor_signup_section_4 .section_4_image_row {
+		max-width: 225px;
+	}
+
+	.professor_signup_section_5 .section_5_text_row {
+		padding-left: 20px;
+	}
+
+	/* Course Pre-Register LP Page CSS - Start */
+	.course_lp_automation_game .banner_text,
+	.course_lp_automation_game .banner_form {
+		max-width: 100%;
+		padding-right: 0;
+	}
+
+	.course_lp_automation_game .banner_text {
+		margin-bottom: 30px;
+	}
+
+	.course_list .course_list_box_content .box_content {
+		width: 50%;
+	}
+
+	/* Annual Report 2022 Page CSS - Start */
+	.annual_repo_spon .spon_column {
+		margin-right: 20px;
+	}
+
+	/* Training Page */
+	.training_page_new .training_content {
+		margin: -10px -15px 0;
+	}
+
+	.training_page_new .training_content .training_content_boxed:first-of-type {
+		margin-top: 0;
+	}
+
+	.training_page_new .training_content .training_content_boxed {
+		margin-top: 30px;
+	}
+
+	/* Hiring Program Page */
+	.hiring_program_offer .membership_table .subscribe_table {
+		padding: 45px 0 30px;
+	}
+
+	.hiring_posr_free_section .post_free_column.post_free_column_one {
+		max-width: calc(100% - 390px);
+	}
+
+	.hiring_posr_free_section .post_free_column.post_free_column_three {
+		max-width: 100%;
+		margin-top: 20px;
+	}
+
+	.hiring_video_section {
+		margin-top: 30px !important;
+	}
+
+	.hiring_video_section .video_section_column.video_section_column_two {
+		max-width: calc(100% + 20px);
+		padding-right: 0;
+		margin: 0 -10px;
+		width: calc(100% + 20px);
+	}
+
+	.hiring_video_section .video_section_column.video_section_column_three {
+		max-width: 372px;
+		padding-right: 0;
+		margin: 30px auto 0;
+	}
+
+	.hiring_video_section .video_section_column.video_section_column_two .elementor-widget-wrap,
+	.dynamic_block_left.annual_repo_banner_section .text_column {
+		padding: 0;
+	}
+
+	.hiring_video_section .video_section_column .elementor-widget-video .elementor-widget-container {
+		border-radius: 0;
+	}
+
+	.hiring_video_section .partner_page_title h2 {
+		margin-bottom: 10px;
+	}
+	.dynamic_blocks_gallery.summer_camp_image_gallery .summer_camp_image_gallery_container .summer_gallery_title h2 {
+		padding: 0 15px;
+	}
+
+	/* Memeber Overview Page */
+	.moc_mo_banner .elementor-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-heading,
+	.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-button {
+		text-align: center;
+	}
+
+	.moc_mo_banner .moc_mo_banner_image_column,
+	.moc_mo_membership.moc_mo_banner .moc_mo_banner_image_column {
+		width: 100%;
+		order: 1;
+	}
+
+	.moc_mo_banner .moc_mo_banner_image_column .elementor-hidden-mobile{
+		display: none;
+	}
+
+	.moc_mo_banner .moc_mo_banner_image_column .elementor-hidden-desktop {
+		display: block;
+	}
+
+	.moc_mo_banner .moc_mo_banner_text_column {
+		order: 2;
+	}
+
+	.moc_mo_experience .elementor-container {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.moc_mo_experience .moc_mo_ex_text_column {
+		max-width: 362px;
+		width: 100%;
+	}
+
+	/* MOP Job Post Product Page CSS */
+	.mop_job_post .courses_product_page .container .row {
+		justify-content: center;
+	}
+
+	.mop_job_post .courses_product_page .courses_product_right_side {
+		max-width: 575px;
+		margin-top: 30px;
+	}
+
+	.mop_job_post .courses_product_page .courses_product_right_side .right_side_box,
+	.mop_job_post .courses_product_page .courses_product_right_side .course_product_review_price_icon,
+	.mop_job_post .courses_product_page .courses_product_right_side .product_form {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.mop_job_post .courses_product_page .courses_product_right_side .course_product_review_price_icon,
+	.mop_job_post .courses_product_page .courses_product_right_side .product_content ul {
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 777px) {
+	.home_mops_apalooza {
+		margin-top: -350px !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.page_not_found .elementor-container {
+		justify-content: center;
+		gap: 40px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.page_not_found .page_not_found_text {
+		max-width: 238px;
+	}
+
+	.page_not_found .page_not_found_text .sub_title {
+		margin-bottom: 15px;
+	}
+
+	.page_not_found .page_not_found_text .elementor-widget-text-editor br  {
+		display: block;
+	}
+
+	.page_not_found .page_not_found_image {
+		max-width: 225px;
+		width: 100%;
+	}
+
+	.woocommerce-cart .site-main .page-content,
+	.woocommerce-account .site-main {
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	.page-id-162337 .site-main {
+		max-width: 620px;
+		padding: 0 10px;
+	}
+
+	.custom-banner rs-row {
+		padding: 30px !important;
+	}
+
+	.custom-banner .slider_box_2,
+	.custom-banner .slider_box_2 img {
+		display: none;
+	}
+
+	.custom-banner .custom-banner-row h2 {
+		font-size: 26px !important;
+		line-height: 36px !important;
+	}
+
+	.custom-banner .custom-banner-row p {
+		font-size: 14px !important;
+		line-height: 20px !important;
+	}
+
+	.old_banner.custom-banner rs-layer-wrap rs-mask-wrap {
+		right: 0;
+		top: 70px;
+	}
+
+	.old_banner.custom-banner rs-layer-wrap,
+	.old_banner.custom-banner rs-layer-wrap rs-loop-wrap,
+	.old_banner.custom-banner rs-layer-wrap rs-loop-wrap rs-mask-wrap,
+	.old_banner.custom-banner rs-layer-wrap rs-loop-wrap rs-mask-wrap .custom-banner-cha-img {
+		position: initial !important;
+		transform: none !important;
+		top: initial !important;
+	}
+
+	.old_banner.custom-banner rs-layer-wrap rs-loop-wrap rs-mask-wrap .custom-banner-cha-img {
+		width: 100% !important;
+		height: initial !important;
+		margin-top: 30px !important;
+		max-width: 100% !important;
+		margin-left: auto !important;
+		text-align: right;
+	}
+
+	.old_banner.custom-banner rs-layer-wrap rs-loop-wrap rs-mask-wrap .custom-banner-cha-img img {
+		width: auto !important;
+		max-width: 440px !important;
+		height: initial !important;
+		object-fit: contain !important;
+		top: 240px !important;
+		transform: none !important;
+		right: 10px;
+	}
+
+	.old_banner.custom-banner rs-slides rs-slide rs-zone rs-row-wrap rs-loop-wrap rs-mask-wrap rs-row {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+
+	.home_mops_apalooza {
+		margin-top: -100px !important;
+	}
+
+	.section_box_1 {
+		margin-top: 0;
+	}
+
+	.marketingops-four {
+		background: none !important;
+	}
+
+	.section_box_1 .elementor-background-overlay,
+	.marketingops-three:after,
+	.single-post .type-post .single_post_page:after,
+	.justbg,
+	.left_bottom_bar:after,
+	.post_featured_job:after,
+	.post_hiring_job:before,
+	.edit_page_section:after,
+	.searched_job_list ul.job_listings li.job_listing:last-of-type:after,
+	.job_banner:after,
+	.searchjobs .elementor-widget-wrap .elementor-background-overlay,
+	.profile-success-section:after,
+	.profile-success-section:before,
+	.register_page:after,
+	.job_search_page .job_search_row .jobsearch form .moc_form_sumbit_btn,
+	.good_company_section:before,
+	.good_company_section:after,
+	.no_bs_partner_boxed:after,
+	.no_bs_partner_boxed:before,
+	.image_with_text.image_with_text_right:after,
+	.image_with_text.image_with_text_right:before,
+	.summer_camp_text_content:after,
+	.summer_camp_text_content:before,
+	.image_with_text.image_with_text_left:before,
+	.profile_setup:after,
+	.membership_table .subscribe_table .table_head .pro_colum:after,
+	.collection_title:after,
+	.new_arrival_section:before,
+	.shadow_box:after,
+	.resources_title::after,
+	.resource_boxes_content_one:after,
+	.resource_boxes_content_two:after,
+	.mistakes_meet_hosts_section:before,
+	.give_away_banner_section:after,
+	.give_away_promo:before,
+	.give_away_promo:after,
+	.marketingops-give-away:after,
+	.user_profile_blog:after,
+	.professor_signup_section_1 .section_text_row .elementor-widget-button,
+	.professor_signup_section_2 .section_2_text_row .elementor-widget-button a .elementor-button-icon,
+	.professor_signup_section_4 .section_4_text_row .elementor-widget-text-editor .two_column .box_2,
+	.courses_product_page .courses_product_left_side .left_side_top_box,
+	.hiring_program_offer:after,
+	.hiring_program_offer:before,
+	.dynamic_features_block:after,
+	.dynamic_features_block:before,
+	.dynamic_blocks_one.course_lp_banner::after {
+		display: none !important;
+	}
+
+	.custom-header {
+		padding: 0 8px;
+	}
+
+	.custom-header .elementor-container {
+		justify-content: space-between;
+	}
+
+	.custom-header .header_account_btn,
+	.custom-header .header_btn_btn,
+	.marketingops-three .marketingops-two-coum-box #testimonial_container .testimonial_box .blank_space_image {
+		display: none !important;
+	}
+
+	.footer-newsletter {
+		padding: 20px 0 90px;
+		margin-bottom: -27%;
+	}
+
+	.footer-newsletter .elementor-widget-wrap {
+		text-align: center;
+		padding: 0 10px 0px !important;
+	}
+
+	.footer-newsletter .elementor-widget-wrap .elementor-element .elementor-element {
+		width: 370px;
+		margin: 10px auto 0px;
+		text-align: left;
+	}
+
+	.footer-newsletter .elementor-widget-wrap .elementor-element:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.footer-section {
+		background-size: contain !important;
+		padding-bottom: 0 !important;
+	}
+
+	.footer-section .elementor-container {
+		background-color: #242730;
+	}
+
+	.section_box_1 .access_section .elementor-widget-wrap {
+		padding: 30px 20px !important;
+	}
+
+	.marketingops .marketingops_img_box {
+		background: #f1f3f4;
+		border-top-left-radius: 70px;
+	}
+
+	.marketingops .marketingops_img_box .elementor-widget-wrap {
+		padding-bottom: 0;
+	}
+
+	.marketingops .marketingops_content_box .elementor-widget-wrap {
+		padding: 30px 20px;
+	}
+
+	.marketingops-two {
+		margin-top: 0 !important;
+		overflow: hidden;
+		padding-bottom: 90px !important;
+	}
+
+	.marketingops-two .marketingops-two-content-box {
+		padding: 0px 10px 30px;
+	}
+
+	.marketingops-two .marketingops-two-boxes .elementor-col-33 {
+		width: auto;
+	}
+
+	.marketingops-two .marketingops-two-boxes .elementor-col-33:last-of-type {
+		width: 100%;
+		margin-bottom: 120px;
+	}
+
+	.marketingops-two .marketingops-two-image-box {
+		position: absolute;
+		bottom: -110px;
+		z-index: -1;
+		right: -30%;
+	}
+
+	.marketingops-three {
+		display: block !important;
+		margin-top: -300px !important;
+		padding-bottom: 0 !important;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container {
+		box-shadow: none;
+		border-radius: 0;
+		padding-left: 0px;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .elementor-widget-wrap {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image {
+		margin-top: -60px;
+		padding-left: 10px;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image .elementor-widget-container {
+		width: auto;
+		display: inline-block;
+		position: relative;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image img {
+		max-width: 100%;
+		z-index: 2;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .elementor-container .marketingops-two-coum-image .elementor-widget-container:after {
+		content: "";
+		background-image: url("/wp-content/themes/marketingops/images/svg/marketingops-three_image_bg.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-size: cover;
+		right: -20px;
+		bottom: -20px;
+		max-width: calc(100% - 20px);
+		max-height: calc(100% - 160px);
+		z-index: 1;
+	}
+
+	.marketingops-four {
+		background: none !important;
+		padding-bottom: 80px !important;
+	}
+
+	.marketingops-four .marketingops-four-boxes {
+		padding-left: 70px;
+	}
+
+	.marketingops-four .marketingops-four-boxes h3 {
+		font-size: 16px !important;
+	}
+
+	.marketingops-four .marketingops-four-boxes h3 a {
+		font-size: 14px !important;
+	}
+
+	.marketingops-four .blog_post .post_boxed .box_loop .blog_post_box .box_title .box_post_img img,
+	.marketingops-four .marketingops-four-boxes img,
+	.marketingops-four-boxes .elementor-post__thumbnail__link {
+		max-height: initial !important;
+		position: relative !important;
+	}
+
+	.marketingops-four .marketingops-four-boxes img {
+		position: absolute !important;
+	}
+
+	.marketingops-five .marketingops-five-row {
+		padding: 0 10px;
+	}
+
+	.marketingops-five .elementor-col-16 {
+		width: 50% !important;
+	}
+
+	.marketingops-five .marketingops-five-row .elementor-section .elementor-container {
+		gap: 50px;
+	}
+
+	.marketingops-six {
+		margin-bottom: -40px;
+	}
+
+	.marketingops-six .acs.elementor-widget-heading {
+		padding: 0 10px;
+	}
+
+	.marketingops-six .marketingops-six-section .section-box {
+		margin-bottom: 40px;
+	}
+
+	.marketingops-six .marketingops-six-section .section-box .elementor-widget-image,
+	.marketingops-six .marketingops-six-section .section-box .elementor-widget-heading,
+	.marketingops-six .marketingops-six-section .section-box .elementor-widget-text-editor,
+	.marketingops-six .marketingops-six-section .section-box .elementor-widget-button,
+	body .member_directory_container {
+		text-align: center !important;
+	}
+
+	.marketingops-six .section-box .elementor-widget-wrap {
+		align-items: center;
+	}
+
+	.marketingops-six .section-box .elementor-widget-wrap .elementor-widget-image {
+		max-width: 85px;
+	}
+
+	.marketingops-six .section-box .elementor-widget-wrap .elementor-widget-text-editor {
+		max-width: calc(100% - 85px);
+		text-align: left !important;
+		padding-left: 15px;
+	}
+
+	.marketingops-two .marketingops-two-boxes .elementor-col-33 .elementor-widget-wrap {
+		padding-bottom: 0;
+		margin-bottom: -12px;
+	}
+
+	.marketingops-two .marketingops-two-boxes .elementor-container .elementor-column:nth-child(2) .elementor-counter .elementor-counter-title {
+		text-align: right;
+	}
+
+	.posts-newsletter .elementor-widget-wrap .elementor-element .elementor-element .elementor-element {
+		width: 100%;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.posts-newsletter .elementor-widget-wrap {
+		padding: 20px 15px !important;
+	}
+
+	.posts-newsletter .elementor-widget-wrap .elementor-widget-wrap {
+		padding: 0 !important;
+	}
+
+	.partner_offer_section {
+		min-height: 500px;
+	}
+
+	.single-post .type-post .elementor-widget-theme-post-content .elementor-location-single,
+	.single-workshop .elementor-widget-theme-post-content .elementor-location-single {
+		background-image: none;
+	}
+
+	.single-post .type-post .elementor-widget-theme-post-content .posts-newsletter,
+	.single-workshop .elementor-widget-theme-post-content .posts-newsletter {
+		margin: 0px -20px;
+	}
+
+	.single-post .type-post .elementor-widget-theme-post-content .posts-newsletter .elementor-widget-wrap,
+	.single-workshop .elementor-widget-theme-post-content .posts-newsletter .elementor-widget-wrap {
+		border-radius: 0px !important;
+		justify-content: center;
+	}
+
+	.single-post .type-post .post_info ul li a img {
+		width: 40px;
+		height: 40px;
+		object-fit: cover;
+		border: 3px solid #f1f3f4;
+	}
+
+	.single-post .type-post .post_info .elementor-icon-list-text {
+		font-family: "open_sanssemibold";
+		font-weight: normal;
+	}
+
+	.single-post .type-post .post_cat ul {
+		width: 100%;
+	}
+
+	.single-post .type-post .post_cat ul li {
+		word-break: initial;
+	}
+
+	.single-post .type-post .elementor-widget-theme-post-content hr.wp-block-separator {
+		margin: 0 0 25px;
+		border-color: rgba(231, 239, 239, 0.75);
+	}
+
+	.single-post .type-post .elementor-widget-theme-post-content .wp-block-image figure {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+
+	.posts-newsletter .elementor-widget-wrap .elementor-element .elementor-element.elementor-widget-html {
+		margin: 20px auto 0;
+	}
+
+	.fjobs .job_listings li.job_listing.job_position_featured {
+		width: calc(50% - 20px);
+	}
+
+	.fjobs .job_listings li.job_listing.job_position_featured img.company_logo {
+		border: 5px solid #f5f7f7;
+	}
+
+	.job_search_page .job_search_row .jobsearch form input#search_keywords,
+	body .member_directory_container input[type="search"] {
+		padding: 23px 20px 23px 85px !important;
+		border-radius: 20px;
+	}
+
+	.job_search_page .job_search_row .elementor-widget-wrap,
+	.searchjobs .elementor-widget-wrap {
+		padding: 20px 20px !important;
+	}
+
+	.job_search_page .job_search_row .jobsearch form input[type="submit"],
+	body .member_directory_container .member_search_form__submit {
+		max-width: 150px;
+		position: relative;
+		top: 0;
+		transform: none;
+		margin-top: 20px;
+		right: 0;
+	}
+
+	.marketingops-two .acs h2 {
+		font-size: 22px !important;
+	}
+
+	/* Filter CSS */
+	.job_filters .search_jobs .mobile_filter {
+		display: flex;
+		width: calc(100% - 179px);
+	}
+
+	.job_filters .search_jobs .sortbycontainer {
+		width: 179px;
+		margin: 0;
+		justify-content: flex-end;
+	}
+
+	.searchjobs .job_search_row {
+		overflow-x: hidden;
+	}
+
+	.searchjobs .job_search_row .searched_job_list .job_listings .mobile_filter_box {
+		position: fixed;
+		bottom: -100vh;
+		z-index: 999;
+		left: 10px;
+		right: 10px;
+		padding: 20px;
+		background: #fff;
+		border: 1px solid rgba(231, 239, 239, 0.75);
+		box-shadow: 0px 20px 40px rgb(0 0 0 / 3%);
+		border-radius: 24px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		height: calc(100vh - 120px);
+		overflow: auto;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.searchjobs .job_search_row .searched_job_list .job_listings .mobile_filter_box.active {
+		bottom: 0;
+	}
+
+	.searchjobs .job_search_row .searched_job_list .job_listings .mobile_filter_box.active:after {
+		display: block;
+	}
+
+	.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+
+	.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .mobile_filter,
+	.job_search_page .job_search_row .searched_job_list .job_listings .job_filters .search_jobs .mobile_filter_title_box {
+		display: flex;
+	}
+
+	.searchjobs .job_search_row .searched_job_list .job_listings .mobile_filter_box .mobile_filter_title_box {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	.quick_filter .quicktitle {
+		width: 100%;
+		margin-bottom: 12px;
+		margin-right: 0;
+	}
+
+	.quick_filter .quickvalues {
+		flex-wrap: wrap;
+	}
+
+	.quick_filter,
+	.quick_filter .quickvalues li {
+		margin-bottom: 10px;
+	}
+
+	.searchjobs .job_search_row .searched_job_list .job_listings .job_filters,
+	.searchjobs .job_search_row .searched_job_list .job_listings .job_listings,
+	.traning_mark_ops .traning_mark_ops_left,
+	.traning_mark_ops .traning_mark_ops_right {
+		width: 100%;
+		margin-right: 0;
+		padding: 0;
+	}
+
+	.job_search_page .job_search_row .elementor-widget-wrap,
+	.searchjobs .elementor-widget-wrap {
+		width: calc(100% - 20px);
+	}
+
+	.searchjobs .job_search_row .searched_job_list .job_listings .job_listings {
+		margin: 20px -20px -30px !important;
+		width: auto;
+	}
+
+	.quick_filter .quickfilter_container .quickvalues {
+		max-width: 100%;
+	}
+
+	.job_banner {
+		margin-bottom: 5px;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comdetails {
+		max-width: 100%;
+		margin-top: 10px;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comdetails h3 {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comdetails .jobmeta {
+		margin-bottom: 10px;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comdetails .jobmeta li {
+		margin-bottom: 15px;
+	}
+
+	.job_listing .single_job_listing .job_description {
+		padding: 20px 15px 0;
+		border-radius: 40px;
+		margin-top: 30px !important;
+	}
+
+	.job_filters .sortbycontainer {
+		position: relative;
+		top: 0;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail,
+	.job_listing .single_job_listing .eachjobdetail .comdetails .jobmeta,
+	.job_listing .single_job_listing .eachjobdetail .comdetails .jobcats {
+		justify-content: flex-start;
+	}
+
+	.eachjobdetail .moc_job_apply_btn.button {
+		border: 5px solid #292a30;
+		padding: 15px 57px;
+		background-position: right 26px top 17px;
+	}
+
+	.post_featured_job .job_manager .job_listings li a .image img,
+	.post_featured_job .job_manager .job_listings li .moc_job_listing_box_container .image img {
+		visibility: visible;
+		border: 5px solid #f5f7f7;
+	}
+
+	.marketingops-six .marketingops-six-section .section-box,
+	.marketingops-three .marketingops-two-coum-box #testimonial_container .testimonial_box,
+	.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .boxed_two_colum .colum_box {
+		width: 100%;
+	}
+
+	.marketingops-three .marketingops-two-coum-box #testimonial_container {
+		margin-top: 50px;
+	}
+
+	.marketingops-three .marketingops-two-coum-box #testimonial_container .elementor-container {
+		background: #f1f3f4;
+		border-radius: 45px;
+		box-shadow: none;
+	}
+
+	.marketingops-three .marketingops-two-coum-box #testimonial_container .rightbtn a {
+		background-color: #fff;
+	}
+
+	.relatedpostbg .elementor-widget-wrap {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	.relatedpostbg .elementor-widget-wrap .elementor-widget-wrap {
+		padding: 0 !important;
+	}
+
+	.single-post .footer-newsletter {
+		margin-top: 0;
+	}
+
+	.training_page_poster {
+		padding: 0 15px;
+	}
+
+	.training_page_poster .poster_right,
+	.traning_mark_ops_box .traning_mark_ops_box_right {
+		border-bottom-left-radius: 24px;
+	}
+
+	.traning_mark_ops_box .traning_mark_ops_box_right {
+		border-top-right-radius: 0;
+	}
+
+	.training_page_poster .poster_right .poster_right_text_box,
+	.traning_mark_ops_box .traning_mark_ops_box_right .text_box {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.training_page_poster .poster_right .poster_right_image_box,
+	.traning_mark_ops_box .traning_mark_ops_box_right .right_image_box {
+		margin: 15px auto;
+	}
+
+	.training_page_poster .poster_right .poster_right_text_box h4,
+	.traning_mark_ops_box .traning_mark_ops_box_right h4 {
+		max-width: 140px;
+		margin: 0 auto;
+	}
+
+	.traning_mark_ops .traning_mark_ops_left .elementor-shortcode {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.traning_mark_ops .traning_mark_ops_left .common_filter_row {
+		width: 33.33%;
+	}
+
+	.traning_mark_ops .traning_mark_ops_left .common_filter_row .directory_search_form {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.traning_mark_ops .traning_mark_ops_right .elementor-widget-button {
+		text-align: left;
+	}
+
+	.articled_blogs .blogs_box_container .blog_box.moc_first_posts_loaded {
+		width: 100%;
+		height: auto;
+	}
+
+	.articled_blogs .blogs_box_container .blog_box {
+		width: 100%;
+		margin-bottom: 30px;
+		padding-bottom: 0px;
+	}
+
+	.articled_blogs .blogs_box_container .blog_box:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.articled_blogs .blogs_box_container .blog_box.moc_first_posts_loaded .box_img {
+		height: auto;
+	}
+
+	.articled_blogs .blogs_box_container .blog_box.moc_first_posts_loaded .box_content {
+		background: rgba(44, 38, 51, 1);
+		position: relative;
+		width: 100%;
+	}
+
+	.traning_mark_ops_search .traning_mark_ops_box_left,
+	.traning_mark_ops_search .traning_mark_ops_box_right {
+		width: 100%;
+	}
+
+	.blog_articles .articled_container {
+		padding: 0 15px;
+	}
+
+	.articled_blogs .blogs_box_container {
+		width: auto;
+		margin: 40px -15px 20px;
+		margin: 40px -15px 20px;
+	}
+
+	.page-template-podcast-listings-tempate .blog_articles .articled_header {
+		justify-content: flex-start;
+	}
+
+	.page-id-163077 .job_search_page .job_search_row .jobsearch form .moc_input_field input#search_keywords {
+		padding-right: 200px !important;
+	}
+
+	.job_search_page .job_search_row .jobsearch form .moc_conditional_checkbox {
+		right: 20px;
+	}
+
+	.articled_blogs .blogs_box_container .blog_box .box_content {
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+	}
+
+	.edit_page_section,
+	.moc_view_other_profile .edit_page_section,
+	.moc_view_own_profile .edit_page_section {
+		background-image: none;
+	}
+
+	.edit_page_section:after,
+	.moc_view_other_profile .edit_page_section:after,
+	.moc_view_own_profile .edit_page_section:after,
+	.profile_page .profile_content .content_box .box_content.box_else_do_content .sub_title_with_content .text_box .title_and_svg .title h2 br,
+	.moc_view_other_profile .profile_page .profile_content .content_box .box_content.box_avatar_content .title_with_btn h3 {
+		display: none;
+	}
+
+	.profile_page .profile_content .content_box .content_boxed textarea,
+	.profile_page .profile_content .content_box .content_boxed input,
+	.profile_page .profile_content .content_box .content_boxed .date_dropbox,
+	.profile_page .profile_content .content_box .content_boxed select,
+	.profile_setup .setup_container .setup_form form input,
+	.profile_setup .setup_container .setup_form form select {
+		padding: 8px 8px;
+	}
+
+	.profile_setup {
+		margin-top: 20px;
+	}
+
+	.profile_page .profile_content .content_box .content_boxed ul.social_icons {
+		top: 8px;
+	}
+
+	.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .moc_social_links .deletesec {
+		top: -2px;
+	}
+
+	.profile_page .profile_content .content_box {
+		padding: 0;
+	}
+
+	.profile_page .profile_content .content_box .box_content {
+		padding: 20px;
+	}
+
+	.profile_page .profile_content .content_box .box_content .title_with_btn .btns {
+		width: 127px;
+		text-align: right;
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.profile_page .profile_content .content_box .box_content .title_with_btn h3 {
+		width: calc(100% - 127px);
+	}
+
+	.profile_page .profile_content .content_box .box_content .title_with_btn.avatar_title h3 {
+		width: auto;
+	}
+
+	body .profile_page .profile_content .content_box .box_content .title_with_btn .table_info .info_box {
+		width: 220px;
+		transform: translateX(-34%) translateY(-106%);
+	}
+
+	body .profile_page .profile_content .content_box .box_content .title_with_btn .table_info:after {
+		top: -5px;
+	}
+
+	.profile_page .profile_content .content_box .box_content .title_with_btn .btns a {
+		width: 60px;
+		display: inline-block;
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 0px;
+		line-height: initial;
+		padding: 3px 5px 5px;
+	}
+
+	.profile_page .profile_content .content_box .box_content .title_with_btn .btns a:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.profile_page .profile_content .content_box .profile_member .box_content .title_with_btn h3 {
+		width: auto;
+	}
+
+	.profile_page .profile_content .content_box .profile_member .box_content .title_with_btn .btns {
+		max-width: calc(100% - 205px);
+		width: 100%;
+	}
+
+	.profile_page .profile_content .content_box .profile_member .box_content .title_with_btn .btns a.profile_member_btn {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.profile_page .profile_content .content_box .box_about_content.basic_section .sub_title_with_content .two_boxes {
+		margin: 0 -10px;
+	}
+
+	.profile_page .profile_content .content_box .box_about_content.basic_section .sub_title_with_content .two_boxes .content_boxes {
+		padding: 0 10px;
+	}
+
+	.profile_page .profile_content .content_box .box_content.martech_section .sub_title_with_content .content_boxes .content_boxed .moc_not_editable_data .boxed_three_colum .colum_box,
+	.profile_page .profile_content .content_box .box_content.skills_section .sub_title_with_content .content_boxes .content_boxed .moc_not_editable_data .boxed_three_colum .colum_box {
+		width: calc(100% - 120px);
+	}
+
+	.profile_page .profile_content .content_box .box_content.martech_section .sub_title_with_content .content_boxes .content_boxed .moc_not_editable_data .boxed_three_colum .colum_box:nth-child(2),
+	.profile_page .profile_content .content_box .box_content.skills_section .sub_title_with_content .content_boxes .content_boxed .moc_not_editable_data .boxed_three_colum .colum_box:nth-child(2) {
+		order: 3;
+	}
+
+	.profile_page .profile_content .content_box .box_content.martech_section .sub_title_with_content .content_boxes .content_boxed .moc_not_editable_data .boxed_three_colum .colum_box:last-of-type,
+	.profile_page .profile_content .content_box .box_content.skills_section .sub_title_with_content .content_boxes .content_boxed .moc_not_editable_data .boxed_three_colum .colum_box:last-of-type {
+		width: 120px;
+		order: 2;
+	}
+
+	.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum .colum_box a.btn {
+		margin-bottom: 0;
+	}
+
+	.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed span.input_checkbox {
+		width: 100px;
+		margin-right: 9px;
+		margin-bottom: 0;
+	}
+
+	.profile_page .profile_content .content_box .box_content .sub_title_with_content .content_boxes .content_boxed span.input_checkbox:last-of-type {
+		margin: 0;
+	}
+
+	.profile_page .profile_content.edit_page .content_box .box_content.martech_section .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_three_colum .colum_box:first-child,
+	.profile_page .profile_content.edit_page .content_box .box_content.skills_section .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_three_colum .colum_box:first-child {
+		width: calc(70% - 20px);
+	}
+
+	.profile_page .profile_content.edit_page .content_box .box_content.martech_section .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_three_colum .colum_box:nth-child(2),
+	.profile_page .profile_content.edit_page .content_box .box_content.skills_section .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_three_colum .colum_box:nth-child(2) {
+		order: 2;
+		width: 23%;
+	}
+
+	.profile_page .profile_content.edit_page .content_box .box_content.martech_section .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_three_colum .colum_box:last-of-type,
+	.profile_page .profile_content.edit_page .content_box .box_content.skills_section .sub_title_with_content .content_boxes .content_boxed .moc_editable_data .boxed_three_colum .colum_box:last-of-type {
+		width: auto;
+		order: 3;
+		top: 25px;
+	}
+
+	.profile_page .profile_content.edit_page .content_box .box_content.work_section .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum .colum_box.colum_box_3,
+	.profile_page .profile_content.edit_page .content_box .box_content.work_section .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum .colum_box.colum_box_4 {
+		width: 100%;
+	}
+
+	.profile_page .profile_content.edit_page .content_box .box_content.work_section .sub_title_with_content .content_boxes .content_boxed .boxed_three_colum .colum_box.colum_box_4 {
+		padding-right: 0;
+	}
+
+	.profile_page .profile_content .content_box .content_boxed .show_more_btn:before,
+	.popup .popup_content .popup_form .form_box.box_btn:before {
+		bottom: 0;
+	}
+
+	.profile_page .profile_content .content_box .content_boxed .show_more_btn:after,
+	.popup .popup_content .popup_form .form_box.box_btn:after {
+		bottom: -1px;
+	}
+
+	.profile_page .profile_content .content_box .content_boxed .show_more_btn b.btn {
+		padding: 6px 10px;
+	}
+
+	.profile_page .profile_content .content_box .content_boxed .input_checkbox label:after {
+		background-color: #fff;
+	}
+
+	.profile_page .profile_content .content_box .box_content.box_else_do_content .sub_title_with_content .text_box .text_box_btn .btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.profile_page .profile_content .content_box .box_content.box_else_do_content .sub_title_with_content .text_box .text_box_btn .btn .svg {
+		position: relative;
+		top: 1px;
+		margin-left: 5px;
+	}
+
+	.profile_page .profile_content .content_box .profile_member .box_content .title_with_btn .title_right_box.title_right_box_mobile {
+		max-width: 100%;
+		padding: 5px 0 0;
+	}
+
+	.job_search_page .job_search_row .gradient-title h2 {
+		font-size: 21px !important;
+		max-width: 100%;
+	}
+
+	.job_search_page .job_search_row .gradient-title {
+		margin-bottom: 12px;
+	}
+
+	.member_directory_container .moc_input_field,
+	.job_search_page .job_search_row .jobsearch form .moc_input_field {
+		margin-bottom: 0px;
+	}
+
+	.job_search_page .job_search_row .jobsearch {
+		margin-bottom: -30px;
+		position: relative;
+		z-index: 99;
+	}
+
+	.searchjobs .job_search_row .jobsearch form .moc_jobs_count_value_div {
+		position: relative;
+		top: initial;
+		margin-top: 8px;
+		left: initial !important;
+		transform: none;
+	}
+
+	.job_search_page .job_search_row .jobsearch form .moc_input_field:after {
+		top: 29px;
+	}
+
+	.directory_main_div .directory_result_div .members_directory {
+		margin: 0 -20px;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li {
+		width: calc(100% - 0px);
+		padding: 10px;
+		margin: 0 0 30px;
+		align-items: flex-start !important;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li .memberleft {
+		width: 80px;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li .memberleft .profileimg img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li .memberright {
+		max-width: calc(100% - 80px);
+		margin-left: 0;
+		padding-left: 10px;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li .memberright .membermeta {
+		justify-content: flex-start;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li .memberright .membermeta span.pright .experiencemeta {
+		max-width: 8ch;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li .memberright .profileimg h3 {
+		margin: 0 0 0px;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li .memberright .memberposition,
+	.directory_main_div .directory_result_div .members_directory li .memberright .memberexcerpt {
+		margin-bottom: 15px;
+	}
+
+	/* Profile Sucess */
+	.profile-success-section,
+	.profile-success-section:after,
+	.profile-success-section:before {
+		background-image: none;
+	}
+
+	/* Partners Page CSS */
+	.partner_section .partner_section_box .elementor-widget-wrap {
+		padding: 30px 15px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.partner_section .partner_section_box .elementor-widget-text-editor {
+		height: auto !important;
+		text-align: left;
+	}
+
+	.good_company_section .good_company_title {
+		margin-bottom: 30px;
+	}
+
+	.good_company_section .boxed_content .box_content.bottom_div {
+		margin-top: 0px;
+		margin-bottom: 0;
+	}
+
+	.good_company_section .boxed_content .box_content.top_div {
+		margin-bottom: -75px;
+	}
+
+	.good_company_section .boxed_content .box_content {
+		max-width: 33.33%;
+		margin: 90px 0px 0;
+		width: 100%;
+	}
+
+	.good_company_section .boxed_content .box_content .elementor-widget-container {
+		justify-content: center;
+	}
+
+	.good_company_section .boxed_content .box_content a {
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+		padding: 35px;
+	}
+
+	.partner_testimonials:after,
+	.membership_section:after {
+		height: 100%;
+		top: 0;
+	}
+
+	/* NO BS Index */
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content,
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content .site_link_verify,
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content .bs_content_text {
+		height: auto !important;
+	}
+
+	.no_bs_index .no_bs_container .container_box {
+		border-radius: 40px;
+		padding: 20px 0px 0;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+
+	.no_bs_index .no_bs_container .container_box h2.moc_related_demo_heading {
+		padding: 0 15px;
+		font-size: 26px;
+		line-height: 39px;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_filter {
+		padding: 0 15px;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_filter ul {
+		padding: 15px 0px 0;
+		margin: 0 0;
+		width: 100%;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_filter ul li {
+		margin: 0 3px 5px;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container {
+		margin: 0 0;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content {
+		max-width: 100%;
+		padding: 0 0px;
+		margin-top: 20px;
+	}
+
+	.no_bs_index .no_bs_container .no_bs_content_box .box_container .box_content .content_container {
+		padding: 30px 20px;
+	}
+
+	/* Summer Camp Page CSS */
+	.image_with_text .box_image .elementor-widget-image:after {
+		width: calc(100% - 77px);
+		height: calc(100% - 52px);
+		left: -15px;
+		bottom: -20px;
+		background-size: contain;
+		background-position: left bottom;
+		background-image: url("/wp-content/themes/marketingops/images/summer_camp/summer_camp_img_one_mobile_bg_svg.svg");
+	}
+
+	.image_with_text_right .box_image .elementor-widget-image:after {
+		background-color: #f1f3f4;
+		background-image: none;
+		width: calc(100% + 30px);
+		height: calc(100% + 20px);
+		left: -15px;
+		bottom: -20px;
+		border-top-left-radius: 60px;
+	}
+
+	.image_with_text_right .box_image,
+	.pricing_list_section .list_box .points_list_btn .elementor-button-wrapper {
+		padding: 0 15px;
+	}
+
+	.image_with_text .box_left {
+		padding: 30px 15px 0;
+	}
+
+	.image_with_text .box_text_content .box_text_content_one_box p,
+	.image_with_text .box_text_content .box_text_content_one_box,
+	.image_with_text .box_text_content .elementor-widget-button {
+		margin-bottom: 10px;
+	}
+
+	.image_with_text_right .box_text_content .elementor-widget-heading {
+		margin-bottom: 5px;
+	}
+
+	.image_with_text .box_text_content .elementor-widget-button,
+	.image_with_text .box_text_content .box_text_content_two_box {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 320px;
+	}
+
+	.summer_camp_image_gallery .summer_camp_image_gallery_container {
+		padding: 40px 15px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 150px;
+	}
+
+	.summer_camp_image_gallery .summer_camp_image_gallery_container .summer_gallery_title h2 {
+		margin-bottom: 0;
+		max-width: 250px;
+	}
+
+	.summer_camp_image_gallery .summer_camp_image_gallery_container .gallery_box.box_left .elementor-widget-wrap {
+		width: auto;
+		margin: 0 -3px;
+	}
+
+	.summer_camp_image_gallery .summer_camp_image_gallery_container .left_box_image.image_1,
+	.pricing_list_section .list_box.box_1 .elementor-widget-text-editor p {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.summer_camp_image_gallery .summer_camp_image_gallery_container .left_box_image {
+		width: 50%;
+		padding: 0 3px 5px;
+	}
+
+	.pricing_list_section .list_box.box_1 .elementor-widget-wrap {
+		background: linear-gradient(180deg, #f1f3f4 3.05%, #fafbfb 84.98%);
+		border-radius: 24px;
+		padding: 20px 10px 10px !important;
+	}
+
+	.pricing_list_section .list_box.box_1 .elementor-widget-wrap .elementor-widget-wrap {
+		padding: 0 !important;
+		border-radius: 0;
+		background: transparent;
+	}
+
+	.pricing_list_section .list_box.box_1 .elementor-widget-text-editor dir {
+		margin: 20px 0 25px;
+	}
+
+	.pricing_list_section .list_box.box_1 .box_1_box {
+		padding: 16px 20px;
+	}
+
+	.faq_section {
+		padding-top: 50px !important;
+		margin-top: 30px;
+	}
+
+	.faq_section:before,
+	.membership-wrap:before,
+	.mistakes_guest_share:before {
+		background-image: url("/wp-content/themes/marketingops/images/summer_camp/faq_bg_mobile.png");
+	}
+
+	.faq_section:after,
+	.membership-wrap:after,
+	.mistakes_guest_share:after {
+		background: -webkit-linear-gradient(180deg, #ffffff 24.55%, rgba(241, 243, 244, 0) 66.18%, #f1f3f4 96.33%);
+		background: -moz-linear-gradient(180deg, #ffffff 24.55%, rgba(241, 243, 244, 0) 66.18%, #f1f3f4 96.33%);
+		background: linear-gradient(180deg, #ffffff 24.55%, rgba(241, 243, 244, 0) 66.18%, #f1f3f4 96.33%);
+	}
+
+	.faq_section .faq_section_row .faq_box_section .faq_box h3 {
+		justify-content: center;
+		margin: 5px auto;
+	}
+
+	/* NO BS Demo */
+	.no_bs_martech_demo_section_box .section_box_text {
+		order: 2;
+	}
+
+	.no_bs_martech_demo_section_box.no_bs_martech_demo_section_two .section_box_text {
+		margin-top: 30px;
+	}
+
+	.no_bs_martech_demo_section_box .section_box_image {
+		order: 1;
+	}
+
+	.no_bs_martech_demo_section_box.no_bs_martech_demo_section_two .section_box_image img {
+		max-width: 225px;
+	}
+
+	.no_bs_martech_demo_section_box .section_box_text .elementor-widget-text-editor ul {
+		padding: 0;
+	}
+
+	.no_bs_martech_demo_section_box .section_box_text .elementor-widget-heading {
+		margin-bottom: 5px;
+	}
+
+	/* Checkout Page */
+	.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods .wc_payment_method {
+		margin-bottom: 20px !important;
+	}
+
+	.checkout_page_box .cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods .payment_box .wc-saved-payment-methods {
+		padding-left: 0;
+	}
+
+	.cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods .payment_box .wc-saved-payment-methods label {
+		padding-left: 28px;
+		font-size: 16px;
+		font-family: "open_sanssemibold";
+		font-weight: normal;
+	}
+
+	.cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods .payment_box .wc-saved-payment-methods label:after {
+		width: 20px;
+		height: 20px;
+	}
+
+	.cart_page_container .cart_page_box .box_content .box_body .woocommerce-checkout-payment .wc_payment_methods .payment_box .wc-saved-payment-methods label:before {
+		width: 10px;
+		height: 10px;
+		left: 5px;
+	}
+
+	.woocommerce .woocommerce-message,
+	.woocommerce .woocommerce-error {
+		background: #fdfdfd;
+		max-width: calc(100% - 30px);
+		left: 15px;
+		right: 15px;
+		padding: 13px 8px;
+		padding-left: 52px;
+	}
+
+	/* Summer Camp Product Page CSS */
+	.summer_camp_product_page .product_page_inner_section .elementor-widget-woocommerce-product-price .price ins {
+		font-size: 26px;
+		line-height: 39px;
+	}
+
+	/* Job Posting Page CSS */
+	.moc_is_job_post_form .page-header h1 {
+		font-size: 26px;
+		line-height: 39px;
+	}
+
+	.moc_is_job_post_form form fieldset,
+	.job-manager-form fieldset {
+		width: 100%;
+	}
+
+	/* Subscribe Page CSS */
+	.membership-wrap .elementor-widget-heading {
+		margin-bottom: 0;
+	}
+
+	.membership_table .subscribe_table .global_cloum.empty_colum {
+		display: none;
+	}
+
+	.membership_table .subscribe_table .global_cloum {
+		max-width: 33.33%;
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr .body_colum {
+		display: none;
+		max-width: 50%;
+		text-align: right;
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr .body_colum.title_tr_colum {
+		display: flex !important;
+		text-align: left;
+		flex-wrap: wrap;
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr .body_colum.title_tr_colum .text {
+		max-width: calc(100% - 17px);
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr .body_colum.title_tr_colum .table_info {
+		display: flex;
+		width: auto;
+		max-width: 14px;
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr .table_info .info_box {
+		width: 200px;
+	}
+
+	.membership_table .subscribe_table .table_head a {
+		pointer-events: initial;
+		cursor: pointer;
+		padding: 0 20px 8px;
+		position: relative;
+		display: inline-block;
+		width: auto;
+	}
+
+	.membership_table .subscribe_table .table_head a.active:after {
+		content: "";
+		background: #45474f;
+		width: 100%;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.membership_table .subscribe_table .table_head .pro_colum a.active:after {
+		background: #fd4b7a;
+		background: -webkit-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+		background: -moz-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+		background: linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr .dot {
+		margin-right: 12px;
+	}
+
+	.membership_table .subscribe_table .table_head {
+		padding-bottom: 13px;
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr.btn_tr .body_colum {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.membership_section .membership_colum .elementor-col-50 {
+		width: 100%;
+	}
+
+	/* Blog Page Popup CSS */
+	.blog_popup .contnet_box .popup_content h2 {
+		font-size: 26px;
+		line-height: 39px;
+		margin-bottom: 8px;
+	}
+
+	.blog_popup .contnet_box .popup_content h4 {
+		font-size: 16px;
+		line-height: 23px;
+		margin-top: 8px;
+		margin-bottom: 5px;
+	}
+
+	.blog_popup .contnet_box .popup_content p {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 15px;
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr.btn_tr {
+		padding: 20px 0px 0;
+	}
+
+	.membership_table .subscribe_table .table_body .table_tr .btn {
+		padding: 15px 15px;
+		max-width: 225px;
+	}
+
+	/* Login Page CSS */
+	body .moc-form-container #moc-registration-1 .moc-form-field-wrap {
+		background-position: top 11px right 20px !important;
+		overflow: hidden;
+	}
+
+	body .moc-form-container #moc-registration-1 .moc-form-field-wrap input {
+		padding: 15px 60px 15px 20px !important;
+	}
+
+	body .moc-form-container #moc-registration-1 .moc-form-field-wrap.reg-password a,
+	body .moc-form-container #moc-registration-1 .moc-form-field-wrap.reg-confirm-password a {
+		top: 16px;
+	}
+
+	.register_page .register_content.login_content {
+		margin: 0 auto;
+	}
+
+	.register_page .register_content.login_content .elementor-widget-wrap {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.register_page .register_content.login_content .elementor-widget-heading h2 {
+		font-size: 21px;
+		line-height: 29px;
+	}
+
+	.register_page.login_page .register_img img {
+		max-width: 227px;
+	}
+
+	body .login_content .moc-form-container #moc-registration-1 .moc-form-submit-button-wrap {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		max-width: 182px;
+		margin-top: 7px;
+	}
+
+	.register_page.login_page .register_img {
+		margin-top: 30px;
+	}
+
+	/* Normal Login Page CSS */
+	.normal_product_page .product_size_chart table {
+		margin: 0 0 0;
+	}
+
+	.normal_product_page .product_page_inner_section form .variations tbody tr {
+		width: 100%;
+	}
+
+	.product_related .elementor-widget-woocommerce-product-related .related.products .products .product a h2 {
+		height: initial !important;
+		min-height: initial;
+	}
+
+	.normal_product_page .product_page_inner_section .elementor-widget-woocommerce-product-price .price {
+		font-size: 22px;
+		line-height: 35px;
+	}
+
+	.products_section .products {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Resources page Design */
+	.resource_boxes_content .elementor-container,
+	.founding_community_section .elementor-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.resource_boxes_content .content_box .elementor-widget-wrap {
+		padding: 40px 15px 35px;
+	}
+
+	.resource_boxes_content .content_box,
+	.founding_community_section .content_box {
+		max-width: 475px;
+		margin-bottom: 30px;
+	}
+
+	.resource_boxes_content .content_box:last-of-type,
+	.founding_community_section .content_box:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.resource_boxes_content .elementor-container .elementor-container,
+	.founding_community_section .elementor-container .elementor-container {
+		flex-direction: initial;
+	}
+
+	.founding_community_section .content_box {
+		max-width: 280px;
+	}
+
+	.resource_boxes_content .content_box .content_text {
+		height: auto !important;
+		max-height: initial !important;
+	}
+
+	/* Job Dashboard Page CSS */
+	.job_manager .job_manager_details .manager_container .content_box {
+		padding: 20px 15px;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_text,
+	.job_manager .job_manager_details .manager_container .content_box .box_text.box_5 {
+		max-width: 50% !important;
+		margin-right: 0;
+		border: none;
+		padding: 5px 15px 5px 0;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_btn {
+		margin-top: 0;
+		max-width: 100%;
+		border-top: 0;
+		padding-top: 0;
+		margin-left: 0;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .job_bottom_bar .job_detail_section .all_jobtypes {
+		max-width: 100%;
+		justify-content: flex-start;
+		margin-top: 15px;
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .job_bottom_bar .job_detail_section .firstrow .comdetail {
+		max-width: calc(100% - 45px);
+	}
+
+	.job_manager .job_manager_details .manager_container .content_box .box_btn a.gradient_btn {
+		max-width: calc(100% - 50px);
+	}
+
+	/* Mistakes Page CSS */
+	.mistakes_guest_share {
+		padding: 55px 15px 0;
+		margin-top: 25px;
+		overflow: hidden;
+	}
+
+	.mistakes_episodes .mistakes_episodes_section .episodes_container .episodes_box {
+		max-width: 100%;
+	}
+
+	.mistake_people .elementor-container {
+		padding: 0 15px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.mistake_people .row_text {
+		max-width: 270px;
+		padding-right: 0px;
+	}
+
+	.mistake_people .row_image {
+		max-width: 227px;
+		margin-top: 30px;
+	}
+
+	.mistakes_newsletter_section .newsletter-section .section_row .row_bg {
+		border-radius: 60px;
+		padding: 30px 20px;
+	}
+
+	.mistakes_newsletter_section .newsletter-section .section_row .row_bg .bg_row .box_content {
+		max-width: 313px;
+		margin: 0 auto;
+	}
+
+	.mistakes_newsletter_section .newsletter-section .section_row .row_bg .bg_row .box_content .row_box {
+		width: 100%;
+	}
+
+	.mistakes_newsletter_section .newsletter-section .section_row .row_bg .bg_row .box_content .row_box.content_text {
+		margin-bottom: 10px;
+	}
+
+	.mistakes_newsletter_section .newsletter-section .section_row .row_bg .bg_row .box_content .content_text h3 {
+		font-size: 21px;
+		line-height: 29px;
+	}
+
+	.mistakes_newsletter_section .newsletter-section .section_row .row_bg .bg_row .box_content .content_form form .form_row input {
+		padding: 9px 120px 9px 20px;
+	}
+
+	.mistakes_newsletter_section .newsletter-section .section_row .row_bg .bg_row .box_content .content_form form .form_row button {
+		max-width: 114px;
+		padding: 7px 10px;
+	}
+
+	.mistakes_guest_share .section_row .elementor-widget-heading,
+	.mistakes_guest_share .inner_section_44 .inner_section_row .elementor-widget-button {
+		text-align: center;
+	}
+
+	.mistakes_guest_share .inner_section_box .elementor-widget-heading {
+		text-align: left;
+	}
+
+	.mistakes_guest_share .inner_section_box .elementor-container {
+		justify-content: center;
+		margin: 0 -15px;
+	}
+
+	.mistakes_guest_share .inner_section_box .elementor-column:first-of-type {
+		order: 2;
+		margin-top: 20px;
+	}
+
+	/* Give Away Page CSS */
+	.give_away_banner_section .banner_image {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.give_away_banner_section .banner_text .banner_btn_section .elementor-container {
+		padding: 20px;
+	}
+
+	.give_away_banner_section .banner_text .banner_btn_section .banner_btn .elementor-widget-button a {
+		padding: 19px 15px;
+	}
+
+	.give_away_banner_section .banner_text .banner_btn_title {
+		margin-top: 0;
+	}
+
+	.give_away_banner_section .mobile_image {
+		margin-right: -10px;
+		width: auto;
+	}
+
+	.give_away_promo .promo_section_colum .elementor-widget-wrap .elementor-widget-heading h2 {
+		width: 100%;
+	}
+
+	.give_away_promo .promo_section_colum .icon_box.orange_title {
+		position: relative;
+		bottom: 0;
+		right: 0;
+		order: 1;
+		margin-bottom: 30px;
+	}
+
+	.give_away_promo .promo_section_colum .elementor-widget-image {
+		order: 2;
+	}
+
+	.marketingops-give-away.marketingops-two .marketingops-two-image-box {
+		bottom: 0px;
+		position: relative;
+		right: -25%;
+		margin-top: -170px;
+		width: 100%;
+	}
+
+	.marketingops-give-away.marketingops-two .marketingops-two-image-box .marketingops-two-btn {
+		position: relative;
+		left: -25%;
+		margin-top: -100px;
+	}
+
+	.give_away_promo .promo_section_colum:first-of-type {
+		margin-top: 25px;
+	}
+
+	.give_away_promo .promo_section_colum .elementor-widget-wrap .icon_box {
+		margin-bottom: 0;
+	}
+
+	.give_away_promo .promo_section_colum .icon_box.orange_title {
+		margin-bottom: 10px;
+	}
+
+	.marketingops-give-away .marketingops-two-content-box .marketingops-two-para {
+		max-width: 240px;
+	}
+
+	.marketingops-give-away .marketingops-two-image-box .marketingops-two-btn a {
+		max-width: 158px;
+		padding: 15px 15px !important;
+	}
+
+	.marketingops-three.marketingops-give-away-professionals {
+		margin-top: -410px !important;
+	}
+
+	.give_away_banner_section .banner_text .elementor-widget-wrap {
+		padding: 0 15px;
+	}
+
+	/* User Profile Page CSS */
+	.user_profile_blog {
+		position: relative;
+		z-index: 99;
+		margin-bottom: -80px;
+	}
+
+	.user_profile_blog {
+		padding: 0px 0 30px;
+		margin-top: -15px;
+	}
+
+	.user_profile_blog .user_profile_left_side,
+	.user_profile_blog .user_profile_right_side {
+		max-width: 100%;
+	}
+
+	.user_profile_blog .user_profile_left_side {
+		margin-bottom: 50px;
+	}
+
+	.user_profile_blog .user_profile_left_side .blog_box_container .profile_details .details_box {
+		max-width: initial;
+		width: auto;
+		margin: 0 -15px;
+	}
+
+	.user_profile_blog .user_profile_left_side .blog_box_container .profile_details .details_box .box_row {
+		max-width: 50%;
+		justify-content: flex-start;
+	}
+
+	.user_profile_blog .user_profile_left_side .blog_box_container .profile_details .details_box .box_row .details_box_bg {
+		align-items: center;
+	}
+
+	.user_profile_blog .user_profile_left_side .blog_box_container .profile_details .details_box .box_row .details_box_bg .details_content {
+		width: 46px;
+		height: 46px;
+	}
+
+	.user_profile_blog .user_profile_left_side .blog_box_container .profile_details .details_box .box_row .details_box_bg .details_content h3 {
+		width: 38px;
+		height: 38px;
+	}
+
+	.user_profile_blog .user_profile_left_side .blog_box_container .profile_details .details_box .box_row .details_box_bg span {
+		display: inline-block;
+		width: calc(100% - 46px);
+		padding-left: 6px;
+		text-align: left;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container {
+		overflow: hidden;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tabbing_content {
+		overflow: auto;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tabbing_content .tabbing_content_container {
+		flex-wrap: wrap;
+		width: 545px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .tabbing_content_details .tabbing_row .column_box .content_boxes .boxes_title_and_content h5,
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .tabbing_content_details .tabbing_row .column_box .content_boxes .boxes_title_and_content .date_btn {
+		padding-right: 0;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .tabbing_content_details .tabbing_row .column_box .content_boxes .boxes_title_and_content h5 {
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .tabbing_content_details .tabbing_row .column_box .content_boxes .boxes_title_and_content .date_btn {
+		max-width: calc(100% - 82px);
+		padding-left: 15px;
+	}
+
+	/* Corse List CSS - Start */
+	.course_list .course_list_title_content .elementor-widget-wrap h2 {
+		font-size: 24px;
+		line-height: 37px;
+	}
+
+	.course_list .course_list_box_content {
+		margin: 50px 0px -30px;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.course_list .course_list_box_content .box_content {
+		max-width: 400px;
+		margin: 0 auto 30px;
+	}
+
+	/* Professor Signup CSS - Start */
+	.professor_signup_section_1 .section_text_row .elementor-widget-heading h2 .small {
+		font-size: 21px;
+	}
+
+	.professor_signup_section_1 .section_text_row .elementor-widget-heading h2 .gradient_title {
+		line-height: 37px;
+	}
+
+	.professor_signup_section_1 .section_image_row {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.professor_signup_section_1 .section_image_row .elementor-widget-wrap {
+		background-color: transparent;
+		border-radius: 0;
+		max-width: 100%;
+	}
+
+	.professor_signup_section_1 .section_image_row .elementor-widget-video .elementor-widget-container {
+		max-width: 100%;
+		max-height: initial;
+		border-radius: 0;
+	}
+
+	.professor_signup_section_2 .section_2_text_row .elementor-widget-heading h6 {
+		margin-bottom: 10px;
+	}
+
+	.professor_signup_section_2:after {
+		content: "";
+		background-image: url("/wp-content/themes/marketingops/images/info_page/banner_blur_mobile.png");
+		width: 212px;
+		height: 424px;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+		top: 131px;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section {
+		overflow: hidden;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .image_row {
+		width: 100% !important;
+		order: 1;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .elementor-container {
+		align-items: flex-end;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .elementor-column.text_row {
+		width: 50% !important;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .elementor-column.text_row_1 {
+		order: 2;
+		margin-top: -115px;
+		left: -28px;
+		justify-content: flex-end;
+		top: -30px;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .elementor-column.text_row_2 {
+		order: 3;
+		margin-top: -115px;
+		right: -40px;
+		justify-content: flex-start;
+	}
+
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .elementor-column.text_row .elementor-widget-wrap {
+		width: 148px !important;
+	}
+
+	.professor_signup_section_3 .section_3_img_row {
+		order: 2;
+		width: 100%;
+	}
+
+	.professor_signup_section_3 .section_3_img_row .elementor-widget-image .elementor-widget-container {
+		text-align: left;
+	}
+
+	.professor_signup_section_3 .section_3_text_row {
+		width: 100%;
+		padding-left: 0;
+		order: 1;
+	}
+
+	.professor_signup_section_4 .section_4_text_row,
+	.professor_signup_section_4 .section_4_text_row .elementor-widget-text-editor .two_column .box_1,
+	.professor_signup_section_4 .section_4_text_row .elementor-widget-text-editor .two_column .box_3 {
+		max-width: 100%;
+		padding-right: 0;
+	}
+
+	.professor_signup_section_4 .section_4_text_row .section_4__text_inner_section {
+		max-width: calc(100% - 84px);
+		width: 100%;
+	}
+
+	.professor_signup_section_4 .section_4_text_row .section_4_inner_section {
+		width: 100%;
+		max-width: 84px;
+	}
+
+	.professor_signup_section_5:after {
+		background-image: url("/wp-content/themes/marketingops/images/info_page/section_5_blur_mobile.png");
+		bottom: initial;
+		top: -182px;
+		left: 0;
+		width: 368px;
+		height: 390px;
+		max-width: 100%;
+	}
+
+	.professor_signup_section_5 .elementor-background-overlay {
+		max-width: 100%;
+		border-top-right-radius: 60px;
+		border-bottom-right-radius: 60px;
+	}
+
+	.professor_signup_section_5 .section_5_text_row {
+		max-width: 100%;
+		padding-left: 0;
+		margin-bottom: 30px;
+		order: 1;
+		margin-top: 0;
+	}
+
+	.professor_signup_section_5 .section_5_image_row {
+		max-width: 100%;
+		order: 2;
+	}
+
+	.professor_signup_section_5 .section_5_image_row .section_5_inner_section .inner_section_row {
+		padding: 0 13px;
+	}
+
+	.professor_signup_section_5 .section_5_image_row .section_5_inner_section .inner_section_row .elementor-widget-wrap {
+		width: 90px;
+		height: 90px;
+	}
+
+	.professor_signup_section_4 .section_4_text_row .section_4_inner_section .inner_section_row:first-of-type {
+		order: 1;
+	}
+
+	.professor_signup_section_4 .section_4_text_row .section_4_inner_section .inner_section_row:nth-of-type(2) {
+		order: 3;
+	}
+
+	.professor_signup_section_4 .section_4_text_row .section_4_inner_section .inner_section_row:nth-of-type(3) {
+		order: 5;
+	}
+
+	.professor_signup_section_4 .section_4_text_row .section_4_inner_section .inner_section_row:nth-of-type(4) {
+		order: 2;
+	}
+
+	.professor_signup_section_4 .section_4_text_row .section_4_inner_section .inner_section_row:nth-of-type(5) {
+		order: 4;
+	}
+
+	/* Course Pre-Register LP Page CSS - Start */
+	.course_lp_banner .banner_form,
+	.course_lp_banner .banner_text,
+	.course_lp_automation_game .banner_text,
+	.course_lp_automation_game .banner_form {
+		max-width: 100%;
+		padding-right: 0;
+	}
+
+	.course_lp_banner .banner_text .text_content {
+		margin-bottom: 20px;
+	}
+
+	.course_lp_banner .banner_text .elementor-widget-video .elementor-widget-container {
+		width: calc(100% + 25px);
+		margin: 0 -15px;
+	}
+
+	.course_lp_testimonial .testimonial_column {
+		background: #f1f3f4;
+		padding: 60px 25px 25px;
+		box-shadow: none;
+	}
+
+	.course_lp_testimonial .testimonial_column:before {
+		top: 15px;
+		left: 25px;
+	}
+
+	.course_lp_testimonial .testimonial_column:after {
+		bottom: 20px;
+		right: 25px;
+	}
+
+	.course_list .course_list_box_content .box_content {
+		width: 100%;
+	}
+
+	/* Annual Report 2022 Page CSS - Start */
+	.annual_repo_banner_section .text_column .text_column_title h2 {
+		max-width: 260px;
+	}
+
+	.annual_repo_banner_section .text_column .text_column_title h2 br {
+		display: block;
+	}
+
+	.annual_repo_icon_with_text .elementor-container .icon_box {
+		width: auto;
+		text-align: center;
+		max-width: 50%;
+	}
+
+	.annual_repo_icon_with_text .elementor-container .icon_box:last-of-type {
+		max-width: 100%;
+	}
+
+	.annual_repo_progress_section .progress_section .progress_section_title h2 {
+		font-size: 28px;
+		line-height: 37px;
+		margin-bottom: 20px;
+	}
+
+	.annual_repo_progress_section .progress_section .progress_bar_container .pb_column_box {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.annual_repo_progress_section .progress_section .progress_bar_container .pb_column_box:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.annual_repo_progress_section .progress_section .progress_bar_container .pb_column_box .pb_box_bottom {
+		max-width: 100% !important;
+		margin-top: 40px;
+	}
+
+	.annual_repo_spon .spon_column {
+		margin-right: 0;
+		max-width: 100%;
+		width: 100% !important;
+	}
+
+	.annual_repo_spon .spon_column .elementor-widget-container {
+		text-align: center;
+	}
+
+	.annual_testimonials .elementor-container {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.annual_testimonials .testimonial_column .testimonial_column_inner_section .text_box {
+		max-width: 100%;
+		padding-left: 0;
+		margin-top: 10px;
+	}
+
+	.entry_level_templates .templates_column .templates_inner_section .templates_form_row .elementor-widget-wrap {
+		padding: 20px 15px;
+	}
+
+	.entry_level_templates .templates_column .templates_inner_section .templates_job_row .elementor-widget-wrap {
+		margin-right: auto;
+		margin-top: 40px;
+	}
+
+	/* Training Page */
+	.training_page_new .training_content {
+		margin: -10px 0px 0;
+	}
+
+	.training_page_new .training_page_poster .poster_right .elementor-widget-wrap .custom_slider {
+		margin: 0;
+		padding-bottom: 20px;
+	}
+
+	/* Courses Product Page CSS */
+	.courses_product_page .courses_product_left_side,
+	.courses_product_page .courses_product_right_side {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.courses_product_page .courses_product_left_side,
+	.courses_product_page .courses_product_right_side .mobile_product_review_price,
+	.courses_product_page .courses_product_right_side .product_form a.moc_single_add_to_cart_button {
+		order: 2;
+	}
+
+	.courses_product_page .courses_product_right_side,
+	.courses_product_page .courses_product_right_side .product_title,
+	.courses_product_page .courses_product_right_side .product_form button.single_checkout_button {
+		order: 1;
+	}
+
+	.courses_product_page .courses_product_right_side .mobile_part {
+		display: block;
+	}
+
+	.courses_product_page .courses_product_right_side .video_box {
+		order: 3;
+		margin: 15px -10px 13px;
+		border-radius: 0;
+	}
+
+	.courses_product_page .courses_product_right_side .video_box img {
+		border-radius: 0;
+	}
+
+	.courses_product_page .courses_product_right_side .product_icon_box {
+		order: 4;
+	}
+
+	.courses_product_page .courses_product_right_side .product_content {
+		order: 5;
+	}
+
+	.courses_product_page .courses_product_right_side .product_form {
+		order: 6;
+		margin-top: 15px;
+		gap: 10px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.courses_product_page .courses_product_right_side .product_review_price {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+
+	.courses_product_page .courses_product_right_side .product_title h2 {
+		font-size: 28px;
+		line-height: 37px;
+	}
+
+	.courses_product_page .courses_product_right_side .product_price .price,
+	.courses_product_page .courses_product_right_side .product_price .price ins {
+		font-size: 28px;
+		line-height: 37px;
+	}
+
+	.courses_product_page .courses_product_right_side .product_form button,
+	.courses_product_page .courses_product_right_side .product_form a {
+		margin-bottom: 0;
+		max-width: calc(50% - 5px) !important;
+		padding: 12px 10px !important;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_left_side {
+		max-width: 100%;
+		width: 100%;
+		padding-right: 0;
+		justify-content: center;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_left_side .author_content {
+		width: auto;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_right_side {
+		max-width: 100%;
+		width: 100%;
+		justify-content: center;
+		margin: 40px 0 0;
+		position: relative;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_right_side:after {
+		content: "";
+		border-bottom: 1px solid #edf3f3;
+		position: absolute;
+		left: -34px;
+		right: 0;
+		width: calc(100% + 70px);
+		top: -20px;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_right_side .right_side_brand_box {
+		flex-wrap: wrap;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_right_side .right_side_brand_box .brand_box {
+		width: calc(50% - 15px);
+	}
+
+	/* Hiring Page CSS */
+	.hiring_program_offer .membership_table .subscribe_table {
+		padding: 45px 0 30px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum {
+		max-width: 66% !important;
+		margin-right: 5px !important;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.free_colum,
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.pro_colum,
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.lifetime_colum,
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.role_colum,
+	.hiring_program_offer .membership_table .subscribe_table .global_cloum.annual_colum {
+		max-width: 32% !important;
+		margin-right: 0 !important;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr .body_colum:first-child {
+		padding: 5px 5px 5px 15px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr .body_colum {
+		padding: 5px 0px 5px 0px;
+		text-align: center;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr:last-of-type {
+		margin-top: 0;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_heading h2 {
+		font-size: 28px;
+		line-height: 37px;
+		max-width: 100%;
+		padding-right: 0;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_heading .heading_btn {
+		display: none;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_head {
+		width: 100%;
+		overflow: auto;
+		flex-wrap: nowrap;
+		gap: 15px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .head_colum.free_colum,
+	.hiring_program_offer .membership_table .subscribe_table .head_colum.pro_colum,
+	.hiring_program_offer .membership_table .subscribe_table .head_colum.lifetime_colum,
+	.hiring_program_offer .membership_table .subscribe_table .head_colum.global_cloum.role_colum,
+	.hiring_program_offer .membership_table .subscribe_table .head_colum.global_cloum.annual_colum {
+		max-width: initial !important;
+		background: transparent;
+		box-shadow: none;
+	}
+
+	.hiring_program_offer.subscribe_plan_section .membership_table .subscribe_table .table_head a {
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 19px;
+		line-height: 25px;
+		white-space: nowrap;
+		width: auto;
+	}
+
+	.hiring_program_offer.subscribe_plan_section .membership_table .subscribe_table .table_head a.active {
+		background: #fa4a7a;
+		background: -webkit-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+		background: -moz-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+		background: -o-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+		background: linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-fill-color: transparent;
+	}
+
+	.hiring_program_offer.subscribe_plan_section .membership_table .subscribe_table .table_head a.active:after {
+		background: #fa4a7a;
+		background: -webkit-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+		background: -moz-linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+		background: linear-gradient(90deg, #fd4b7a -2.36%, #4d00ae 159.05%);
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr:last-of-type .empty_colum {
+		display: block !important;
+		padding: 5px;
+		z-index: 1;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr:last-of-type .empty_colum .heading_btn {
+		visibility: visible;
+		opacity: 1;
+		padding-top: 0px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr:last-of-type .empty_colum .heading_btn a {
+		font-weight: 400;
+		font-size: 16px;
+		max-width: 100%;
+		padding: 10px 5px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr:last-of-type .body_colum {
+		padding-bottom: 30px;
+		padding-top: 15px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr:last-of-type .body_colum a {
+		font-weight: 400;
+		font-size: 14px;
+		max-width: calc(100% - 10px);
+		padding: 10px 5px;
+	}
+
+	.hiring_posr_free_section .elementor-container {
+		padding: 22px 15px;
+	}
+
+	.hiring_posr_free_section .post_free_column.post_free_column_one,
+	.hiring_posr_free_section .post_free_column .elementor-widget-text-editor p,
+	.hiring_posr_free_section .post_free_column.post_free_column_two {
+		max-width: 100%;
+	}
+
+	.hiring_posr_free_section .post_free_column.post_free_column_two {
+		margin-top: 30px;
+	}
+
+	.hiring_video_section .video_section_column.video_section_column_one .elementor-widget-heading h2 {
+		padding-left: 20px;
+		margin-bottom: 5px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr:last-child .body_colum {
+		padding-bottom: 20px;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr .body_colum:first-of-type .btn {
+		width: 100%;
+	}
+
+	.hiring_program_offer .membership_table .subscribe_table .table_body .table_tr .btn {
+		width: calc(100% - 10px);
+	}
+
+	.forget_password_page .form_text_part .elementor-widget-heading {
+		margin-bottom: 8px;
+	}
+
+	.forget_password_page .form_text_part form {
+		margin: 0 auto;
+	}
+
+	/* Dynamic Blocks */
+	.dynamic_blocks_logos.marketingops-five .marketingops-five-row .elementor-section .elementor-container {
+		justify-content: center;
+	}
+
+	.dynamic_blocks_process .process_inner_section {
+		margin-bottom: 15px;
+	}
+
+	.dynamic_blocks_process .process_inner_section:after {
+		margin: 0 0;
+		left: 55px;
+	}
+
+	.dynamic_blocks_process .process_inner_section .process_box_content.process_empty_box {
+		display: none;
+	}
+
+	.dynamic_blocks_process .process_inner_section .process_box_number {
+		order: 1;
+	}
+
+	.dynamic_blocks_process .process_inner_section .process_box_content {
+		max-width: calc(100% - 111px);
+		order: 2;
+	}
+
+	.dynamic_blocks_process .process_inner_section .process_box_content .elementor-widget-wrap {
+		align-content: center;
+	}
+
+	.dynamic_blocks_founding_member.founding_community_section .elementor-container {
+		flex-direction: row;
+	}
+
+	.dynamic_blocks_founding_member.founding_community_section .content_box {
+		margin-bottom: 0px;
+	}
+
+	.dynamic_blocks_gallery.summer_camp_image_gallery .summer_camp_image_gallery_container .summer_gallery_title h2 {
+		max-width: 100%;
+	}
+
+	.dynamic_blocks_one.annual_repo_banner_section .text_column .text_column_title h2,
+	.dynamic_block_left.annual_repo_banner_section .text_column .text_column_title h2 {
+		max-width: 100%;
+	}
+
+	.popup.moc_moops_tv_popup .popup_content {
+		max-height: calc(100vh - 150px);
+	}
+
+	/* Memeber Overview Page */
+	.moc_mo_banner .moc_mo_banner_text_column {
+		padding-top: 10px;
+	}
+
+	.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-heading,
+	.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-button {
+		text-align: left;
+	}
+
+	.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-heading {
+		margin-bottom: 8px;
+	}
+
+	.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-text-editor {
+		margin-bottom: 15px;
+	}
+
+	.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-button a {
+		max-width: 202px;
+	}
+
+	.moc_mo_partnership .marketingops-five-row .moc_mo_partner_logos .elementor-container {
+		gap: 15px;
+		row-gap: 30px;
+	}
+
+	.moc_mo_partnership .marketingops-five-row .elementor-section .elementor-column {
+		width: calc(33.33% - 10px);
+	}
+
+	.moc_mo_experience .moc_mo_ex_text_column {
+		max-width: 336px;
+		width: 100%;
+	}
+
+	.moc_mo_membership.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-heading {
+		margin-bottom: 10px;
+	}
+
+	.moc_mo_membership.moc_mo_banner .moc_mo_banner_text_column .elementor-widget-text-editor p {
+		margin-bottom: 14px;
+	}
+
+	.moc_mo_member_program {
+		margin-bottom: -100px;
+	}
+
+	.moc_mo_member_program::before {
+		height: 100%;
+		background-image: url('/wp-content/themes/marketingops/images/memeber_overview/mp_bg_mobile.svg');
+	}
+
+	.moc_mo_member_program .moc_mo_mp_column .elementor-widget-heading {
+		margin-bottom: 17px;
+	}
+
+	.moc_mo_member_program .moc_mo_mp_column .moc_mo_mp_icon_list ul {
+		gap: 10px;
+		row-gap: 10px;
+		justify-content: flex-start;
+	}
+
+	.moc_mo_member_program .moc_mo_mp_column .moc_mo_mp_icon_list ul li {
+		padding: 10px 10px 15px;
+		width: calc(50% - 5px);
+		gap: 10px;
+	}
+
+	.moc_mo_member_program .moc_mo_mp_column .moc_mo_mp_inner_section {
+		width: calc(100% + 20px);
+		margin: 0 -10px;
+	}
+
+	.moc_mo_member_program .moc_mo_mp_column .moc_mo_mp_inner_section .inner_section_column {
+		border-radius: 0;
+		border-top-right-radius: 40px;
+		padding: 33px 10px;
+	}
+
+	.moc_mo_member_program .moc_mo_mp_column .moc_mo_mp_inner_section .inner_section_column .elementor-widget-button a {
+		max-width: 213px;
+		padding: 8px 20px;
+	}
+
+	/* Post Your Job */
+	.page-id-161517 .page-header h1 {
+		font-size: 28px;
+		line-height: 39px;
+	}
+
+	.page-id-161517 .pyj_desc .pyj_desc_box {
+		flex-direction: column;
+	}
+
+	.pyj_login_form {
+		gap: 15px;
+	}
+
+	.pyj_login_form fieldset .account-sign-in {
+		row-gap: 12px;
+	}
+
+	.page-id-161517 .form_box h2 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+	.page-id-161517 .form_box,
+	.pyj_login_form {
+		padding: 20px 15px;
+	}
+}
+
+@media only screen and (max-width: 599px) {
+	/* Dynamic Blocks */
+	.dynamic_blocks_events_timing .events_timing_inner_section .events_timing_inner_title,
+	.dynamic_blocks_events_timing .events_timing_inner_section .events_timing_inner_content {
+		max-width: 500px;
+		width: 100%;
+	}
+
+	.dynamic_blocks_founding_member.founding_community_section .elementor-container {
+		flex-direction: column;
+	}
+
+	.hiring_video_section .partner_page_title h2 {
+		max-width: 280px;
+	}
+	
+	/* Memeber Overview Page */
+	.moc_mo_member_program .moc_mo_mp_column .moc_mo_mp_inner_section .inner_section_column .elementor-widget-heading {
+		max-width: 238px;
+		margin: 0 auto 11px;
+	}
+
+	/* Subscription Page */
+	.subscription_body .cart_page_container .box_content .box_body .body_content.box_3 {
+		width: 100% !important;
+	}
+	.dont_run_alone{    margin-top: 25px !important;}
+	.dont_run_alone::after{top: -30px !important;}
+}
+
+@media only screen and (max-width: 575px) {
+	/* Footer Bottom Tooltip */
+	.custom_login_popup .custom_login_toolip_box .clt_box_content {
+		width: 100%;
+		padding-right: 0;
+	}
+	
+	.page-id-162337 .site-main {
+		max-width: 500px;
+	}
+
+	/* Popup CSS */
+	.moc_confirmation_popup .moc_confirmation_popup_content {
+		padding: 30px 50px 40px 20px;
+	}
+
+	.moc_confirmation_popup .moc_confirmation_popup_content .box_btn .btn {
+		max-width: 110px;
+	}
+
+	.moc_confirmation_popup .moc_confirmation_popup_content .box_btn .moc_confirmation_popup_no {
+		margin-left: 5px;
+	}
+
+	/* Banner CSS */
+	.old_banner.custom-banner.custom-banner rs-slides .rev_row_zone_top {
+		z-index: 99999 !important;
+	}
+	.old_banner.custom-banner.custom-banner rs-layer-wrap rs-mask-wrap {
+		top: inherit !important;
+		right: -30px;
+		bottom: -38px;
+		width: 100%;
+		z-index: 9999;
+	}
+
+	.old_banner.custom-banner.custom-banner rs-layer-wrap rs-mask-wrap rs-layer {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.old_banner.custom-banner.custom-banner rs-layer-wrap rs-loop-wrap rs-mask-wrap .custom-banner-cha-img {
+		margin-top: 328px !important;
+	}
+
+	.old_banner.custom-banner.custom-banner rs-layer-wrap rs-loop-wrap rs-mask-wrap .custom-banner-cha-img img {
+		width: auto !important;
+		max-width: calc(100% - 10px) !important;
+		height: initial !important;
+		object-fit: contain !important;
+		top: -22px !important;
+		transform: none !important;
+		right: 10px;
+	}
+
+	.home_mops_apalooza {
+		margin-top: 0 !important;
+	}
+
+	body .member_directory_container .moc_members_count_value_div .moc_jobs_search_keyword:after,
+	.searchjobs .job_search_row .jobsearch form .moc_jobs_count_value_div .moc_jobs_search_keyword:after,
+	.searchjobs .job_search_row .jobsearch form .moc_jobs_count_value_div .moc_jobs_search_keyword,
+	.searchjobs .elementor-background-overlay {
+		display: none;
+	}
+
+	.section_box_1 {
+		padding-bottom: 10px;
+	}
+
+	.section_box_1 .access_section {
+		padding: 0 10px;
+	}
+
+	.section_box_1 .access_section .elementor-widget-wrap {
+		background: linear-gradient(180deg, #f1f3f4 57.87%, rgba(241, 243, 244, 0) 95.57%) !important;
+		border-radius: 45px !important;
+	}
+
+	.section_box_1 .access_section .elementor-widget-wrap .elementor-widget-heading h2 {
+		font-size: 19px !important;
+		line-height: 26px !important;
+	}
+
+	.section_box_1 .access_section .elementor-widget-wrap .elementor-widget-text-editor p {
+		margin-bottom: -25px;
+		font-size: 14px;
+		line-height: 20px;
+		position: relative;
+		z-index: 99;
+	}
+
+	.section_box_1 .access_section .research-wrap .elementor-widget-wrap {
+		background: none !important;
+		border-radius: 18px !important;
+	}
+
+	.section_box_1 .access_section .research-wrap .section_box_1_box .elementor-button-wrapper {
+		margin-bottom: -13px;
+	}
+
+	.section_box_1 .access_section .research-wrap .section_box_1_box .elementor-button-wrapper a {
+		padding: 18px 20px !important;
+		margin-top: -10px;
+	}
+
+	.section_box_1 .access_section .research-wrap .section_box_1_box .elementor-button-wrapper a,
+	.section_box_1 .access_section .research-wrap .section_box_1_box .elementor-button-wrapper a span {
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+	.section_box_1 .access_section .research-wrap .elementor-widget-text-editor p {
+		margin-bottom: -40px;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .lefttext {
+		width: 50% !important;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .rightbtn {
+		margin-left: 0;
+		position: relative;
+		top: initial;
+		width: 50% !important;
+		margin-top: 0px;
+		text-align: right;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .rightbtn a .elementor-button-icon {
+		left: -18px;
+	}
+
+	.fjobs .job_listings li.job_listing.job_position_featured {
+		width: calc(100% - 20px);
+	}
+
+	.job_search_page .job_search_row .jobsearch form .moc_input_field:after,
+	body .member_directory_container .moc_input_field:after {
+		background-size: 25px;
+		width: 25px;
+		height: 28px;
+		left: 18px;
+	}
+
+	.job_search_page .job_search_row .jobsearch form input#search_keywords,
+	body .member_directory_container input[type="search"] {
+		padding: 15px 20px 15px 55px !important;
+		border-radius: 15px;
+	}
+
+	.common_filter_row .directory_search_form {
+		padding-bottom: 0px;
+	}
+
+	body .member_directory_container .moc_members_count_value_div {
+		left: 0 !important;
+		position: absolute;
+		transform: none;
+		top: 70px;
+		z-index: initial;
+		width: 100%;
+		text-align: left;
+	}
+
+	body .member_directory_container .moc_members_count_value_div .moc_jobs_search_keyword {
+		position: absolute;
+		left: 60px;
+		z-index: -2;
+		top: -53px;
+	}
+
+	body .member_directory_container .moc_members_count_value_div .moc_members_count_value,
+	.searchjobs .job_search_row .jobsearch form .moc_jobs_count_value_div .moc_jobs_count_value {
+		font-family: "open_sanssemibold";
+		color: #000;
+	}
+
+	.member_directory_container .moc_input_field {
+		margin-bottom: 30px;
+	}
+
+	.directory_main_div .directory_result_div .members_directory li,
+	.directory_main_div .directory_result_div .members_directory li .memberright .membermeta,
+	.directory_main_div .directory_result_div .members_directory li .memberright .membermeta span {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.footer_custom .footer_nav {
+		width: 50% !important;
+	}
+
+	.footer_custom .footer_nav .elementor-widget-wrap {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.footer_custom .footer_nav .elementor-widget-wrap ul li a {
+		padding: 0px 0;
+		margin-bottom: 15px;
+	}
+
+	.footer-newsletter .elementor-widget-wrap .elementor-element .elementor-element,
+	.post_featured_job .job_manager .job_listings li,
+	.posts-newsletter form {
+		width: 100% !important;
+	}
+
+	.footer_custom .footer_social .elementor-social-icons-wrapper {
+		justify-content: flex-start !important;
+	}
+
+	.footer_custom .footer_social .elementor-social-icons-wrapper .elementor-icon i {
+		font-size: 26px;
+	}
+
+	.footer_custom .footer_social .elementor-social-icons-wrapper .elementor-icon {
+		margin-right: 8px;
+		height: auto;
+	}
+
+	.footer_custom .footer_social .elementor-social-icons-wrapper .elementor-icon svg {
+		width: 22px;
+		height: auto;
+	}
+
+	.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .rightbtn a {
+		width: 100%;
+		padding: 12px 5px;
+		font-size: 14px;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comapply .application_details {
+		left: auto;
+		right: auto;
+		width: 100%;
+	}
+
+	.job_listing .single_job_listing .eachjobdetail .comapply .application_details:after,
+	.job_listing .single_job_listing .eachjobdetail .comapply .application_details:before {
+		left: 80px;
+	}
+
+	.posts-newsletter form .hs-error-msgs,
+	.posts-newsletter form .hs-error-msgs label.hs-error-msg {
+		position: relative;
+		bottom: 0px;
+	}
+
+	.posts-newsletter form .hs-error-msgs label.hs-error-msg {
+		bottom: -10px;
+	}
+
+	.page-id-163077 .job_search_page .job_search_row .jobsearch form .moc_input_field input#search_keywords {
+		padding-right: 15px !important;
+	}
+
+	.job_search_page .job_search_row .jobsearch form .moc_conditional_checkbox {
+		right: initial;
+		left: 0;
+		top: 68px;
+		transform: none;
+		max-width: 50%;
+	}
+
+	.page-id-163077 .job_search_page .job_search_row .jobsearch form .moc_input_field .moc_jobs_count_value_div {
+		left: initial !important;
+		right: 0;
+		max-width: 50%;
+		width: 100%;
+		text-align: right;
+	}
+
+	.training_content {
+		margin: 20px -10px 0;
+	}
+
+	.training_page_new .training_content {
+		margin: -10px 5px 0;
+	}
+
+	.traning_mark_ops .traning_mark_ops_left .common_filter_row {
+		width: 50%;
+	}
+
+	.email-otp .email-otp-container .email-otp-title .gradient-title {
+		max-width: 300px;
+	}
+
+	.email-otp .email-otp-container .email-otp-title h3 {
+		font-size: 21px;
+		line-height: 29px;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	.email-otp .email-otp-container .form-container {
+		max-width: 290px;
+	}
+
+	.email-otp .email-otp-container .form-container .colum-box-2 {
+		margin-top: 10px;
+	}
+
+	/* Partners Page CSS */
+	.partner_testimonials,
+	.membership_section {
+		padding-top: 35px !important;
+		padding-bottom: 0 !important;
+		margin-bottom: -50px;
+	}
+
+	.partner_testimonials:before,
+	.membership_section:before,
+	.mistakes_guest_share:before {
+		background-image: url('/wp-content/themes/marketingops/images/partner_page/partner_testimonials_mobile_bg.png');
+		height: 59px;
+	}
+
+	.partner_testimonials .elementor-container {
+		position: relative;
+		z-index: 1;
+	}
+
+	/* NO BS Partner */
+	.no_bs_partner .no_bs_container .no_bs_content_box .box_container .box_content .content_container {
+		padding: 30px 20px;
+	}
+
+	.no_bs_partner .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content .bs_btn {
+		flex-direction: column;
+	}
+
+	.no_bs_partner .no_bs_container .no_bs_content_box .box_container .box_content .content_container .img_box,
+	.no_bs_partner .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content {
+		max-width: 100%;
+	}
+
+	.no_bs_partner .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content {
+		margin-top: 20px;
+	}
+
+	.no_bs_partner .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content .site_link_verify,
+	.no_bs_partner .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content .bs_btn,
+	.no_bs_partner .no_bs_container .no_bs_content_box .box_container .box_content .content_container .bs_content {
+		justify-content: center;
+		text-align: center;
+	}
+
+	/* Summer Camp Product Page CSS */
+	.summer_camp_product_page .product_page_inner_section .product_price,
+	.summer_camp_product_page .product_page_inner_section .product_ratings {
+		width: 100%;
+	}
+
+	.summer_camp_product_page .product_page_inner_section .product_ratings {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.normal_product_page .product_page_inner_section .product_ratings {
+		margin-bottom: 30px;
+	}
+
+	/* Profile Page CSS */
+	.profile_page .profile_content .content_box .profile_member .box_content .sub_title_with_content .moc_profile_member_content .profile_member_btn a {
+		max-width: 35%;
+		width: 100%;
+		line-height: 15px;
+		padding: 4px 10px 7px;
+	}
+
+	.profile_page .profile_content .content_box .profile_member .box_content .sub_title_with_content .moc_profile_member_content .profile_member_btn a:first-of-type {
+		max-width: 60%;
+		width: 100%;
+	}
+
+	.profile_page .profile_content .content_box .profile_member .box_content .sub_title_with_content .moc_profile_member_content .profile_content_box {
+		margin: 25px 0 25px 28px;
+		padding: 6px 0;
+		padding-left: 33px;
+	}
+
+	.profile_page .profile_content .content_box .profile_member .box_content .sub_title_with_content .moc_profile_member_content .profile_content_box .member_badge {
+		left: -28px;
+	}
+
+	/* Subscribe Page CSS */
+	.membership_table .subscribe_table .table_head a {
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+		font-size: 16px;
+		line-height: initial;
+	}
+
+	/* Mistakes Page CSS */
+	.mistakes_guest_share {
+		padding: 45px 15px 0;
+		margin-top: 15px;
+	}
+
+	.mistakes_section_header .section_row .mistakes_inner_section .elementor-column {
+		width: 100%;
+		text-align: center;
+	}
+
+	.mistakes_section_header .section_row .mistakes_inner_section .elementor-column.row_text {
+		margin: 5px 0px;
+	}
+
+	.mistakes_section_header .section_row .mistakes_header_text p {
+		max-width: 250px;
+		margin: 0 auto;
+	}
+
+	.mistakes_episodes .mistakes_episodes_section .episodes_container .episodes_box {
+		margin-top: 25px;
+	}
+
+	.mistakes_episodes .section_row .box_btn {
+		margin-top: 5px;
+	}
+
+	/* Give Away Page CSS */
+	.marketingops-three .marketingops-two-coum-box .marketingops-two-coum .marketingops-two-coum-para {
+		max-width: 300px;
+	}
+
+	/* User Profile Page CSS */
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row.form_btn {
+		justify-content: center;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row.form_btn button {
+		padding: 10px 20px;
+		margin-right: 10px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link .input_box input {
+		margin: 5px 0 10px;
+		padding-right: 0;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link .input_box .input_btn_box {
+		max-width: 100%;
+		justify-content: flex-end;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container {
+		padding-bottom: 0;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .post-content-wp-editor-container .quicktags-toolbar {
+		flex-wrap: wrap;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .post-content-wp-editor-container .quicktags-toolbar input {
+		width: calc(25% - 4px);
+	}
+
+	/* Course Pre-Register LP Page CSS - Start */
+	.course_lp_automation_game .banner_text h2 {
+		word-break: break-word;
+		display: inline-block;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.course_lp_automation_game .banner_text h2 span {
+		display: inline;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_right_side .right_side_brand_box .brand_box {
+		width: calc(100%);
+	}
+
+	.courses_review .review_box {
+		padding: 25px;
+	}
+
+	.courses_review .review_box h3 {
+		font-size: 21px;
+		line-height: 29px;
+	}
+
+	.courses_review .review_box form .review_box_btn_textarea .form-submit {
+		justify-content: flex-start;
+		margin: 8px 0 0;
+	}
+
+	/* Memeber Overview Page */
+	.moc_mo_partnership .marketingops-five-row .elementor-section .elementor-column {
+		width: calc(50% - 8px);
+	}
+
+	/* Post Your Job */
+	.pyj_login_form fieldset,
+	.page-id-161517 .form_box fieldset {
+		width: 100% !important;
+	}
+
+	.page-id-161517 .form_box fieldset.fieldset-application,
+	.page-id-161517 .form_box fieldset.fieldset-company_name {
+		margin-top: 0;
+	}
+
+	/* MOP Job Post Product Page CSS */
+	.mop_job_post .courses_product_page .courses_product_right_side .right_side_box,
+	.mop_job_post .courses_product_page .courses_product_right_side .course_product_review_price_icon,
+	.mop_job_post .courses_product_page .courses_product_right_side .product_form{
+		justify-content: flex-start;
+		text-align: left;
+	}
+	
+}
+
+@media only screen and (max-width: 400px) {
+	.footer-section .hubspot_header {
+		position: relative;
+		left: -3px;
+	}
+
+	/* Cart CSS */
+	.cart_page_box .cart_page_container .cart_page_box .box_content {
+		padding: 15px 15px;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box .box_content .box_1 {
+		width: 50px;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box .box_content .box_2 {
+		width: calc(100% - 145px);
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box .box_content .box_3 {
+		width: 35px;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box .box_content .box_3 a {
+		width: 35px;
+		height: 35px;
+		background-size: contain;
+	}
+
+	.cart_page_box .cart_page_container .cart_page_box .box_content .box_4 {
+		width: 60px;
+		padding-left: 5px;
+	}
+
+	.traning_mark_ops .traning_mark_ops_left .common_filter_row {
+		width: 100%;
+	}
+
+	/* Subscription View Page CSS */
+	.subscription_body .cart_page_container .box_content .box_body .body_content {
+		width: 50% !important;
+	}
+
+	/* User Profile Page CSS */
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row.form_btn {
+		flex-direction: column;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row.form_btn button {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row.form_btn button:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .select2 .select2-selection .select2-search {
+		top: 10px;
+		transform: none;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row #tag_box .select2 .select2-selection {
+		padding-bottom: 45px;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row #tag_box .select2 .select2-selection__rendered {
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .input_box {
+		top: initial;
+		transform: none;
+		bottom: 15px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: auto;
+		text-align: center;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .parma_link .input_box .input_boxes span {
+		width: 100%;
+		text-align: left;
+		padding-right: 0;
+	}
+
+	.user_profile_blog .user_profile_right_side .blog_box_container .right_side_box_tab_contnet .tabbing_boxed_container .column_box.column_btn a {
+		display: inline-block;
+		margin-top: 40px;
+	}
+
+	/* Professor Signup CSS - Start */
+	.professor_signup_section_2 .section_2_three_column_row .three_column_inner_section .elementor-column.text_row_2 {
+		right: -30px;
+	}
+
+	.professor_signup_section_2 .section_2_text_row .elementor-widget-button a {
+		max-width: 252px;
+		line-height: 14px !important;
+	}
+
+	/* Courses Product Page CSS */
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_left_side {
+		padding: 0;
+	}
+
+	.courses_product_page .courses_product_left_side .left_side_bottom_box .bottom_box_container .bottom_box_left_side .author_content {
+		max-width: 100%;
+		padding: 10px 0 0;
+		text-align: center;
+	}
+
+	/* Events Index Page CSS */
+	.events_btn_section .elementor-widget-button a {
+		max-width: 229px;
+		padding: 8px 40px;
+	}
+	
+}
+
+@media only screen and (max-width: 357px) {
+	.professor_signup_section_5 .section_5_image_row .section_5_inner_section .inner_section_row {
+		padding: 0 13px;
+	}
+
+	/* Course Pre-Register LP Page CSS - Start */
+	.course_lp_automation_game .banner_form .form_author_section .elementor-container {
+		justify-content: center;
+	}
+
+	.course_lp_automation_game .banner_form .form_author_section .author_text {
+		width: 100%;
+		max-width: 100%;
+		padding-left: 0;
+		padding-top: 25px;
+		text-align: center;
+	}
+
+	/* Dynamic Blocks */
+	.dynamic_blocks_process .process_inner_section:after {
+		display: none;
+	}
+
+	.dynamic_blocks_process .process_inner_section .process_box_content {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.checkout_page_box .cart_page_container .cart_page_box .moc_checkout .checkout_review_order .order_row .review_order_content {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	
+}

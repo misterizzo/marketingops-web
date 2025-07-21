@@ -1,0 +1,4 @@
+.non-clickable {pointer-events: none;opacity: 0.5;}
+.cf-test-google-recaptcha-form .button {margin-top: 10px;}
+.notice.notice-success {color: green;}
+.notice.notice-error {color: red;}
