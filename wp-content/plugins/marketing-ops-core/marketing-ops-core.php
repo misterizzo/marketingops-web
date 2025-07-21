@@ -24,15 +24,10 @@
  * Domain Path:       /languages
  */
 
-use Automattic\WooCommerce\Admin\API\Reports\Categories\Query;
-
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-
-// error_reporting( E_ALL );
-// ini_set( 'display_errors', '1' );
 
 /**
  * Currently plugin version.
