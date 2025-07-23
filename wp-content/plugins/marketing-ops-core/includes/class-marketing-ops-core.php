@@ -369,6 +369,7 @@ class Marketing_Ops_Core {
 		$this->loader->add_action( 'woocommerce_account_project-templates_endpoint', $plugin_public, 'mops_woocommerce_account_project_templates_endpoint_callback' );
 		$this->loader->add_action( 'woocommerce_account_agency-profile_endpoint', $plugin_public, 'mops_woocommerce_account_agency_profile_endpoint_callback' );
 		$this->loader->add_action( 'woocommerce_account_platform-profile_endpoint', $plugin_public, 'mops_woocommerce_account_platform_profile_endpoint_callback' );
+		$this->loader->add_action( 'woocommerce_account_chapter-members_endpoint', $plugin_public, 'mops_woocommerce_account_chapter_members_endpoint_callback' );
 		$this->loader->add_action( 'woocommerce_account_my-articles-and-content_endpoint', $plugin_public, 'mops_woocommerce_account_my_articles_and_content_endpoint_callback' );
 		$this->loader->add_shortcode( 'apalooza_timer', $plugin_public, 'mops_apalooza_timer_callback' );
 		$this->loader->add_shortcode( 'moc_member_only_button', $plugin_public, 'mops_moc_member_only_button_callback' );

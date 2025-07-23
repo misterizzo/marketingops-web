@@ -5802,11 +5802,12 @@ class Marketing_Ops_Core_Public {
 	 * @since 1.0.0
 	 */
 	public function mops_woocommerce_get_query_vars_callback( $vars = array() ) {
-		$vars['premium-content']         = 'premium-content';
-		$vars['ld-certificates']         = 'ld-certificates';
-		$vars['project-templates']       = 'project-templates';
-		$vars['agency-profile']          = 'agency-profile';
-		$vars['platform-profile']        = 'platform-profile';
+		$vars['premium-content']   = 'premium-content';
+		$vars['ld-certificates']   = 'ld-certificates';
+		$vars['project-templates'] = 'project-templates';
+		$vars['agency-profile']    = 'agency-profile';
+		$vars['platform-profile']  = 'platform-profile';
+		$vars['chapter-members']   = 'chapter-members';
 
 		return $vars;
 	}
@@ -5826,6 +5827,7 @@ class Marketing_Ops_Core_Public {
 		$is_project_templates_endpoint       = isset( $wp_query->query_vars['project-templates'] ); // Is project templates endpoint.
 		$is_agency_profile_endpoint          = isset( $wp_query->query_vars['agency-profile'] ); // Is agency profile endpoint.
 		$is_platform_profile_endpoint        = isset( $wp_query->query_vars['platform-profile'] ); // Is platform profile endpoint.
+		$is_chapter_members_endpoint         = isset( $wp_query->query_vars['chapter-members'] ); // Is chapter members endpoint.
 		$is_my_articles_and_content_endpoint = isset( $wp_query->query_vars['my-articles-and-content'] ); // Is my articles and content endpoint.
 
 		// Premium content endpoint title.
@@ -5859,6 +5861,13 @@ class Marketing_Ops_Core_Public {
 		// Platform profile endpoint title.
 		if ( $is_platform_profile_endpoint && ! is_admin() && is_main_query() && in_the_loop() && is_account_page() ) {
 			$title = __( 'Platform Profile', 'marketingops' );
+
+			remove_filter( 'the_title', array( $this, 'mops_the_title_callback' ) );
+		}
+
+		// Chapter members endpoint title.
+		if ( $is_chapter_members_endpoint && ! is_admin() && is_main_query() && in_the_loop() && is_account_page() ) {
+			$title = __( 'Chapter Members', 'marketingops' );
 
 			remove_filter( 'the_title', array( $this, 'mops_the_title_callback' ) );
 		}
@@ -5909,6 +5918,15 @@ class Marketing_Ops_Core_Public {
 	 */
 	public function mops_woocommerce_account_platform_profile_endpoint_callback() {
 		include_once 'partials/templates/woocommerce/myaccount/platform-profile.php';
+	}
+
+	/**
+	 * Template for customer dashboard - chapter members.
+	 *
+	 * @since 1.0.0
+	 */
+	public function mops_woocommerce_account_chapter_members_endpoint_callback() {
+		include_once 'partials/templates/woocommerce/myaccount/chapter-members.php';
 	}
 
 	/**
