@@ -3179,6 +3179,7 @@ class Marketing_Ops_Core_Public {
 		$first_name        = $posted_array['first_name'];
 		$last_name         = $posted_array['last_name'];
 		$location          = $posted_array['location'];
+		$nearest_metro     = $posted_array['nearest_metro'];
 		$profetional_title = $posted_array['profetional_title'];
 		$wiypm             = $posted_array['wiypm'];
 		$yimo              = $posted_array['yimo'];
@@ -3247,6 +3248,7 @@ class Marketing_Ops_Core_Public {
 				update_user_meta( $user_id, 'billing_country', $location );
 				update_user_meta( $user_id, 'shipping_country', $location );
 				update_user_meta( $user_id, 'country', $location );
+				update_user_meta( $user_id, 'nearest_metro', $nearest_metro );
 				update_user_meta( $user_id, 'profetional_title', $profetional_title );
 				update_user_meta( $user_id, 'experience', $wiypm );
 				update_user_meta( $user_id, 'experience_years', $yimo );
@@ -3276,6 +3278,7 @@ class Marketing_Ops_Core_Public {
 			update_user_meta( $user_id, 'billing_country', $location );
 			update_user_meta( $user_id, 'shipping_country', $location );
 			update_user_meta( $user_id, 'country', $location );
+			update_user_meta( $user_id, 'nearest_metro', $nearest_metro );
 			update_user_meta( $user_id, 'profetional_title', $profetional_title );
 			update_user_meta( $user_id, 'experience', $wiypm );
 			update_user_meta( $user_id, 'experience_years', $yimo );

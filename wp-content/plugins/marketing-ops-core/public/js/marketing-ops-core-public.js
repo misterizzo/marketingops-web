@@ -3034,7 +3034,6 @@ jQuery( document ).ready( function( $ ) {
 			success: function( response ) {
 				if ( 'major-metros-found' === response.data.code ) {
 					var major_metros = response.data.major_metros;
-					console.log( 'major_metros', major_metros );
 					var options = '<option value="">What metropolitan area you are most near?</option>';
 					$.each( major_metros, function( index, metro_name ) {
 						options += '<option value="' + metro_name + '">' + metro_name + '</option>';
@@ -3045,9 +3044,7 @@ jQuery( document ).ready( function( $ ) {
 			complete: function() {
 				unblock_element( $( '.loader_bg' ) );
 			}
-		});
-
-		console.log( 'Country Code: ' + country_code );
+		} );
 	} );
 	
 	// Save the final profile information.
@@ -3058,6 +3055,7 @@ jQuery( document ).ready( function( $ ) {
 		var first_name        = $( 'input[name="moc_first_name"]' ).val();
 		var last_name         = $( 'input[name="moc_last_name"]' ).val();
 		var location          = $( '#moc_location' ).val();
+		var nearest_metro     = $( '#nearest_major_metro' ).val();
 		var profetional_title = $( 'input[name="moc_pro_text"]' ).val();
 		var wiypm             = $( '#moc_what_is_your_map' ).val();
 		var yimo              = $( '#moc_years_in_marketing_operation' ).val();
@@ -3123,6 +3121,7 @@ jQuery( document ).ready( function( $ ) {
 			formData.append( 'first_name', first_name );
 			formData.append( 'last_name', last_name );
 			formData.append( 'location', location );
+			formData.append( 'nearest_metro', nearest_metro );
 			formData.append( 'profetional_title', profetional_title );
 			formData.append( 'wiypm', wiypm );
 			formData.append( 'yimo', yimo );

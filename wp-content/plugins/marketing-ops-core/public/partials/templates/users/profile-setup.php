@@ -59,17 +59,15 @@ $member_plan_obj      = moc_get_membership_plan_object();
 $major_metros         = get_field( 'major_metros', 'option' );
 $major_metros_list    = array();
 
-if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) {
-	// Prepare the major metros list based on the location.
-	if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
-		// Loop through each metro and check if the location matches.
-		foreach ( $major_metros as $metro_data ) {
-			$country_code = ( ! empty( $metro_data['country_code'] ) ) ? $metro_data['country_code'] : '';
+// Prepare the major metros list based on the location.
+if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
+	// Loop through each metro and check if the location matches.
+	foreach ( $major_metros as $metro_data ) {
+		$country_code = ( ! empty( $metro_data['country_code'] ) ) ? $metro_data['country_code'] : '';
 
-			// If the country code matches the location, add to the list.
-			if ( ! empty( $location ) && $country_code === $location ) {
-				$major_metros_list = array_column( $metro_data['metros'], 'metro_name' );
-			}
+		// If the country code matches the location, add to the list.
+		if ( ! empty( $location ) && $country_code === $location ) {
+			$major_metros_list = array_column( $metro_data['metros'], 'metro_name' );
 		}
 	}
 }
@@ -194,22 +192,20 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 						</div>
 					</div>
 
-					<?php if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) { ?>
-						<!-- form row -->
-						<div class="form_row">
-							<!-- input with error -->
-							<div class="content_boxed required">
-								<select id="nearest_major_metro" class="<?php echo esc_attr( $wipm_selected ); ?>">
-									<option value=""><?php esc_html_e( 'What metropolitan area you are most near?', 'marketingops' ); ?></option>
-									<?php if ( ! empty( $major_metros_list ) && is_array( $major_metros_list ) ) { ?>
-										<?php foreach ( $major_metros_list as $metro_name ) { ?>
-											<option value="<?php echo esc_attr( $metro_name ); ?>"><?php echo esc_html( $metro_name ); ?></option>
-										<?php } ?>
+					<!-- form row -->
+					<div class="form_row">
+						<!-- input with error -->
+						<div class="content_boxed required">
+							<select id="nearest_major_metro" class="<?php echo esc_attr( $wipm_selected ); ?>">
+								<option value=""><?php esc_html_e( 'What metropolitan area you are most near?', 'marketingops' ); ?></option>
+								<?php if ( ! empty( $major_metros_list ) && is_array( $major_metros_list ) ) { ?>
+									<?php foreach ( $major_metros_list as $metro_name ) { ?>
+										<option value="<?php echo esc_attr( $metro_name ); ?>"><?php echo esc_html( $metro_name ); ?></option>
 									<?php } ?>
-								</select>
-							</div>
+								<?php } ?>
+							</select>
 						</div>
-					<?php } ?>
+					</div>
 
 					<!-- form row -->
 					<div class="form_row">
