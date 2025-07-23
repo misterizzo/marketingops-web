@@ -58,6 +58,7 @@ $jsd_selected_class   = ! empty( $job_seeker_details ) ? 'moc_change_selection' 
 $member_plan_obj      = moc_get_membership_plan_object();
 $major_metros         = get_field( 'major_metros', 'option' );
 $major_metros_list    = array();
+$user_nearest_metro   = get_user_meta( $user_id, 'nearest_metro', true );
 
 // Prepare the major metros list based on the location.
 if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
@@ -199,8 +200,10 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							<select id="nearest_major_metro" class="<?php echo esc_attr( $wipm_selected ); ?>">
 								<option value=""><?php esc_html_e( 'What metropolitan area you are most near?', 'marketingops' ); ?></option>
 								<?php if ( ! empty( $major_metros_list ) && is_array( $major_metros_list ) ) { ?>
-									<?php foreach ( $major_metros_list as $metro_name ) { ?>
-										<option value="<?php echo esc_attr( $metro_name ); ?>"><?php echo esc_html( $metro_name ); ?></option>
+									<?php foreach ( $major_metros_list as $metro_name ) {
+										$selected_metro = ( ! empty( $user_nearest_metro ) && $user_nearest_metro === $metro_name ) ? 'selected' : '';
+										?>
+										<option value="<?php echo esc_attr( $metro_name ); ?>" <?php echo $selected_metro; ?>><?php echo esc_html( $metro_name ); ?></option>
 									<?php } ?>
 								<?php } ?>
 							</select>
