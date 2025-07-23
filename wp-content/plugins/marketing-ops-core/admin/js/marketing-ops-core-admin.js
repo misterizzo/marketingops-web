@@ -47,7 +47,7 @@ jQuery( document ).ready( function ( $ ) {
 					var states = response.data.states;
 					var options = '<option value="">' + select_state + '</option>';
 					$.each( states, function( index, state ) {
-						options += '<option value="' + state.code + '">' + state.name + '</option>';
+						options += '<option value="' + index + '">' + state + '</option>';
 					} );
 					$( '#acf-field_6880d5af8b204' ).html( options );
 				}
