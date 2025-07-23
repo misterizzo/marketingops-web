@@ -6724,10 +6724,10 @@ class Marketing_Ops_Core_Public {
 	 * @since 1.0.0
 	 */
 	public function mops_get_major_metros_callback() {
-		$country_code = filter_input( INPUT_POST, 'country_code', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+		$location = filter_input( INPUT_POST, 'country_code', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 
 		// Return, if country code is empty.
-		if ( empty( $country_code ) ) {
+		if ( empty( $location ) ) {
 			wp_send_json_error(
 				array(
 					'code'    => 'country-code-empty',
@@ -6738,16 +6738,27 @@ class Marketing_Ops_Core_Public {
 			wp_die();
 		}
 
-		var_dump( $country_code ); die;
+		$major_metros      = get_field( 'major_metros', 'option' );
+		$major_metros_list = array();
 
-		// Get the major metros for the given country code.
-		$major_metros = $this->get_major_metros( $country_code );
+		// Prepare the major metros list based on the location.
+		if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
+			// Loop through each metro and check if the location matches.
+			foreach ( $major_metros as $metro_data ) {
+				$country_code = ( ! empty( $metro_data['country_code'] ) ) ? $metro_data['country_code'] : '';
+
+				// If the country code matches the location, add to the list.
+				if ( ! empty( $location ) && $country_code === $location ) {
+					$major_metros_list = array_column( $metro_data['metros'], 'metro_name' );
+				}
+			}
+		}
 
 		// Return the major metros.
 		wp_send_json_success(
 			array(
 				'code'         => 'major-metros-found',
-				'major_metros' => $major_metros,
+				'major_metros' => $major_metros_list,
 			)
 		);
 		wp_die();
