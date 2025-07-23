@@ -56,6 +56,11 @@ $ye_selected          = ! empty( $year_experience ) ? 'moc_change_selection' : '
 $location_class       = ! empty( $location ) ? 'moc_change_selection' : '';
 $jsd_selected_class   = ! empty( $job_seeker_details ) ? 'moc_change_selection' : '';
 $member_plan_obj      = moc_get_membership_plan_object();
+$major_metros         = get_field( 'major_metros', 'option' );
+
+if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) {
+	debug( $major_metros );
+}
 
 // Set the redirection based on the most recently activated membership plan.
 if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
@@ -177,6 +182,24 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							</div>
 						</div>
 					</div>
+
+					<?php if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) { ?>
+						<!-- form row -->
+						<div class="form_row">
+							<!-- input with error -->
+							<div class="content_boxed required">
+								<select id="nearest_major_metro" class="">
+									<option value=""><?php esc_html_e( 'What metropolitan area you are most near?', 'marketingops' ); ?></option>
+									<?php
+									foreach ( $options as $option ) {
+										$option_selected = ( $option === $wipm ) ? 'selected' : '';
+										echo '<option value="' . $option . '" ' . $option_selected . '>' . esc_html( $option ) . '</option>';
+									}
+									?>
+								</select>
+							</div>
+						</div>
+					<?php } ?>
 
 					<!-- form row -->
 					<div class="form_row">
