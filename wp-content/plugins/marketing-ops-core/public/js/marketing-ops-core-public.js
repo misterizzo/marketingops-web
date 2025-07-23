@@ -3019,6 +3019,26 @@ jQuery( document ).ready( function( $ ) {
 	$( document ).on( 'change', '#moc_location', function() {
 		var country_code = $( this ).val();
 
+		// Shoot the ajax to get the major metros.
+		$.ajax( {
+			dataType: 'JSON',
+			url: ajaxurl,
+			type: 'POST',
+			data: {
+				'action': 'get_major_metros',
+				'country_code': country_code,
+			},
+			beforeSend: function() {
+				block_element( $( '.loader_bg' ) );
+			},
+			success: function( response ) {
+				unblock_element( $( '.loader_bg' ) );
+				if ( 'courses-added-cart' === response.data.code ) {
+					window.location.href = response.data.return_url;
+				}
+			}
+		});
+
 		console.log( 'Country Code: ' + country_code );
 	} );
 	

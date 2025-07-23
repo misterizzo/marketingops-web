@@ -6717,4 +6717,39 @@ class Marketing_Ops_Core_Public {
 		debug( $posted_array );
 		die;
 	}
+
+	/**
+	 * Get the major metros.
+	 *
+	 * @since 1.0.0
+	 */
+	public function mops_get_major_metros_callback() {
+		$country_code = filter_input( INPUT_POST, 'country_code', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+
+		// Return, if country code is empty.
+		if ( empty( $country_code ) ) {
+			wp_send_json_error(
+				array(
+					'code'    => 'country-code-empty',
+					'message' => __( 'Country code is empty.', 'marketingops' ),
+				),
+				400
+			);
+			wp_die();
+		}
+
+		var_dump( $country_code ); die;
+
+		// Get the major metros for the given country code.
+		$major_metros = $this->get_major_metros( $country_code );
+
+		// Return the major metros.
+		wp_send_json_success(
+			array(
+				'code'         => 'major-metros-found',
+				'major_metros' => $major_metros,
+			)
+		);
+		wp_die();
+	}
 }
