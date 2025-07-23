@@ -64,11 +64,16 @@ if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) {
 	if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
 		// Loop through each metro and check if the location matches.
 		foreach ( $major_metros as $metro_data ) {
-			debug( $metro_data );
+			$country_code = ( ! empty( $metro_data['country_code'] ) ) ? $metro_data['country_code'] : '';
+
+			// If the country code matches the location, add to the list.
+			if ( ! empty( $location ) && $country_code === $location ) {
+				$major_metros_list[] = array_column( $metro_data['metros'], 'metro_name' );
+			}
 		}
 	}
-	var_dump( $location );
-	// debug( $major_metros );
+
+	debug( $major_metros_list );
 }
 
 // Set the redirection based on the most recently activated membership plan.
