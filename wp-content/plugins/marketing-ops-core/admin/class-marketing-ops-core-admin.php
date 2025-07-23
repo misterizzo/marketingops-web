@@ -1817,7 +1817,7 @@ class Marketing_Ops_Core_Admin {
 	 */
 	public function moc_acf_load_field_country_code_callback( $field ) {
 		// Reset the fields.
-		$field['choices'] = array();
+		$field['choices'][''] = array( __( 'Select a country', 'marketingops' ) );
 
 		// Get the list of countries.
 		$countries = WC()->countries->get_countries();
