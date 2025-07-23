@@ -43,6 +43,7 @@
 .mops_my-account_page .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout a::before {content: ""}
 .mops_my-account_page .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--subscriptions a::before {content: ""}
 .mops_my-account_page .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--premium-content a::before {content: "\f521";}
+.mops_my-account_page .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--chapter-members a::before {content: "\f508";}
 .categories-filter {padding-bottom: 6px;}
 .categories-filter span {color: #45474F;font-size: 16px;line-height: 21px;font-weight: 700;}
 .categories-filter button {background-color: #F0F2F3 !important;padding: 4px 14px 4px 14px;border-radius: 6px !important;color: #45474F !important;font-size: 12px;line-height: 24px;font-weight: 700;text-transform: uppercase;margin: 0 5px 14px;}
