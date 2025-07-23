@@ -392,6 +392,7 @@ class Marketing_Ops_Core_Public {
 	public function set_custom_post_types_and_taxonomies() {
 		moc_custom_taxonomy_job_listings(); // Register Taxonomy for Job Listings.
 		moc_workshop_custom_post_type(); // Register workshop custom post type.
+		moc_chapter_custom_post_type(); // Register chapter custom post type.
 		moc_training_platform(); // Register Taxonomy as platform for Workshop.
 		moc_training_skill_level(); // Register Taxonomy as skill level for Workshop.
 		moc_training_strategy_type(); // Register Taxonomy as strategy type for Workshop.

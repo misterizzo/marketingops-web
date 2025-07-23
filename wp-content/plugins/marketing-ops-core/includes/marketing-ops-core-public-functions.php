@@ -761,6 +761,62 @@ if ( ! function_exists( 'moc_workshop_custom_post_type' ) ) {
 /**
  * Check if the function exists.
  */
+if ( ! function_exists( 'moc_chapter_custom_post_type' ) ) {
+	/**
+	 * Function to register workshop custom post type.
+	 *
+	 * @since 1.0.0
+	 */
+	function moc_chapter_custom_post_type() {
+		register_post_type( 'chapter', array(
+			'label'               => __( 'Chapter', 'marketingops' ),
+			'description'         => __( 'Its custom post type of chapter', 'marketingops' ),
+			'labels'              => array(
+				'name'                  => _x( 'Chapters', 'Chapter General Name', 'marketingops' ),
+				'singular_name'         => _x( 'Chapter', 'Chapter Singular Name', 'marketingops' ),
+				'menu_name'             => __( 'Chapters', 'marketingops' ),
+				'name_admin_bar'        => __( 'Chapters', 'marketingops' ),
+				'parent_item_colon'     => __( 'Parent Chapter:', 'marketingops' ),
+				'all_items'             => __( 'All Chapters', 'marketingops' ),
+				'add_new_item'          => __( 'Add New Chapter', 'marketingops' ),
+				'add_new'               => __( 'Add New', 'marketingops' ),
+				'new_item'              => __( 'New Chapter', 'marketingops' ),
+				'edit_item'             => __( 'Edit Chapter', 'marketingops' ),
+				'update_item'           => __( 'Update Chapter', 'marketingops' ),
+				'view_item'             => __( 'View Chapter', 'marketingops' ),
+				'view_items'            => __( 'View Chapters', 'marketingops' ),
+				'search_items'          => __( 'Search Chapter', 'marketingops' ),
+				'not_found'             => __( 'Not found', 'marketingops' ),
+				'not_found_in_trash'    => __( 'Not found in Trash', 'marketingops' ),
+				'insert_into_item'      => __( 'Insert into Chapter', 'marketingops' ),
+				'uploaded_to_this_item' => __( 'Uploaded to this Chapter', 'marketingops' ),
+				'items_list'            => __( 'Chapters list', 'marketingops' ),
+				'items_list_navigation' => __( 'Chapters list navigation', 'marketingops' ),
+				'filter_items_list'     => __( 'Filter Chapters list', 'marketingops' ),
+			),
+			'supports'            => array( 'title', 'author' ),
+			'taxonomies'          => array(),
+			'hierarchical'        => false,
+			'public'              => false,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'menu_position'       => 5,
+			'menu_icon'           => 'dashicons-location-alt',
+			'show_in_admin_bar'   => true,
+			'show_in_nav_menus'   => true,
+			'can_export'          => true,
+			'has_archive'         => false,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => false,
+			'capability_type'     => 'post',
+			'show_in_rest'        => true,
+		) );
+	}
+}
+
+/**
+ * Check if the function exists.
+ */
 if ( ! function_exists( 'moc_no_bs_demo_custom_post_type' ) ) {
 	/**
 	 * Function to register no_bs_demo custom post type.
