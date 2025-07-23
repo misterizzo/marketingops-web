@@ -1363,6 +1363,9 @@ class Marketing_Ops_Core_Admin {
 			'side',
 			'high'
 		);
+
+		// Remove the revolution slider metabox.
+		remove_meta_box( 'revolution_slider', 'chapter', 'side' );
 	}
 
 	/**
