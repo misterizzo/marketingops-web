@@ -1811,4 +1811,24 @@ class Marketing_Ops_Core_Admin {
 		);
 		wp_die();
 	}
+
+	/**
+	 * Dynamically populate the country select dropdown in the ACF field.
+	 */
+	public function moc_acf_load_country_choices_callback( $field ) {
+		// Reset the fields.
+		$field['choices'] = array();
+
+		// Get the list of countries.
+		$countries = WC()->countries->get_countries();
+
+		// If the countries are not empty.
+		if ( ! empty( $countries ) && is_array( $countries ) ) {
+			foreach ( $countries as $country_code => $country_name ) {
+				$field['choices'][ $country_code ] = $country_name;
+			}
+		}
+
+		return $field;
+	}
 }
