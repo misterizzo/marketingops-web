@@ -3001,7 +3001,6 @@ jQuery( document ).ready( function( $ ) {
 		$( this ).hide();
 		$( '.pic_box' ).addClass( 'blank_pic' );
 		$( '.moc_previously_stored_attach_id' ).val( '' );
-
 	} );
 
 	/**

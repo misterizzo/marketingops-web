@@ -56,7 +56,12 @@ $ye_selected          = ! empty( $year_experience ) ? 'moc_change_selection' : '
 $location_class       = ! empty( $location ) ? 'moc_change_selection' : '';
 $jsd_selected_class   = ! empty( $job_seeker_details ) ? 'moc_change_selection' : '';
 $member_plan_obj      = moc_get_membership_plan_object();
-// $major_metros         = get_field( 'major_metros', 'option' );
+$major_metros         = get_field( 'major_metros', 'option' );
+
+if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) {
+	var_dump( $location );
+	debug( $major_metros );
+}
 
 // Set the redirection based on the most recently activated membership plan.
 if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
