@@ -68,7 +68,7 @@ if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) {
 
 			// If the country code matches the location, add to the list.
 			if ( ! empty( $location ) && $country_code === $location ) {
-				$major_metros_list[] = array_column( $metro_data['metros'], 'metro_name' );
+				$major_metros_list = array_column( $metro_data['metros'], 'metro_name' );
 			}
 		}
 	}
