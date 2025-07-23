@@ -3034,6 +3034,7 @@ jQuery( document ).ready( function( $ ) {
 			success: function( response ) {
 				if ( 'major-metros-found' === response.data.code ) {
 					var major_metros = response.data.major_metros;
+					console.log( 'major_metros', major_metros );
 					var options = '<option value="">' + select_state + '</option>';
 					$.each( major_metros, function( index, metro_name ) {
 						options += '<option value="' + metro_name + '">' + metro_name + '</option>';
