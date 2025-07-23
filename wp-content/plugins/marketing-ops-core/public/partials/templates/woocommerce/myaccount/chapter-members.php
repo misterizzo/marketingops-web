@@ -12,8 +12,8 @@ $my_orders_columns = apply_filters(
 	'woocommerce_my_account_chapter_members_columns',
 	array(
 		'picture' => '&nbsp;',
-		'name'    => __( 'Date', 'woocommerce' ),
-		'email'   => __( 'Status', 'woocommerce' ),
+		'name'    => __( 'Name', 'woocommerce' ),
+		'email'   => __( 'Email', 'woocommerce' ),
 		'actions' => '&nbsp;',
 	)
 );
