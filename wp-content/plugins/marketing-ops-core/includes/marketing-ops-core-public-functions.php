@@ -626,6 +626,15 @@ if ( ! function_exists( 'moc_add_option_page' ) ) {
 					'parent_slug' => 'mops-general-settings',
 				),
 			);
+			acf_add_options_sub_page(
+				array(
+					'page_title'  => __( 'Major Metros', 'marketingops' ),
+					'menu_title'  => __( 'Major Metros', 'marketingops' ),
+					'parent_slug' => 'edit.php?post_type=chapter',
+					'capability'  => 'edit_posts',
+					'redirect'    => false,
+				),
+			);
 		}
 	}
 }
