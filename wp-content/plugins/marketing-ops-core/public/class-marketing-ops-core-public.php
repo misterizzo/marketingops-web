@@ -5781,6 +5781,13 @@ class Marketing_Ops_Core_Public {
 						$new_endpoints['platform-profile'] = __( 'Platform Profile', 'marketingops' );
 					}
 				}
+
+				// Add the "chapter-members" endpoint.
+				if ( current_user_can( 'administrator' ) ) {
+					if ( ! array_key_exists( 'chapter-members', $endpoints ) ) {
+						$new_endpoints['chapter-members'] = __( 'Chapter Members', 'marketingops' );
+					}
+				}
 			}
 		}
 
