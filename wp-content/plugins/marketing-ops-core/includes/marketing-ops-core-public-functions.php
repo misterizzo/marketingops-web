@@ -811,6 +811,39 @@ if ( ! function_exists( 'moc_chapter_custom_post_type' ) ) {
 			'capability_type'     => 'post',
 			'show_in_rest'        => true,
 		) );
+
+		// Register taxonomy (major_metro) for chapter post type.
+		register_taxonomy( 'major_metro', array( 'chapter' ), array(
+			'labels'            => array(
+				'name'                       => _x( 'Major Metros', 'Taxonomy General Name', 'marketingops' ),
+				'singular_name'              => _x( 'Major Metro', 'Taxonomy Singular Name', 'marketingops' ),
+				'menu_name'                  => __( 'Major Metros', 'marketingops' ),
+				'all_items'                  => __( 'All Major Metros', 'marketingops' ),
+				'parent_item'                => __( 'Parent Major Metro', 'marketingops' ),
+				'parent_item_colon'          => __( 'Parent Major Metro:', 'marketingops' ),
+				'new_item_name'              => __( 'New Major Metro Name', 'marketingops' ),
+				'add_new_item'               => __( 'Add New Major Metro', 'marketingops' ),
+				'edit_item'                  => __( 'Edit Major Metro', 'marketingops' ),
+				'update_item'                => __( 'Update Major Metro', 'marketingops' ),
+				'view_item'                  => __( 'View Major Metro', 'marketingops' ),
+				'separate_items_with_commas' => __( 'Separate Major Metros with commas', 'marketingops' ),
+				'add_or_remove_items'        => __( 'Add or remove Major Metros', 'marketingops' ),
+				'choose_from_most_used'      => __( 'Choose from the most used', 'marketingops' ),
+				'popular_items'              => __( 'Popular Major Metros', 'marketingops' ),
+				'search_items'               => __( 'Search Major Metros', 'marketingops' ),
+				'not_found'                  => __( 'Not Found', 'marketingops' ),
+				'no_terms'                   => __( 'No Major Metros', 'marketingops' ),
+				'items_list'                 => __( 'Major Metros list', 'marketingops' ),
+				'items_list_navigation'      => __( 'Major Metros list navigation', 'marketingops' ),
+			),
+			'hierarchical'      => true,
+			'public'            => false,
+			'show_ui'           => true,
+			'show_admin_column' => true,
+			'show_in_nav_menus' => true,
+			'show_tagcloud'     => false,
+			'show_in_rest'      => true,
+		) );
 	}
 }
 
