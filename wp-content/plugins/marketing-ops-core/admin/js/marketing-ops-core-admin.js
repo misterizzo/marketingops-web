@@ -19,6 +19,13 @@ jQuery( document ).ready( function ( $ ) {
 		}
 	} );
 
+	// Chapter leader, show states based on country selection.
+	$( document ).on( 'change', '#acf-field_6880d49a8b203', function() {
+		var country_code = $( this ).val();
+
+		console.log( 'Selected country code: ' + country_code );
+	} );
+
 	// Set the initial state of the redirect fields.
 	var membership_plan_signup_redirect_type = $( '#signup_redirect_type' ).val();
 	$( '#signup_redirect_type' ).trigger( 'change' );
