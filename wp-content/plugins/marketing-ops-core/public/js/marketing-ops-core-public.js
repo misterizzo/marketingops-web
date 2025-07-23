@@ -3015,6 +3015,13 @@ jQuery( document ).ready( function( $ ) {
 			this_element.removeClass( 'moc_change_selection' );
 		}
 	} );
+
+	// Get the major metros based on the location selecion.
+	$( document ).on( 'change', '#moc_location', function() {
+		var country_code = $( this ).val();
+
+		console.log( 'Country Code: ' + country_code );
+	} );
 	
 	// Save the final profile information.
 	$( document ).on( 'click', '.moc_save_final_step', function( event ) {
