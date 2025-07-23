@@ -57,10 +57,18 @@ $location_class       = ! empty( $location ) ? 'moc_change_selection' : '';
 $jsd_selected_class   = ! empty( $job_seeker_details ) ? 'moc_change_selection' : '';
 $member_plan_obj      = moc_get_membership_plan_object();
 $major_metros         = get_field( 'major_metros', 'option' );
+$major_metros_list    = array();
 
 if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) {
+	// Prepare the major metros list based on the location.
+	if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
+		// Loop through each metro and check if the location matches.
+		foreach ( $major_metros as $metro_data ) {
+			debug( $metro_data );
+		}
+	}
 	var_dump( $location );
-	debug( $major_metros );
+	// debug( $major_metros );
 }
 
 // Set the redirection based on the most recently activated membership plan.
