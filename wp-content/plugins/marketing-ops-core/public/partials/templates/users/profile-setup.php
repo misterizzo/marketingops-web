@@ -72,8 +72,6 @@ if ( '119.252.195.95' === $_SERVER['REMOTE_ADDR'] ) {
 			}
 		}
 	}
-
-	debug( $major_metros_list );
 }
 
 // Set the redirection based on the most recently activated membership plan.
@@ -201,7 +199,14 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 						<div class="form_row">
 							<!-- input with error -->
 							<div class="content_boxed required">
-								<select id="nearest_major_metro" class="<?php echo esc_attr( $wipm_selected ); ?>"><option value=""><?php esc_html_e( 'What metropolitan area you are most near?', 'marketingops' ); ?></option></select>
+								<select id="nearest_major_metro" class="<?php echo esc_attr( $wipm_selected ); ?>">
+									<option value=""><?php esc_html_e( 'What metropolitan area you are most near?', 'marketingops' ); ?></option>
+									<?php if ( ! empty( $major_metros_list ) && is_array( $major_metros_list ) ) { ?>
+										<?php foreach ( $major_metros_list as $metro_name ) { ?>
+											<option value="<?php echo esc_attr( $metro_name ); ?>"><?php echo esc_html( $metro_name ); ?></option>
+										<?php } ?>
+									<?php } ?>
+								</select>
 							</div>
 						</div>
 					<?php } ?>
