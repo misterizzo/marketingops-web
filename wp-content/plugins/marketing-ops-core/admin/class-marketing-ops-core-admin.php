@@ -1815,7 +1815,7 @@ class Marketing_Ops_Core_Admin {
 	/**
 	 * Dynamically populate the country select dropdown in the ACF field.
 	 */
-	public function moc_acf_load_country_choices_callback( $field ) {
+	public function moc_acf_load_field_country_code_callback( $field ) {
 		// Reset the fields.
 		$field['choices'] = array();
 
