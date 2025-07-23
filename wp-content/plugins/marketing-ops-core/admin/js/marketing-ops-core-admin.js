@@ -1,6 +1,7 @@
 jQuery( document ).ready( function ( $ ) {
 	// Localized variables.
-	var ajaxurl = Moc_Admin_JS_Obj.ajaxurl;
+	var ajaxurl      = Moc_Admin_JS_Obj.ajaxurl;
+	var select_state = Moc_Admin_JS_Obj.select_state;
 
 	// Membership plan signup redirect type.
 	$( document ).on( 'change', '#signup_redirect_type', function() {
@@ -23,7 +24,39 @@ jQuery( document ).ready( function ( $ ) {
 	$( document ).on( 'change', '#acf-field_6880d49a8b203', function() {
 		var country_code = $( this ).val();
 
-		console.log( 'Selected country code: ' + country_code );
+		if ( '' === country_code ) {
+			$( '#acf-field_6880d49a8b204' ).html( '<option value="">' + Moc_Admin_JS_Obj.select_state + '</option>' );
+			return;
+		}
+
+		// Make AJAX call to get states based on country code.
+		$.ajax( {
+			dataType: 'json',
+			url: ajaxurl,
+			type: 'POST',
+			data: {
+				action: 'get_states_by_country_code',
+				country_code: country_code,
+			},
+			beforeSend: function() {
+				// Block element.
+				block_element( $( '#acf-field_6880d5af8b204' ) );
+			},
+			success: function ( response ) {
+				if ( 'states-by-country-code' === response.data.code ) {
+					var states = response.data.states;
+					var options = '<option value="">' + select_state + '</option>';
+					$.each( states, function( index, state ) {
+						options += '<option value="' + state.code + '">' + state.name + '</option>';
+					} );
+					$( '#acf-field_6880d5af8b204' ).html( options );
+				}
+			},
+			complete: function() {
+				// Unblock element.
+				unblock_element( $( '#acf-field_6880d5af8b204' ) );
+			}
+		} );
 	} );
 
 	// Set the initial state of the redirect fields.

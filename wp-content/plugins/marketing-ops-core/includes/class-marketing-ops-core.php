@@ -185,6 +185,7 @@ class Marketing_Ops_Core {
 		$this->loader->add_action( 'manage_agency_posts_custom_column', $plugin_admin, 'moc_manage_agency_posts_custom_column_callback', 10, 2 );
 		$this->loader->add_action( 'wp_ajax_feature_agency', $plugin_admin, 'moc_feature_agency_callback' );
 		$this->loader->add_filter( 'acf/load_field/name=country_code', $plugin_admin, 'moc_acf_load_field_country_code_callback' );
+		$this->loader->add_action( 'wp_ajax_get_states_by_country_code', $plugin_admin, 'moc_get_states_by_country_code_callback' );
 	}
 
 	/**

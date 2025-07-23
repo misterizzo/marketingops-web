@@ -93,7 +93,8 @@ class Marketing_Ops_Core_Admin {
 			$this->plugin_name,
 			'Moc_Admin_JS_Obj',
 			array(
-				'ajaxurl' => admin_url( 'admin-ajax.php' ),
+				'ajaxurl'      => admin_url( 'admin-ajax.php' ),
+				'select_state' => __( 'Select State', 'marketingops' ),
 			)
 		);
 	}
@@ -1814,6 +1815,12 @@ class Marketing_Ops_Core_Admin {
 
 	/**
 	 * Dynamically populate the country select dropdown in the ACF field.
+	 *
+	 * @param array $field The field settings.
+	 *
+	 * @return array
+	 *
+	 * @since 1.0.0
 	 */
 	public function moc_acf_load_field_country_code_callback( $field ) {
 		// Reset the fields.
@@ -1830,5 +1837,36 @@ class Marketing_Ops_Core_Admin {
 		}
 
 		return $field;
+	}
+
+	/**
+	 * AJAX callback to get states by country code.
+	 *
+	 * @since 1.0.0
+	 */
+	public function moc_get_states_by_country_code_callback() {
+		$country_code = filter_input( INPUT_POST, 'country_code', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+
+		// If the country code is unavailable.
+		if ( empty( $country_code ) ) {
+			wp_send_json_error(
+				array(
+					'code'          => 'country-code-not-found',
+					'toast_message' => __( 'Country code not found.', 'marketingops' ),
+				)
+			);
+			wp_die();
+		}
+
+		// Get the states by country code.
+		$states = WC()->countries->get_states( $country_code );
+
+		wp_send_json_success(
+			array(
+				'code'   => 'states-by-country-code',
+				'states' => $states,
+			)
+		);
+		wp_die();
 	}
 }
