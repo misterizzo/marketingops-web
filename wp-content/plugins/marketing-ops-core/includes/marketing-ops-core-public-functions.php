@@ -7324,8 +7324,7 @@ if ( ! function_exists( 'moc_get_courses_by_search_keyword' ) ) {
 			}
 		}
 
-		var_dump( $_SERVER['SERVER_ADDR'] );
-		if ( '119.252.194.87' === $_SERVER['SERVER_ADDR'] ) {
+		if ( '127.0.0.1' === $_SERVER['SERVER_ADDR'] ) {
 			debug( $args );
 			die("pool");
 		}
