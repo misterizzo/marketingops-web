@@ -111,6 +111,14 @@ function moc_plugin_actions_callback( $links = array() ) {
 		unset( $links['deactivate'] );
 	}
 
+	// Add custom link for plugin settings.
+	$links = array_merge(
+		array(
+			'<a title="' . __( 'Settings', 'marketing-ops-core' ) . '" href="' . esc_url( admin_url( 'admin.php?page=mops-general-settings' ) ) . '">' . __( 'Settings', 'marketing-ops-core' ) . '</a>',
+		),
+		$links
+	);
+
 	return $links;
 }
 

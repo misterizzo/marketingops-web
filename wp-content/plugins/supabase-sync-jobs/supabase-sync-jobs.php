@@ -147,11 +147,20 @@ function supabase_jobs_admin_notices_callback() {
  * @since 1.0.0
  */
 function supabase_jobs_plugin_actions_callback( $links ) {
-	$this_plugin_links = array(
-		'<a title="' . __( 'Settings', 'supabase-sync-jobs' ) . '" href="' . esc_url( admin_url( 'edit.php?post_type=job_listing&page=job-manager-settings#settings-supabase_jobs_sync' ) ) . '">' . __( 'Settings', 'supabase-sync-jobs' ) . '</a>',
-		'<a title="' . __( 'Reference', 'supabase-sync-jobs' ) . '" target="_blank" href="https://supabase.com/">' . __( 'Reference', 'supabase-sync-jobs' ) . '</a>',
-		'<a title="' . __( 'GitHub', 'supabase-sync-jobs' ) . '" target="_blank" href="https://github.com/rafaelwendel/phpsupabase">' . __( 'GitHub', 'supabase-sync-jobs' ) . '</a>',
+	// Remove the plugin deactivation link.
+	if ( isset( $links['deactivate'] ) ) {
+		unset( $links['deactivate'] );
+	}
+
+	// Add custom link for plugin settings and other links.
+	$links = array_merge(
+		array(
+			'<a title="' . __( 'Settings', 'supabase-sync-jobs' ) . '" href="' . esc_url( admin_url( 'edit.php?post_type=job_listing&page=job-manager-settings#settings-supabase_jobs_sync' ) ) . '">' . __( 'Settings', 'supabase-sync-jobs' ) . '</a>',
+			'<a title="' . __( 'Reference', 'supabase-sync-jobs' ) . '" target="_blank" href="https://supabase.com/">' . __( 'Reference', 'supabase-sync-jobs' ) . '</a>',
+			'<a title="' . __( 'GitHub', 'supabase-sync-jobs' ) . '" target="_blank" href="https://github.com/rafaelwendel/phpsupabase">' . __( 'GitHub', 'supabase-sync-jobs' ) . '</a>',
+		),
+		$links
 	);
 
-	return array_merge( $this_plugin_links, $links );
+	return $links;
 }
