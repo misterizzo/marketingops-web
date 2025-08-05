@@ -4126,7 +4126,7 @@ if ( ! function_exists( 'moc_training_products_listing_html' ) ) {
 									$platform_icon_id           = get_term_meta( $platform_id, 'product_icons', true );
 									$platform_icon_src          = ! empty( $platform_icon_id ) ? wp_get_attachment_image_src( $platform_icon_id, 'single-post-thumbnail' ) : array();
 									$get_course_meta            = get_post_meta( $get_post_id, '_sfwd-courses', true );
-									$get_couse_price            = $get_course_meta['sfwd-courses_course_price_type'];
+									$get_couse_price            = ( ! empty( $get_course_meta['sfwd-courses_course_price_type'] ) ) ? $get_course_meta['sfwd-courses_course_price_type'] : '';
 									$meta_value                 = ( 1 ===  $meta_value ) ? 'free' : $meta_value;
 									$related_groups             = ! empty( get_post_meta( $get_post_id, '_related_group', true ) ) ? get_post_meta( $get_post_id, '_related_group', true ) : array();
 									$related_courses            = ! empty( get_post_meta( $get_post_id, '_related_course', true ) ) ? get_post_meta( $get_post_id, '_related_course', true ) : array();
