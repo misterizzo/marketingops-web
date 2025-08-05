@@ -107,16 +107,20 @@ add_action( 'plugins_loaded', 'cf_plugins_loaded_callback' );
  */
 function cf_plugin_actions_callback( $links = array() ) {
 
-	debug( $links );
-	var_dump( $_SERVER['REMOTE_ADDR'] );
-	die;
+	// Remove the plugin deactivation link.
+	if ( isset( $links['deactivate'] ) ) {
+		unset( $links['deactivate'] );
+	}
 
-	return array_merge(
+	// Add custom link for plugin settings.
+	$links = array_merge(
 		array(
 			'<a title="' . __( 'Settings', 'marketingops-google-recaptcha' ) . '" href="' . esc_url( admin_url( 'admin.php?page=wc-settings&tab=security&section=google-recaptcha' ) ) . '">' . __( 'Settings', 'marketingops-google-recaptcha' ) . '</a>',
 		),
 		$links
 	);
+
+	return $links;
 }
 
 /**
