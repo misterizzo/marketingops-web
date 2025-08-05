@@ -7323,6 +7323,12 @@ if ( ! function_exists( 'moc_get_courses_by_search_keyword' ) ) {
 				);
 			}
 		}
+
+		if ( '119.252.194.87' === $_SERVER['SERVER_ADDR'] ) {
+			debug( $args );
+			die("pool");
+		}
+
 		/**
 		 * Posts/custom posts listing arguments filter.
 		 *
