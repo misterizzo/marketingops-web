@@ -114,9 +114,9 @@ function cf_plugin_actions_callback( $links = array() ) {
 		$links
 	);
 
-	if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
-		debug( $links );
-	}
+	debug( $links );
+	var_dump( $_SERVER['REMOTE_ADDR'] );
+	die;
 }
 
 /**
