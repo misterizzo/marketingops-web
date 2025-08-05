@@ -4053,14 +4053,15 @@ if ( ! function_exists( 'moc_training_products_listing_html' ) ) {
 	function moc_training_products_listing_html( $search_keyword = '', $post_type = 'post', $paged = 1, $posts_per_page = '', $selected_sorting_by = 'date', $selected_sorting_order = 'DESC', $category = '', $taxonomy = '', $meta_key = '', $meta_value = '', $compare = '', $type = '', $professor_id = '' ) {
 		global $wpdb;
 
+		ob_start();
+		$count_posts_query = moc_get_courses_by_search_keyword( $search_keyword, $post_type, $paged, -1, $selected_sorting_by, $selected_sorting_order, $category, $taxonomy, $meta_key, $meta_value, $compare, $type, $professor_id );
+
 		if ( '127.0.0.1' === $_SERVER['SERVER_ADDR'] ) {
 			var_dump( $search_keyword );
-			debug( $args );
+			debug( $count_posts_query );
 			die("pool");
 		}
 
-		ob_start();
-		$count_posts_query = moc_get_courses_by_search_keyword( $search_keyword, $post_type, $paged, -1, $selected_sorting_by, $selected_sorting_order, $category, $taxonomy, $meta_key, $meta_value, $compare, $type, $professor_id );
 		$count_posts       = count( $count_posts_query->posts );
 		$get_query_posts   = moc_get_courses_by_search_keyword( $search_keyword, $post_type, $paged, $posts_per_page , $selected_sorting_by, $selected_sorting_order, $category, $taxonomy, $meta_key, $meta_value, $compare, $type, $professor_id );
 		$get_posts         = $get_query_posts->posts;
