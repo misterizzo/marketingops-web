@@ -89,9 +89,30 @@ function run_marketing_ops_core() {
  */
 function moc_plugins_loaded_callback() {
 	run_marketing_ops_core();
+
+	add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'moc_plugin_actions_callback' );
 }
 
 add_action( 'plugins_loaded', 'moc_plugins_loaded_callback' );
+
+/**
+ * This function adds custom plugin actions.
+ *
+ * @param array $links Links array.
+ *
+ * @return array
+ *
+ * @since 1.0.0
+ */
+function moc_plugin_actions_callback( $links = array() ) {
+
+	// Remove the plugin deactivation link.
+	if ( isset( $links['deactivate'] ) ) {
+		unset( $links['deactivate'] );
+	}
+
+	return $links;
+}
 
 /**
  * Debugger function which shall be removed in production.
