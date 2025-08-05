@@ -4058,7 +4058,7 @@ if ( ! function_exists( 'moc_training_products_listing_html' ) ) {
 
 		if ( '127.0.0.1' === $_SERVER['SERVER_ADDR'] ) {
 			var_dump( $search_keyword );
-			debug( $count_posts_query );
+			debug( $count_posts_query->posts );
 			die("pool");
 		}
 
