@@ -112,7 +112,7 @@ if ( $chapter_members->get_results() ) : ?>
 								?>
 
 							<?php elseif ( 'email' === $column_id ) : ?>
-								<?php echo ( ! empty( $chapter_member_data->data->user_email ) ? $chapter_member_data->data->user_email : '' ); ?>
+								<?php echo ( ! empty( $chapter_member_data->data->user_email ) ? '<a href="mailto:' . esc_attr( $chapter_member_data->data->user_email ) . '">' . esc_html( $chapter_member_data->data->user_email ) . '</a>' : '' ); ?>
 
 							<?php elseif ( 'actions' === $column_id ) : ?>
 								<a href="<?php echo esc_url( $chapter_member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
