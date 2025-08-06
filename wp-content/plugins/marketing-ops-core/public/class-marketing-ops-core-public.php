@@ -3191,7 +3191,7 @@ class Marketing_Ops_Core_Public {
 		$user_id            = (int) $posted_array['user_id'];
 		$add_to_cart        = ! empty( $posted_array['add_to_cart'] ) ? $posted_array['add_to_cart'] : '';
 
-		if ( false === strpos( $location, ':' ) ) {
+		if ( false !== strpos( $location, ':' ) ) {
 			$customer_location_data = explode( ':', $location );
 			$country_code           = isset( $customer_location_data[0] ) ? $customer_location_data[0] : '';
 			$state_code             = isset( $customer_location_data[1] ) ? $customer_location_data[1] : '';
