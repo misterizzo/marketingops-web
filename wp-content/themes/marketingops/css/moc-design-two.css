@@ -15354,9 +15354,10 @@ body.job_listing-template-default .job_listing {max-width: 100%;overflow: initia
 }
 
 .woocommerce-chapter-members .chapter-members-filter input {
-   border: 1px solid #EDF3F3 !important;
+    border: 1px solid #EDF3F3 !important;
     margin: 15px 0;
-    padding-right: 40px;
+    padding-right: 55px;
+    border-radius: 30px;
 }
 
 .woocommerce-chapter-members .woocommerce table.shop_table td {
@@ -15387,9 +15388,10 @@ body.job_listing-template-default .job_listing {max-width: 100%;overflow: initia
 .woocommerce-chapter-members .chapter-members-filter i.search {
     position: absolute;
     top: 23px;
-    right: 0;
+    right: 10px;
     width: 40px;
     height: 25px;
+    cursor: pointer;
 }
 
 
@@ -15398,11 +15400,15 @@ body.job_listing-template-default .job_listing {max-width: 100%;overflow: initia
     height: 100%;
 }
 
+.woocommerce-chapter-members .chapter-members-filter i.search svg path {
+    stroke: gray;
+}
 
 .woocommerce-chapter-members .woocommerce .woocommerce-MyAccount-content a.button:last-of-type {
     margin-bottom: 0;
     background: #F1F3F4;
     color: #45474F;
+    padding: 6px 12px;
 }
 
 
