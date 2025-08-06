@@ -36,6 +36,7 @@ $table_columns      = apply_filters(
 		'name'    => __( 'Name', 'woocommerce' ),
 		'email'   => __( 'Email', 'woocommerce' ),
 		'profession' => __( 'Profession', 'woocommerce' ),
+		'experience' => __( 'Experience', 'woocommerce' ),
 		'actions' => __( 'Actions', 'woocommerce' ),
 	)
 );
@@ -99,6 +100,7 @@ if ( $chapter_members->get_results() ) : ?>
 
 				$chapter_member_profile_url = get_author_posts_url( $member_id );
 				$chapter_member_profession  = get_user_meta( $member_id, 'profetional_title', true );
+				$chapter_member_experience  = get_user_meta( $member_id, 'experience_years', true );
 				$chapter_member_first_name  = get_user_meta( $member_id, 'first_name', true );
 				$chapter_member_last_name   = get_user_meta( $member_id, 'last_name', true );
 				$chapter_member_data        = get_userdata( $member_id );
@@ -124,6 +126,9 @@ if ( $chapter_members->get_results() ) : ?>
 
 							<?php elseif ( 'profession' === $column_id ) : ?>
 								<?php echo esc_html( $chapter_member_profession ); ?>
+
+							<?php elseif ( 'experience' === $column_id ) : ?>
+								<?php echo esc_html( $chapter_member_experience ) . ' years'; ?>
 
 							<?php elseif ( 'actions' === $column_id ) : ?>
 								<a href="<?php echo esc_url( $chapter_member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
