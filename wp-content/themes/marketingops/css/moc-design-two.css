@@ -15399,6 +15399,13 @@ body.job_listing-template-default .job_listing {max-width: 100%;overflow: initia
 }
 
 
+.woocommerce-chapter-members .woocommerce .woocommerce-MyAccount-content a.button:last-of-type {
+    margin-bottom: 0;
+    background: #F1F3F4;
+    color: #45474F;
+}
+
+
 .woocommerce-chapter-members .woocommerce-MyAccount-content h2{
     background: -webkit-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
     background: -moz-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
