@@ -3191,8 +3191,18 @@ class Marketing_Ops_Core_Public {
 		$user_id            = (int) $posted_array['user_id'];
 		$add_to_cart        = ! empty( $posted_array['add_to_cart'] ) ? $posted_array['add_to_cart'] : '';
 
-		var_dump( $_SERVER['REMOTE_ADDR'] );
-		var_dump( $location ); die;
+		if ( false === strpos( $location, ':' ) ) {
+			$customer_location_data = explode( ':', $location );
+			$country_code           = isset( $customer_location_data[0] ) ? $customer_location_data[0] : '';
+			$state_code             = isset( $customer_location_data[1] ) ? $customer_location_data[1] : '';
+		} else {
+			$country_code = $location;
+		}
+
+		if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
+			var_dump( $country_code, $state_code );
+			die;
+		}
 
 		if ( ! empty( $_FILES ) ) {
 			if ( ( 212 <= $image_width && 212 <= $image_height ) && ( 512 >= $image_width && 512 >= $image_height ) ) {
