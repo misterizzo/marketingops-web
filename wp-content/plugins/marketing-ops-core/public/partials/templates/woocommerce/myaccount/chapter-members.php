@@ -84,7 +84,7 @@ if ( $chapter_members->get_results() ) : ?>
 				$chapter_member_last_name = get_user_meta( $member_id, 'last_name', true );
 				?>
 				<tr class="order">
-					<?php foreach ( $my_orders_columns as $column_id => $column_name ) : ?>
+					<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
 						<td class="<?php echo esc_attr( $column_id ); ?>" data-title="<?php echo esc_attr( $column_name ); ?>">
 							<?php if ( has_action( 'woocommerce_my_account_chapter_members_column_' . $column_id ) ) : ?>
 								<?php do_action( 'woocommerce_my_account_chapter_members_column_' . $column_id, $order ); ?>
