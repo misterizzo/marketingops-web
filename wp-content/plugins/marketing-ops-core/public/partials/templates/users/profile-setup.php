@@ -36,14 +36,10 @@ $years_options        = explode( ',', $years_options );
 $all_user_meta        = get_user_meta( $user_id );
 $first_name           = ! empty ( $all_user_meta['first_name'][0] ) ? $all_user_meta['first_name'][0] : '';
 $last_name            = ! empty( $all_user_meta['last_name'][0] ) ? $all_user_meta['last_name'][0] : '';
-
-if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
-	debug( $all_user_meta );
-	die;
-}
-
-$location             = ! empty( $all_user_meta['country'][0] ) ? $all_user_meta['country'][0] : ( ! empty( $all_user_meta['billing_country'][0] ) ? $all_user_meta['billing_country'][0] : '' );
-$location            = ! empty( $location ) ? $location : '';
+$pronunciation        = ! empty( $all_user_meta['pronunciation'][0] ) ? $all_user_meta['pronunciation'][0] : '';
+$country              = ! empty( $all_user_meta['country'][0] ) ? $all_user_meta['country'][0] : ( ! empty( $all_user_meta['billing_country'][0] ) ? $all_user_meta['billing_country'][0] : '' );
+$state                = ! empty( $all_user_meta['state'][0] ) ? $all_user_meta['state'][0] : ( ! empty( $all_user_meta['billing_state'][0] ) ? $all_user_meta['billing_state'][0] : '' );
+$location             = ( ! empty( $state ) ) ? "{$country}:{$state}" : $country;
 $profetional_title    = ! empty( get_user_meta( $user_id, 'profetional_title', true ) ) ? get_user_meta( $user_id, 'profetional_title', true ) : '';
 $wipm                 = ! empty( get_user_meta( $user_id, 'experience', true ) ) ? get_user_meta( $user_id, 'experience', true ) : '';
 $year_experience      = ! empty( get_user_meta( $user_id, 'experience_years', true ) ) ? get_user_meta( $user_id, 'experience_years', true ) : '' ;
@@ -64,13 +60,17 @@ $jsd_selected_class   = ! empty( $job_seeker_details ) ? 'moc_change_selection' 
 $member_plan_obj      = moc_get_membership_plan_object();
 $major_metros         = get_field( 'major_metros', 'option' );
 $major_metros_list    = array();
-$user_nearest_metro   = get_user_meta( $user_id, 'nearest_metro', true );
+$nearest_metro        = ( ! empty( $all_user_meta['nearest_metro'][0] ) ) ? $all_user_meta['nearest_metro'][0] : '';
+
+if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
+	var_dump( $location );
+}
 
 // Prepare the major metros list based on the location.
 if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
 	// Loop through each metro and check if the location matches.
 	foreach ( $major_metros as $metro_data ) {
-		$country_code = ( ! empty( $metro_data['country_code'] ) ) ? $metro_data['country_code'] : '';
+		$country_state_code = ( ! empty( $metro_data['country_code'] ) ) ? $metro_data['country_code'] : '';
 
 		// If the country code matches the location, add to the list.
 		if ( ! empty( $location ) && $country_code === $location ) {
@@ -140,7 +140,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							<div class="form_row">
 								<!-- input with error -->
 								<div class="content_boxed">
-									<input type="text" class="inputtext" name="moc_name_pronunciation" placeholder="He/Him/She/Her" value="<?php echo esc_html( $name_pronunciation ); ?>">
+									<input type="text" class="inputtext" name="moc_name_pronunciation" placeholder="He/Him/She/Her" value="<?php echo esc_html( $pronunciation ); ?>">
 								</div>
 							</div>
 						</div>
