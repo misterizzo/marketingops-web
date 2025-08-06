@@ -23,10 +23,11 @@ $chapter_location = new WP_Query(
 		),
 	)
 );
-
-debug( $chapter_location->posts );
-
-$my_orders_columns = apply_filters(
+$heading          = ( ! empty( $chapter_location[0]->post_title ) ) ? sprintf( __( 'Chapter members from %s', 'marketingops' ), $chapter_location[0]->post_title ) : __( 'Chapter members', 'marketingops' );
+$chapter_post_id  = ( ! empty( $chapter_location[0]->ID ) ) ? $chapter_location[0]->ID : 0;
+$chapter_location = ( 0 !== $chapter_post_id ) ? get_post_meta( $chapter_post_id, 'country_state_code', true ) : '';
+var_dump( $chapter_location );
+$table_columns    = apply_filters(
 	'woocommerce_my_account_chapter_members_columns',
 	array(
 		'picture' => '&nbsp;',
@@ -50,11 +51,11 @@ $customer_orders = get_posts(
 );
 
 if ( $customer_orders ) : ?>
-	<h2><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', esc_html__( 'Chapter members', 'woocommerce' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
-	<table class="shop_table shop_table_responsive my_account_orders">
+	<h2><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', $heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
+	<table class="shop_table shop_table_responsive my_account_chapter_members">
 		<thead>
 			<tr>
-				<?php foreach ( $my_orders_columns as $column_id => $column_name ) : ?>
+				<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
 					<th class="<?php echo esc_attr( $column_id ); ?>"><span class="nobr"><?php echo esc_html( $column_name ); ?></span></th>
 				<?php endforeach; ?>
 			</tr>
