@@ -35,7 +35,13 @@ $years_options        = $experience_years[0]['options'];
 $years_options        = explode( ',', $years_options );
 $all_user_meta        = get_user_meta( $user_id );
 $first_name           = ! empty ( $all_user_meta['first_name'][0] ) ? $all_user_meta['first_name'][0] : '';
-$lastname             = ! empty( $all_user_meta['last_name'][0] ) ? $all_user_meta['last_name'][0] : '';
+$last_name            = ! empty( $all_user_meta['last_name'][0] ) ? $all_user_meta['last_name'][0] : '';
+
+if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
+	debug( $all_user_meta );
+	die;
+}
+
 $location             = ! empty( $all_user_meta['country'][0] ) ? $all_user_meta['country'][0] : ( ! empty( $all_user_meta['billing_country'][0] ) ? $all_user_meta['billing_country'][0] : '' );
 $location            = ! empty( $location ) ? $location : '';
 $profetional_title    = ! empty( get_user_meta( $user_id, 'profetional_title', true ) ) ? get_user_meta( $user_id, 'profetional_title', true ) : '';
@@ -123,7 +129,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							<div class="form_row">
 								<!-- input with error -->
 								<div class="content_boxed moc_required_field">
-									<input type="text" class="inputtext" name="moc_last_name" placeholder="Last name" value="<?php echo esc_html( $lastname ); ?>">
+									<input type="text" class="inputtext" name="moc_last_name" placeholder="Last name" value="<?php echo esc_html( $last_name ); ?>">
 									<div class="moc_error moc_last_name_err">
 										<span></span>
 									</div>

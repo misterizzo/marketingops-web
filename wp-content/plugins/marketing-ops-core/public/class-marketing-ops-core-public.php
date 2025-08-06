@@ -3199,11 +3199,6 @@ class Marketing_Ops_Core_Public {
 			$country_code = $location;
 		}
 
-		// if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
-		// 	var_dump( $country_code, $state_code );
-		// 	die;
-		// }
-
 		if ( ! empty( $_FILES ) ) {
 			if ( ( 212 <= $image_width && 212 <= $image_height ) && ( 512 >= $image_width && 512 >= $image_height ) ) {
 				$name             = isset( $_FILES['user_avtar']['name'] ) ? $_FILES['user_avtar']['name'] : array();
