@@ -15331,3 +15331,80 @@ body .learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-i
 body.job_listing-template-default .job_listing {max-width: 100%;overflow: initial;padding: 0 15px;}
 .eachjobdetail .moc_job_apply_btn.button {text-decoration: none;}
 .normal_product_page .product_page_inner_section form .variations tbody tr td .variable-items-wrapper li.selected:after {left: inherit;}
+
+
+
+.woocommerce-chapter-members .woocommerce-MyAccount-content {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .03);
+    border-radius: 20px;
+    border: 1px solid rgb(231 239 239 / 75%);
+    background: #fff;
+}
+
+
+.woocommerce-chapter-members .woocommerce table.shop_table.shop_table_responsive.my_account_chapter_members {
+    border: 0;
+    margin: 20px 0;
+}
+
+.woocommerce-chapter-members .woocommerce table.shop_table.shop_table_responsive.my_account_chapter_members th {
+    border: none;
+    border-bottom: 0px solid #EDF3F3 !important;
+	border-top: 0px solid #EDF3F3 !important;
+}
+
+.woocommerce-chapter-members .chapter-members-filter input {
+   border: 1px solid #EDF3F3 !important;
+    margin: 15px 0;
+    padding-right: 40px;
+}
+
+.woocommerce-chapter-members .woocommerce table.shop_table td {
+    border-top: 0 !important;
+    background-color: transparent;
+	border: none;
+	border-bottom:1px solid #EDF3F3 !important
+}
+.woocommerce-chapter-members .woocommerce table.shop_table.shop_table_responsive.my_account_chapter_members tr {
+    border-bottom: 1px solid #EDF3F3 !important;
+}
+
+.woocommerce-chapter-members .woocommerce table.shop_table td.picture img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 100%;
+    position: relative;
+    top: 2px;
+    border: 2px solid #FFFFFF;
+    font-size: 12px;
+}
+
+.woocommerce-chapter-members .chapter-members-filter {
+    position: relative;
+}
+
+.woocommerce-chapter-members .chapter-members-filter i.search {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    width: 40px;
+    height: 25px;
+}
+
+
+.woocommerce-chapter-members .chapter-members-filter i.search svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.woocommerce-chapter-members .woocommerce-MyAccount-content h2{
+    background: -webkit-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
+    background: -moz-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
+    background: -o-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
+    background: linear-gradient(102deg, #FD4B7A 20%, #4D00AE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
