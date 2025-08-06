@@ -20,45 +20,6 @@ jQuery( document ).ready( function ( $ ) {
 		}
 	} );
 
-	// Chapter leader, show states based on country selection.
-	$( document ).on( 'change', '#acf-field_6880d49a8b203', function() {
-		var country_code = $( this ).val();
-
-		if ( '' === country_code ) {
-			$( '#acf-field_6880d49a8b204' ).html( '<option value="">' + Moc_Admin_JS_Obj.select_state + '</option>' );
-			return;
-		}
-
-		// Make AJAX call to get states based on country code.
-		$.ajax( {
-			dataType: 'json',
-			url: ajaxurl,
-			type: 'POST',
-			data: {
-				action: 'get_states_by_country_code',
-				country_code: country_code,
-			},
-			beforeSend: function() {
-				// Block element.
-				block_element( $( '#acf-field_6880d5af8b204' ) );
-			},
-			success: function ( response ) {
-				if ( 'states-by-country-code' === response.data.code ) {
-					var states = response.data.states;
-					var options = '<option value="">' + select_state + '</option>';
-					$.each( states, function( index, state ) {
-						options += '<option value="' + index + '">' + state + '</option>';
-					} );
-					$( '#acf-field_6880d5af8b204' ).html( options );
-				}
-			},
-			complete: function() {
-				// Unblock element.
-				unblock_element( $( '#acf-field_6880d5af8b204' ) );
-			}
-		} );
-	} );
-
 	// Set the initial state of the redirect fields.
 	var membership_plan_signup_redirect_type = $( '#signup_redirect_type' ).val();
 	$( '#signup_redirect_type' ).trigger( 'change' );

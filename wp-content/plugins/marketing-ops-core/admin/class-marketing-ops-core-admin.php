@@ -1883,35 +1883,4 @@ class Marketing_Ops_Core_Admin {
 
 		return $country_dropdown_options;
 	}
-
-	/**
-	 * AJAX callback to get states by country code.
-	 *
-	 * @since 1.0.0
-	 */
-	public function moc_get_states_by_country_code_callback() {
-		$country_code = filter_input( INPUT_POST, 'country_code', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
-
-		// If the country code is unavailable.
-		if ( empty( $country_code ) ) {
-			wp_send_json_error(
-				array(
-					'code'          => 'country-code-not-found',
-					'toast_message' => __( 'Country code not found.', 'marketingops' ),
-				)
-			);
-			wp_die();
-		}
-
-		// Get the states by country code.
-		$states = WC()->countries->get_states( $country_code );
-
-		wp_send_json_success(
-			array(
-				'code'   => 'states-by-country-code',
-				'states' => $states,
-			)
-		);
-		wp_die();
-	}
 }

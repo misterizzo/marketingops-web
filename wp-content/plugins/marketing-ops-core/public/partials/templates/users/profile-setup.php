@@ -61,9 +61,9 @@ $major_metros         = get_field( 'major_metros', 'option' );
 $major_metros_list    = array();
 $nearest_metro        = ( ! empty( $all_user_meta['nearest_metro'][0] ) ) ? $all_user_meta['nearest_metro'][0] : '';
 
-if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
-	var_dump( $location );
-}
+// if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
+// 	var_dump( $location );
+// }
 
 // Prepare the major metros list based on the location.
 if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
