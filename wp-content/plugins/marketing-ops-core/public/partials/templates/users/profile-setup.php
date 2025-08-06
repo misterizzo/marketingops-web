@@ -25,8 +25,7 @@ if ( ! is_user_logged_in() ) {
 	exit;
 }
 
-$user_id = get_current_user_id();
-
+$user_id              = get_current_user_id();
 $ppress_custom_fields = $wpdb->get_results( $wpdb->prepare( 'SELECT * FROM ' . $wpdb->prefix . 'ppress_profile_fields WHERE field_key = %s', array( 'experience' ) ), ARRAY_A );
 $options              = $ppress_custom_fields[0]['options'];
 $options              = explode( ',', $options );
@@ -187,7 +186,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 						<div class="content_boxed required moc_required_field">
 							<select id="moc_location" class="<?php echo esc_attr( $location_class ); ?>">
 								<option value=""><?php esc_html_e( 'Location', 'marketingops' ); ?></option>
-								<?php WC()->countries->country_dropdown_options( 'US', 'CA' ); ?>
+								<?php WC()->countries->country_dropdown_options( $country, $state ); ?>
 							</select>
 							<div class="moc_error moc_location_err">
 								<span></span>
@@ -203,7 +202,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 								<option value=""><?php esc_html_e( 'What metropolitan area you are most near?', 'marketingops' ); ?></option>
 								<?php if ( ! empty( $major_metros_list ) && is_array( $major_metros_list ) ) { ?>
 									<?php foreach ( $major_metros_list as $metro_name ) {
-										$selected_metro = ( ! empty( $user_nearest_metro ) && $user_nearest_metro === $metro_name ) ? 'selected' : '';
+										$selected_metro = ( ! empty( $nearest_metro ) && $nearest_metro === $metro_name ) ? 'selected' : '';
 										?>
 										<option value="<?php echo esc_attr( $metro_name ); ?>" <?php echo $selected_metro; ?>><?php echo esc_html( $metro_name ); ?></option>
 									<?php } ?>
