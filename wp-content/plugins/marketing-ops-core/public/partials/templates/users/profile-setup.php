@@ -72,7 +72,7 @@ if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
 		$country_state_code = ( ! empty( $metro_data['country_code'] ) ) ? $metro_data['country_code'] : '';
 
 		// If the country code matches the location, add to the list.
-		if ( ! empty( $location ) && $country_code === $location ) {
+		if ( ! empty( $location ) && $country_state_code === $location ) {
 			$major_metros_list = array_column( $metro_data['metros'], 'metro_name' );
 		}
 	}
