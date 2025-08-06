@@ -1842,10 +1842,10 @@ class Marketing_Ops_Core_Admin {
 			$field['choices'][ $location_code ] = $location_name;
 		}
 
-		if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
-			debug( $field );
-			die;
-		}
+		// if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
+		// 	debug( $field );
+		// 	die;
+		// }
 
 		return $field;
 	}
