@@ -15349,7 +15349,7 @@ body.job_listing-template-default .job_listing {max-width: 100%;overflow: initia
 
 .woocommerce-chapter-members .woocommerce table.shop_table.shop_table_responsive.my_account_chapter_members th {
     border: none;
-    border-bottom: 0px solid #EDF3F3 !important;
+    border-bottom: 1px solid #EDF3F3 !important;
 	border-top: 0px solid #EDF3F3 !important;
 }
 
