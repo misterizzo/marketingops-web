@@ -8,6 +8,24 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Get the chapter members.
+$user_id          = get_current_user_id();
+$chapter_location = new WP_Query(
+	array(
+		'post_type'      => 'chapter',
+		'posts_per_page' => 1,
+		'meta_query'     => array(
+			array(
+				'key'     => 'primary_leader',
+				'value'   => '"' . $user_id . '"',
+				'compare' => 'LIKE',
+			),
+		),
+	)
+);
+
+debug( $chapter_location );
+
 $my_orders_columns = apply_filters(
 	'woocommerce_my_account_chapter_members_columns',
 	array(
