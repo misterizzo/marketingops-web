@@ -81,6 +81,11 @@ if ( $chapter_members->get_results() ) : ?>
 		<tbody>
 			<?php
 			foreach ( $chapter_members->get_results() as $member_id ) :
+				// If the member is the current user, skip.
+				if ( $member_id === $user_id ) {
+					continue;
+				}
+
 				$chapter_member_first_name = get_user_meta( $member_id, 'first_name', true );
 				$chapter_member_last_name  = get_user_meta( $member_id, 'last_name', true );
 				$chapter_member_data       = get_userdata( $member_id );
