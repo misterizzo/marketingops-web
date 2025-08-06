@@ -86,6 +86,7 @@ if ( $chapter_members->get_results() ) : ?>
 					continue;
 				}
 
+				$chapter_member_profile_url = get_author_posts_url( $member_id );
 				$chapter_member_first_name = get_user_meta( $member_id, 'first_name', true );
 				$chapter_member_last_name  = get_user_meta( $member_id, 'last_name', true );
 				$chapter_member_data       = get_userdata( $member_id );
@@ -110,7 +111,7 @@ if ( $chapter_members->get_results() ) : ?>
 								<?php echo ( ! empty( $chapter_member_data->data->user_email ) ? $chapter_member_data->data->user_email : '' ); ?>
 
 							<?php elseif ( 'actions' === $column_id ) : ?>
-								<a href="/" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
+								<a href="<?php echo esc_url( $chapter_member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
 							<?php endif; ?>
 						</td>
 					<?php endforeach; ?>
