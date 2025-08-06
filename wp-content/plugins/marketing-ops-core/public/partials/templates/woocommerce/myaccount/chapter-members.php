@@ -66,22 +66,7 @@ if ( ! empty( $chapter_state_code ) ) {
 }
 $chapter_members = new WP_User_Query( $chapter_members_query_args );
 
-debug( $chapter_members->get_results() );
-
-$customer_orders = get_posts(
-	apply_filters(
-		'woocommerce_my_account_my_orders_query',
-		array(
-			'numberposts' => $order_count,
-			'meta_key'    => '_customer_user',
-			'meta_value'  => get_current_user_id(),
-			'post_type'   => wc_get_order_types( 'view-orders' ),
-			'post_status' => array_keys( wc_get_order_statuses() ),
-		)
-	)
-);
-
-if ( $customer_orders ) : ?>
+if ( $chapter_members->get_results() ) : ?>
 	<h2><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', $heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
 	<table class="shop_table shop_table_responsive my_account_chapter_members">
 		<thead>
@@ -94,23 +79,22 @@ if ( $customer_orders ) : ?>
 
 		<tbody>
 			<?php
-			foreach ( $customer_orders as $customer_order ) :
-				$order      = wc_get_order( $customer_order ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
-				$item_count = $order->get_item_count();
+			foreach ( $chapter_members->get_results() as $member_id ) :
+				$chapter_member_first_name = get_user_meta( $member_id, 'first_name', true );
+				$chapter_member_last_name = get_user_meta( $member_id, 'last_name', true );
 				?>
 				<tr class="order">
 					<?php foreach ( $my_orders_columns as $column_id => $column_name ) : ?>
 						<td class="<?php echo esc_attr( $column_id ); ?>" data-title="<?php echo esc_attr( $column_name ); ?>">
-							<?php if ( has_action( 'woocommerce_my_account_my_orders_column_' . $column_id ) ) : ?>
-								<?php do_action( 'woocommerce_my_account_my_orders_column_' . $column_id, $order ); ?>
+							<?php if ( has_action( 'woocommerce_my_account_chapter_members_column_' . $column_id ) ) : ?>
+								<?php do_action( 'woocommerce_my_account_chapter_members_column_' . $column_id, $order ); ?>
 
 							<?php elseif ( 'picture' === $column_id ) : ?>
-								<a href="<?php echo esc_url( $order->get_view_order_url() ); ?>">
-									<?php echo _x( '#', 'hash before order number', 'woocommerce' ) . $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-								</a>
+								<img src="https://marketingops.com/wp-content/uploads/2024/12/Mike-Square20241209234031.png" alt="Mike Rizzo">
 
-							<?php elseif ( 'name' === $column_id ) : ?>
-								<time datetime="<?php echo esc_attr( $order->get_date_created()->date( 'c' ) ); ?>"><?php echo esc_html( wc_format_datetime( $order->get_date_created() ) ); ?></time>
+							<?php elseif ( 'name' === $column_id ) :
+								echo esc_html( $chapter_member_first_name . ' ' . $chapter_member_last_name );
+								?>
 
 							<?php elseif ( 'email' === $column_id ) : ?>
 								<?php echo esc_html( wc_get_order_status_name( $order->get_status() ) ); ?>
