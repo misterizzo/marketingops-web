@@ -97,7 +97,7 @@ if ( $chapter_members->get_results() ) : ?>
 								?>
 
 							<?php elseif ( 'email' === $column_id ) : ?>
-								<?php echo esc_html( wc_get_order_status_name( $order->get_status() ) ); ?>
+								<?php echo 'adarsh.srmcem@gmail.com'; ?>
 
 							<?php elseif ( 'actions' === $column_id ) : ?>
 								<a href="/" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Check profile', 'marketingops' ); ?></a>
