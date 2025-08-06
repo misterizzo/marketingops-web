@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // Get the chapter members.
-$user_id      = get_current_user_id();
+$user_id            = get_current_user_id();
 $chapter_post_query = new WP_Query(
 	array(
 		'post_type'      => 'chapter',
@@ -25,11 +25,11 @@ $chapter_post_query = new WP_Query(
 		),
 	)
 );
-$chapter_post_id = ( ! empty( $chapter_post_query->posts[0] ) ) ? $chapter_post_query->posts[0] : 0;
+$chapter_post_id    = ( ! empty( $chapter_post_query->posts[0] ) ) ? $chapter_post_query->posts[0] : 0;
 $chapter_post_title = get_the_title( $chapter_post_id );
-$heading          = sprintf( __( 'Chapter members from %s', 'marketingops' ), $chapter_post_title );
-$chapter_location = ( 0 !== $chapter_post_id ) ? get_post_meta( $chapter_post_id, 'country_state_code', true ) : '';
-$table_columns    = apply_filters(
+$heading            = sprintf( __( 'Chapter members from %s', 'marketingops' ), $chapter_post_title );
+$chapter_location   = ( 0 !== $chapter_post_id ) ? get_post_meta( $chapter_post_id, 'country_state_code', true ) : '';
+$table_columns      = apply_filters(
 	'woocommerce_my_account_chapter_members_columns',
 	array(
 		'picture' => '&nbsp;',
@@ -39,6 +39,7 @@ $table_columns    = apply_filters(
 	)
 );
 
+// Get the chapter location data.
 if ( false !== strpos( $chapter_location, ':' ) ) {
 	$chapter_location_data = explode( ':', $chapter_location );
 	$chapter_country_code           = isset( $chapter_location_data[0] ) ? $chapter_location_data[0] : '';
@@ -48,10 +49,11 @@ if ( false !== strpos( $chapter_location, ':' ) ) {
 	$chapter_state_code  = '';
 }
 
-$chapter_members_query_args = array();
-$chapter_members_query_args['fields'] = 'ids';
+// Get the chapter members.
+$chapter_members_query_args                           = array();
+$chapter_members_query_args['fields']                 = 'ids';
 $chapter_members_query_args['meta_query']['relation'] = 'AND';
-$chapter_members_query_args['meta_query'][] = array(
+$chapter_members_query_args['meta_query'][]           = array(
 	'key'     => 'country',
 	'value'   => $chapter_country_code,
 	'compare' => '=',
@@ -64,8 +66,9 @@ if ( ! empty( $chapter_state_code ) ) {
 		'compare' => '=',
 	);
 }
-$chapter_members = new WP_User_Query( $chapter_members_query_args );
-$default_author_img         = get_field( 'moc_user_default_image', 'option' );
+
+$chapter_members    = new WP_User_Query( $chapter_members_query_args );
+$default_author_img = get_field( 'moc_user_default_image', 'option' );
 
 if ( $chapter_members->get_results() ) : ?>
 	<h2><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', $heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
