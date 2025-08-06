@@ -82,6 +82,10 @@ if ( $chapter_members->get_results() ) : ?>
 			foreach ( $chapter_members->get_results() as $member_id ) :
 				$chapter_member_first_name = get_user_meta( $member_id, 'first_name', true );
 				$chapter_member_last_name = get_user_meta( $member_id, 'last_name', true );
+
+				if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
+					debug( get_user_meta( $member_id ) );
+				}
 				?>
 				<tr class="order">
 					<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
