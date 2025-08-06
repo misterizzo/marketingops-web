@@ -133,11 +133,8 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							<!-- form row -->
 							<div class="form_row">
 								<!-- input with error -->
-								<div class="content_boxed moc_required_field">
+								<div class="content_boxed">
 									<input type="text" class="inputtext" name="moc_name_pronunciation" placeholder="He/Him/She/Her" value="<?php echo esc_html( $name_pronunciation ); ?>">
-									<div class="moc_error moc_name_pronunciation_err">
-										<span></span>
-									</div>
 								</div>
 							</div>
 						</div>

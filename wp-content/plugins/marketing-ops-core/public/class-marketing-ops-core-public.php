@@ -3173,22 +3173,26 @@ class Marketing_Ops_Core_Public {
 	public function moc_profile_setup_process_callback() {
 		global $wp_filesystem;
 		WP_Filesystem();
-		$message           = '';
-		$toast_message     = '';
-		$posted_array      = filter_input_array( INPUT_POST );
-		$first_name        = $posted_array['first_name'];
-		$last_name         = $posted_array['last_name'];
-		$location          = $posted_array['location'];
-		$nearest_metro     = $posted_array['nearest_metro'];
-		$profetional_title = $posted_array['profetional_title'];
-		$wiypm             = $posted_array['wiypm'];
-		$yimo              = $posted_array['yimo'];
-		$jsd               = $posted_array['jsd'];
-		$previously_img_id = $posted_array['previously_img_id'];
-		$signup_redirect   = $posted_array['signup_redirect'];
-		$previously_img_id = ! empty( $previously_img_id ) ? $previously_img_id : '';
-		$user_id           = (int) $posted_array['user_id'];
-		$add_to_cart       = ! empty( $posted_array['add_to_cart'] ) ? $posted_array['add_to_cart'] : '';
+		$message            = '';
+		$toast_message      = '';
+		$posted_array       = filter_input_array( INPUT_POST );
+		$first_name         = $posted_array['first_name'];
+		$last_name          = $posted_array['last_name'];
+		$location           = $posted_array['location'];
+		$name_pronunciation = $posted_array['name_pronunciation'];
+		$nearest_metro      = $posted_array['nearest_metro'];
+		$profetional_title  = $posted_array['profetional_title'];
+		$wiypm              = $posted_array['wiypm'];
+		$yimo               = $posted_array['yimo'];
+		$jsd                = $posted_array['jsd'];
+		$previously_img_id  = $posted_array['previously_img_id'];
+		$signup_redirect    = $posted_array['signup_redirect'];
+		$previously_img_id  = ! empty( $previously_img_id ) ? $previously_img_id : '';
+		$user_id            = (int) $posted_array['user_id'];
+		$add_to_cart        = ! empty( $posted_array['add_to_cart'] ) ? $posted_array['add_to_cart'] : '';
+
+		var_dump( $_SERVER['REMOTE_ADDR'] );
+		var_dump( $location ); die;
 
 		if ( ! empty( $_FILES ) ) {
 			if ( ( 212 <= $image_width && 212 <= $image_height ) && ( 512 >= $image_width && 512 >= $image_height ) ) {

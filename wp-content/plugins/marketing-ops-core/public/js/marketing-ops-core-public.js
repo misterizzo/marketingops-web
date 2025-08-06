@@ -3032,21 +3032,18 @@ jQuery( document ).ready( function( $ ) {
 				block_element( $( '.loader_bg' ) );
 			},
 			success: function( response ) {
-				console.log( 'response', response );
 				if ( 'major-metros-found' === response.data.code ) {
 					var major_metros = response.data.major_metros;
-
-					console.log( 'major_metros', major_metros );
-
-					var options = '<option value="">What metropolitan area you are most near new?</option>';
+					var options      = '<option value="">What metropolitan area you are most near?</option>';
 					$.each( major_metros, function( index, metro_name ) {
 						options += '<option value="' + metro_name + '">' + metro_name + '</option>';
 					} );
+
+					// Set the major metros in the dropdown.
 					$( '#nearest_major_metro' ).html( options );
 				}
 			},
 			complete: function() {
-				console.log( 'complete1' );
 				unblock_element( $( '.loader_bg' ) );
 			}
 		} );
@@ -3057,25 +3054,26 @@ jQuery( document ).ready( function( $ ) {
 		event.preventDefault();
 		var this_btn = $( this );
 		this_btn.text( edit_save_btn_processing_text );
-		var first_name        = $( 'input[name="moc_first_name"]' ).val();
-		var last_name         = $( 'input[name="moc_last_name"]' ).val();
-		var location          = $( '#moc_location' ).val();
-		var nearest_metro     = $( '#nearest_major_metro' ).val();
-		var profetional_title = $( 'input[name="moc_pro_text"]' ).val();
-		var wiypm             = $( '#moc_what_is_your_map' ).val();
-		var yimo              = $( '#moc_years_in_marketing_operation' ).val();
-		var jsd               = $( '#moc_job_seeker_details' ).val();
-		var previously_img_id = $( '.moc_previously_stored_attach_id' ).val();
-		var signup_redirect   = $( 'input[name="moc_signup_redirect_url"]' ).val();
-		var process_execute   = true;
-		var arrow_html        = moc_arrow_html();
-		var file_input        = $( '.moc_profie_pic' );
-		var file_val          = file_input.val();
-		var ext_array         = moc_image_valid_ext;
-		var ext               = file_val.split( '.' ).pop();
-		var file              = $( '.moc_profie_pic' )[0].files[0];
-		var add_to_cart       = ( undefined !== moc_get_url_vars() ) ? moc_get_url_vars()['add_to_cart'] : '';
-		var formData          = new FormData();
+		var first_name         = $( 'input[name="moc_first_name"]' ).val();
+		var last_name          = $( 'input[name="moc_last_name"]' ).val();
+		var name_pronunciation = $( 'input[name="moc_name_pronunciation"]' ).val();
+		var location           = $( '#moc_location' ).val();
+		var nearest_metro      = $( '#nearest_major_metro' ).val();
+		var profetional_title  = $( 'input[name="moc_pro_text"]' ).val();
+		var wiypm              = $( '#moc_what_is_your_map' ).val();
+		var yimo               = $( '#moc_years_in_marketing_operation' ).val();
+		var jsd                = $( '#moc_job_seeker_details' ).val();
+		var previously_img_id  = $( '.moc_previously_stored_attach_id' ).val();
+		var signup_redirect    = $( 'input[name="moc_signup_redirect_url"]' ).val();
+		var process_execute    = true;
+		var arrow_html         = moc_arrow_html();
+		var file_input         = $( '.moc_profie_pic' );
+		var file_val           = file_input.val();
+		var ext_array          = moc_image_valid_ext;
+		var ext                = file_val.split( '.' ).pop();
+		var file               = $( '.moc_profie_pic' )[0].files[0];
+		var add_to_cart        = ( undefined !== moc_get_url_vars() ) ? moc_get_url_vars()['add_to_cart'] : '';
+		var formData           = new FormData();
 		$( '.moc_error span' ).text('');
 
 		/**
@@ -3125,6 +3123,7 @@ jQuery( document ).ready( function( $ ) {
 			formData.append( 'user_id', current_user_id );
 			formData.append( 'first_name', first_name );
 			formData.append( 'last_name', last_name );
+			formData.append( 'name_pronunciation', name_pronunciation );
 			formData.append( 'location', location );
 			formData.append( 'nearest_metro', nearest_metro );
 			formData.append( 'profetional_title', profetional_title );
