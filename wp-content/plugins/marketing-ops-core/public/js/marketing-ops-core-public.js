@@ -3017,7 +3017,7 @@ jQuery( document ).ready( function( $ ) {
 
 	// Get the major metros based on the location selecion.
 	$( document ).on( 'change', '#moc_location', function() {
-		var country_code = $( this ).val();
+		var country_state_code = $( this ).val();
 
 		// Shoot the ajax to get the major metros.
 		$.ajax( {
@@ -3026,15 +3026,19 @@ jQuery( document ).ready( function( $ ) {
 			type: 'POST',
 			data: {
 				'action': 'get_major_metros',
-				'country_code': country_code,
+				'country_state_code': country_state_code,
 			},
 			beforeSend: function() {
 				block_element( $( '.loader_bg' ) );
 			},
 			success: function( response ) {
+				console.log( 'response', response );
 				if ( 'major-metros-found' === response.data.code ) {
 					var major_metros = response.data.major_metros;
-					var options = '<option value="">What metropolitan area you are most near?</option>';
+
+					console.log( 'major_metros', major_metros );
+
+					var options = '<option value="">What metropolitan area you are most near new?</option>';
 					$.each( major_metros, function( index, metro_name ) {
 						options += '<option value="' + metro_name + '">' + metro_name + '</option>';
 					} );
@@ -3042,6 +3046,7 @@ jQuery( document ).ready( function( $ ) {
 				}
 			},
 			complete: function() {
+				console.log( 'complete' );
 				unblock_element( $( '.loader_bg' ) );
 			}
 		} );

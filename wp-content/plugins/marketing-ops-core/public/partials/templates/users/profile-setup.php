@@ -133,28 +133,13 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							<!-- form row -->
 							<div class="form_row">
 								<!-- input with error -->
-								<div class="content_boxed required moc_required_field">
-									<?php
-									$countries_obj = new WC_Countries();
-									$countries     = $countries_obj->__get('countries');
-									?>
-									<select id="moc_location" class="<?php echo esc_attr( $location_class ); ?>">
-										<option value=""><?php esc_html_e( 'Location', 'marketingops' ); ?></option>
-										<?php
-										foreach ( $countries as $key=> $country ) {
-											$option_selected = ( ! empty( $location ) && $location === $key ) ? 'selected="selected"' : '';
-											?>
-											<option value="<?php echo esc_attr( $key ); ?>" <?php echo esc_attr( $option_selected ); ?>><?php echo esc_html( $country ); ?></option>
-											<?php
-										}
-										?>
-									</select>
-									<div class="moc_error moc_location_err">
+								<div class="content_boxed moc_required_field">
+									<input type="text" class="inputtext" name="moc_name_pronunciation" placeholder="He/Him/She/Her" value="<?php echo esc_html( $name_pronunciation ); ?>">
+									<div class="moc_error moc_name_pronunciation_err">
 										<span></span>
 									</div>
 								</div>
 							</div>
-
 						</div>
 						<!-- profile pic -->
 						<div class="box_container profile_pic">
@@ -188,6 +173,20 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 								</div> -->
 							</div>
 							<div class="moc_error moc_profile_pic_err">
+								<span></span>
+							</div>
+						</div>
+					</div>
+
+					<!-- form row -->
+					<div class="form_row">
+						<!-- input with error -->
+						<div class="content_boxed required moc_required_field">
+							<select id="moc_location" class="<?php echo esc_attr( $location_class ); ?>">
+								<option value=""><?php esc_html_e( 'Location', 'marketingops' ); ?></option>
+								<?php WC()->countries->country_dropdown_options( 'US', 'CA' ); ?>
+							</select>
+							<div class="moc_error moc_location_err">
 								<span></span>
 							</div>
 						</div>

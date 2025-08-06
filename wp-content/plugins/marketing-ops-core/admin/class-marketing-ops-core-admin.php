@@ -1827,19 +1827,61 @@ class Marketing_Ops_Core_Admin {
 	 */
 	public function moc_acf_load_field_country_code_callback( $field ) {
 		// Reset the fields.
-		$field['choices'][''] = __( 'Select a country', 'marketingops' );
+		$field['choices'][''] = __( 'Select location', 'marketingops' );
 
 		// Get the list of countries.
-		$countries = WC()->countries->get_countries();
+		$country_states = $this->moc_get_country_states_dropdown_options_callback();
 
-		// If the countries are not empty.
-		if ( ! empty( $countries ) && is_array( $countries ) ) {
-			foreach ( $countries as $country_code => $country_name ) {
-				$field['choices'][ $country_code ] = $country_name;
-			}
+		// If the country states array is empty, return.
+		if ( empty( $country_states ) || ! is_array( $country_states ) ) {
+			return $field;
+		}
+
+		// Set the field choices to the country states.
+		foreach ( $country_states as $location_code => $location_name ) {
+			$field['choices'][ $location_code ] = $location_name;
 		}
 
 		return $field;
+	}
+
+	/**
+	 * Get the country states dropdown options.
+	 *
+	 * @return array
+	 *
+	 * @since 1.0.0
+	 */
+	public function moc_get_country_states_dropdown_options_callback() {
+		$countries = WC()->countries->get_countries();
+
+		// If the countries are not empty.
+		if ( empty( $countries ) || ! is_array( $countries ) ) {
+			return array();
+		}
+
+		// Prepare the countries dropdown options.
+		$country_dropdown_options = array();
+
+		// Loop through the countries.
+		foreach ( $countries as $country_code => $country_name ) {
+			// Get the states for the country.
+			$states = WC()->countries->get_states( $country_code );
+
+			// If the states are not empty.
+			if ( ! empty( $states ) && is_array( $states ) ) {
+				// Loop through the states.
+				foreach ( $states as $state_code => $state_name ) {
+					// Add the state to the dropdown options.
+					$country_dropdown_options[ $country_code . ':' . $state_code ] = $country_name . ' - ' . $state_name;
+				}
+			} else {
+				// If there are no states, add the country only.
+				$country_dropdown_options[ $country_code ] = $country_name;
+			}
+		}
+
+		return $country_dropdown_options;
 	}
 
 	/**
