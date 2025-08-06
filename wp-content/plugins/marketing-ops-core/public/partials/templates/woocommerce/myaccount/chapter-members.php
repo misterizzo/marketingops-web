@@ -128,7 +128,7 @@ if ( $chapter_members->get_results() ) : ?>
 								<?php echo esc_html( $chapter_member_profession ); ?>
 
 							<?php elseif ( 'experience' === $column_id ) : ?>
-								<?php echo esc_html( $chapter_member_experience ) . ' years'; ?>
+								<?php echo esc_html( $chapter_member_experience ) . ' years in the marketing industry!'; ?>
 
 							<?php elseif ( 'actions' === $column_id ) : ?>
 								<a href="<?php echo esc_url( $chapter_member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
