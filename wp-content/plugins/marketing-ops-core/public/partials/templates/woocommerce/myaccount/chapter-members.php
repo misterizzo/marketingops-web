@@ -69,6 +69,10 @@ $default_author_img         = get_field( 'moc_user_default_image', 'option' );
 
 if ( $chapter_members->get_results() ) : ?>
 	<h2><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', $heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
+
+	<div class="chapter-members-filter">
+		<input type="text" placeholder="<?php esc_attr_e( 'Search your favourite chapter members...', 'marketingops' ); ?>" />
+	</div>
 	<table class="shop_table shop_table_responsive my_account_chapter_members">
 		<thead>
 			<tr>
