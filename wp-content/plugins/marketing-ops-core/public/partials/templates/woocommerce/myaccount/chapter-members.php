@@ -65,6 +65,7 @@ if ( ! empty( $chapter_state_code ) ) {
 	);
 }
 $chapter_members = new WP_User_Query( $chapter_members_query_args );
+$default_author_img         = get_field( 'moc_user_default_image', 'option' );
 
 if ( $chapter_members->get_results() ) : ?>
 	<h2><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', $heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
@@ -83,10 +84,9 @@ if ( $chapter_members->get_results() ) : ?>
 				$chapter_member_first_name = get_user_meta( $member_id, 'first_name', true );
 				$chapter_member_last_name  = get_user_meta( $member_id, 'last_name', true );
 				$chapter_member_data       = get_userdata( $member_id );
-
-				if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
-					debug( $chapter_member_data );
-				}
+				$chapter_member_avatar_id  = ( ! empty( get_user_meta( $member_id, 'wp_user_avatar', true ) ) ) ? get_user_meta( $member_id, 'wp_user_avatar', true ) : '';
+				$chapter_member_avatar_url = ( ! empty( $chapter_member_avatar_id ) ) ? get_post_meta( $chapter_member_avatar_id, '_wp_attached_file', true ) : '';
+				$chapter_member_avatar_url = ( ! empty( $chapter_member_avatar_url ) ) ?  $upload_url['baseurl'] . '/' . $chapter_member_avatar_url : $default_author_img;
 				?>
 				<tr class="order">
 					<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
@@ -95,17 +95,17 @@ if ( $chapter_members->get_results() ) : ?>
 								<?php do_action( 'woocommerce_my_account_chapter_members_column_' . $column_id, $order ); ?>
 
 							<?php elseif ( 'picture' === $column_id ) : ?>
-								<img src="https://marketingops.com/wp-content/uploads/2024/12/Mike-Square20241209234031.png" alt="Mike Rizzo">
+								<img src="<?php echo esc_url( $chapter_member_avatar_url ); ?>" alt="Mike Rizzo">
 
 							<?php elseif ( 'name' === $column_id ) :
 								echo esc_html( $chapter_member_first_name . ' ' . $chapter_member_last_name );
 								?>
 
 							<?php elseif ( 'email' === $column_id ) : ?>
-								<?php echo 'adarsh.srmcem@gmail.com'; ?>
+								<?php echo ( ! empty( $chapter_member_data->data->user_email ) ? $chapter_member_data->data->user_email : '' ); ?>
 
 							<?php elseif ( 'actions' === $column_id ) : ?>
-								<a href="/" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Check profile', 'marketingops' ); ?></a>
+								<a href="/" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
 							<?php endif; ?>
 						</td>
 					<?php endforeach; ?>
