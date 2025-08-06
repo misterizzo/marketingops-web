@@ -3199,10 +3199,10 @@ class Marketing_Ops_Core_Public {
 			$country_code = $location;
 		}
 
-		if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
-			var_dump( $country_code, $state_code );
-			die;
-		}
+		// if ( '119.252.194.87' === $_SERVER['REMOTE_ADDR'] ) {
+		// 	var_dump( $country_code, $state_code );
+		// 	die;
+		// }
 
 		if ( ! empty( $_FILES ) ) {
 			if ( ( 212 <= $image_width && 212 <= $image_height ) && ( 512 >= $image_width && 512 >= $image_height ) ) {
@@ -3256,17 +3256,6 @@ class Marketing_Ops_Core_Public {
 				} else {
 					$redirect_url = $signup_redirect;
 				}
-
-				update_user_meta( $user_id, 'first_name', $first_name );
-				update_user_meta( $user_id, 'last_name', $last_name );
-				update_user_meta( $user_id, 'billing_country', $location );
-				update_user_meta( $user_id, 'shipping_country', $location );
-				update_user_meta( $user_id, 'country', $location );
-				update_user_meta( $user_id, 'nearest_metro', $nearest_metro );
-				update_user_meta( $user_id, 'profetional_title', $profetional_title );
-				update_user_meta( $user_id, 'experience', $wiypm );
-				update_user_meta( $user_id, 'experience_years', $yimo );
-				update_user_meta( $user_id, 'job_seeker_details', $jsd );
 			} else {
 				$default_author_img = get_field( 'moc_user_default_image', 'option' );
 				$author_img_id      = ! empty( get_user_meta( $user_id, 'wp_user_avatar', true ) ) ? get_user_meta( $user_id, 'wp_user_avatar', true ) : '';
@@ -3287,33 +3276,28 @@ class Marketing_Ops_Core_Public {
 				$redirect_url = $signup_redirect;
 			}
 
-			update_user_meta( $user_id, 'first_name', $first_name );
-			update_user_meta( $user_id, 'last_name', $last_name );
-			update_user_meta( $user_id, 'billing_country', $location );
-			update_user_meta( $user_id, 'shipping_country', $location );
-			update_user_meta( $user_id, 'country', $location );
-			update_user_meta( $user_id, 'nearest_metro', $nearest_metro );
-			update_user_meta( $user_id, 'profetional_title', $profetional_title );
-			update_user_meta( $user_id, 'experience', $wiypm );
-			update_user_meta( $user_id, 'experience_years', $yimo );
 			update_user_meta( $user_id , 'wp_user_avatar', $previously_img_id );
-			update_user_meta( $user_id, 'job_seeker_details', $jsd );
 		}
-		update_user_meta( $user_id, 'profile-setup-completed', 'yes' );
-		$all_user_meta       = get_user_meta( $user_id );
-		$user_display_name   = ! empty( $first_name ) ? $first_name . ' ' . $last_name : $all_user_meta['nickname'][0];
-		$updated_user_id     = wp_update_user( array( 'ID' => $user_id, 'display_name' => $user_display_name ) );
 
-		// Update the syncari information.
-		moc_update_syncari_data_tabels(
-			$user_id,
-			array(
-				'user_ID'           => $user_id,
-				'job_seeker_status' => $jsd,
-				'first_name'        => $first_name,
-				'last_name'         => $last_name,
-			)
-		);
+		update_user_meta( $user_id, 'profetional_title', $profetional_title );
+		update_user_meta( $user_id, 'experience', $wiypm );
+		update_user_meta( $user_id, 'experience_years', $yimo );
+		update_user_meta( $user_id, 'first_name', $first_name );
+		update_user_meta( $user_id, 'last_name', $last_name );
+		update_user_meta( $user_id, 'pronunciation', $name_pronunciation );
+		update_user_meta( $user_id, 'billing_country', $country_code );
+		update_user_meta( $user_id, 'billing_state', $state_code );
+		update_user_meta( $user_id, 'shipping_country', $country_code );
+		update_user_meta( $user_id, 'shipping_state', $state_code );
+		update_user_meta( $user_id, 'country', $country_code );
+		update_user_meta( $user_id, 'state', $state_code );
+		update_user_meta( $user_id, 'nearest_metro', $nearest_metro );
+		update_user_meta( $user_id, 'job_seeker_details', $jsd );
+		update_user_meta( $user_id, 'profile-setup-completed', 'yes' );
+
+		$all_user_meta     = get_user_meta( $user_id );
+		$user_display_name = ! empty( $first_name ) ? $first_name . ' ' . $last_name : $all_user_meta['nickname'][0];
+		$updated_user_id   = wp_update_user( array( 'ID' => $user_id, 'display_name' => $user_display_name ) );
 
 		// Send back the AJAX response.
 		wp_send_json_success(
