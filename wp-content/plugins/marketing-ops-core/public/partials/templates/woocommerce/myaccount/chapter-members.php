@@ -29,7 +29,6 @@ $chapter_post_id = ( ! empty( $chapter_post_query->posts[0] ) ) ? $chapter_post_
 $chapter_post_title = get_the_title( $chapter_post_id );
 $heading          = sprintf( __( 'Chapter members from %s', 'marketingops' ), $chapter_post_title );
 $chapter_location = ( 0 !== $chapter_post_id ) ? get_post_meta( $chapter_post_id, 'country_state_code', true ) : '';
-var_dump( $chapter_location );
 $table_columns    = apply_filters(
 	'woocommerce_my_account_chapter_members_columns',
 	array(
@@ -39,6 +38,34 @@ $table_columns    = apply_filters(
 		'actions' => '&nbsp;',
 	)
 );
+
+if ( false !== strpos( $chapter_location, ':' ) ) {
+	$chapter_location_data = explode( ':', $chapter_location );
+	$chapter_country_code           = isset( $chapter_location_data[0] ) ? $chapter_location_data[0] : '';
+	$chapter_state_code             = isset( $chapter_location_data[1] ) ? $chapter_location_data[1] : '';
+} else {
+	$chapter_country_code = $chapter_location;
+	$chapter_state_code  = '';
+}
+
+$chapter_members_query_args = array();
+$chapter_members_query_args['meta_query']['relation'] = 'AND';
+$chapter_members_query_args['meta_query'][] = array(
+	'key'     => 'country',
+	'value'   => $chapter_country_code,
+	'compare' => '=',
+);
+
+if ( ! empty( $chapter_state_code ) ) {
+	$chapter_members_query_args['meta_query'][] = array(
+		'key'     => 'state',
+		'value'   => $chapter_state_code,
+		'compare' => '=',
+	);
+}
+$chapter_members = new WP_User_Query( $chapter_members_query_args );
+
+debug( $chapter_members->get_results() );
 
 $customer_orders = get_posts(
 	apply_filters(
