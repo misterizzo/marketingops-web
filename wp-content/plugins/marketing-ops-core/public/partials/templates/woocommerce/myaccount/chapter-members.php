@@ -35,6 +35,7 @@ $table_columns      = apply_filters(
 		'picture' => '&nbsp;',
 		'name'    => __( 'Name', 'woocommerce' ),
 		'email'   => __( 'Email', 'woocommerce' ),
+		'profession' => __( 'Profession', 'woocommerce' ),
 		'actions' => __( 'Actions', 'woocommerce' ),
 	)
 );
@@ -97,12 +98,13 @@ if ( $chapter_members->get_results() ) : ?>
 				}
 
 				$chapter_member_profile_url = get_author_posts_url( $member_id );
-				$chapter_member_first_name = get_user_meta( $member_id, 'first_name', true );
-				$chapter_member_last_name  = get_user_meta( $member_id, 'last_name', true );
-				$chapter_member_data       = get_userdata( $member_id );
-				$chapter_member_avatar_id  = ( ! empty( get_user_meta( $member_id, 'wp_user_avatar', true ) ) ) ? get_user_meta( $member_id, 'wp_user_avatar', true ) : '';
-				$chapter_member_avatar_url = ( ! empty( $chapter_member_avatar_id ) ) ? get_post_meta( $chapter_member_avatar_id, '_wp_attached_file', true ) : '';
-				$chapter_member_avatar_url = ( ! empty( $chapter_member_avatar_url ) ) ?  $upload_url['baseurl'] . '/' . $chapter_member_avatar_url : $default_author_img;
+				$chapter_member_profession  = get_user_meta( $member_id, 'profetional_title', true );
+				$chapter_member_first_name  = get_user_meta( $member_id, 'first_name', true );
+				$chapter_member_last_name   = get_user_meta( $member_id, 'last_name', true );
+				$chapter_member_data        = get_userdata( $member_id );
+				$chapter_member_avatar_id   = ( ! empty( get_user_meta( $member_id, 'wp_user_avatar', true ) ) ) ? get_user_meta( $member_id, 'wp_user_avatar', true ) : '';
+				$chapter_member_avatar_url  = ( ! empty( $chapter_member_avatar_id ) ) ? get_post_meta( $chapter_member_avatar_id, '_wp_attached_file', true ) : '';
+				$chapter_member_avatar_url  = ( ! empty( $chapter_member_avatar_url ) ) ?  $upload_url['baseurl'] . '/' . $chapter_member_avatar_url : $default_author_img;
 				?>
 				<tr class="order">
 					<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
@@ -119,6 +121,9 @@ if ( $chapter_members->get_results() ) : ?>
 
 							<?php elseif ( 'email' === $column_id ) : ?>
 								<?php echo ( ! empty( $chapter_member_data->data->user_email ) ? '<a href="mailto:' . esc_attr( $chapter_member_data->data->user_email ) . '">' . esc_html( $chapter_member_data->data->user_email ) . '</a>' : '' ); ?>
+
+							<?php elseif ( 'profession' === $column_id ) : ?>
+								<?php echo esc_html( $chapter_member_profession ); ?>
 
 							<?php elseif ( 'actions' === $column_id ) : ?>
 								<a href="<?php echo esc_url( $chapter_member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
