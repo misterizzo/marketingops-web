@@ -9,11 +9,13 @@
 defined( 'ABSPATH' ) || exit;
 
 // Get the chapter members.
-$user_id          = get_current_user_id();
-$chapter_location = new WP_Query(
+$user_id      = get_current_user_id();
+$chapter_post = new WP_Query(
 	array(
 		'post_type'      => 'chapter',
 		'posts_per_page' => 1,
+		'post_status'    => 'publish',
+		'fields'         => 'ids',
 		'meta_query'     => array(
 			array(
 				'key'     => 'primary_leader',
@@ -23,6 +25,9 @@ $chapter_location = new WP_Query(
 		),
 	)
 );
+
+debug( $chapter_post );
+
 $heading          = ( ! empty( $chapter_location[0]->post_title ) ) ? sprintf( __( 'Chapter members from %s', 'marketingops' ), $chapter_location[0]->post_title ) : __( 'Chapter members', 'marketingops' );
 $chapter_post_id  = ( ! empty( $chapter_location[0]->ID ) ) ? $chapter_location[0]->ID : 0;
 $chapter_location = ( 0 !== $chapter_post_id ) ? get_post_meta( $chapter_post_id, 'country_state_code', true ) : '';
