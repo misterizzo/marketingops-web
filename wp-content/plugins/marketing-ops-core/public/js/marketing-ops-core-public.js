@@ -3046,7 +3046,7 @@ jQuery( document ).ready( function( $ ) {
 				}
 			},
 			complete: function() {
-				console.log( 'complete' );
+				console.log( 'complete1' );
 				unblock_element( $( '.loader_bg' ) );
 			}
 		} );

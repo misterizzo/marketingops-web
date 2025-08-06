@@ -6753,15 +6753,15 @@ class Marketing_Ops_Core_Public {
 	 */
 	public function mops_get_major_metros_callback() {
 		$country_state_code = filter_input( INPUT_POST, 'country_state_code', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
-
-		var_dump( $country_state_code );
+		$major_metros_list  = array();
 
 		// Return, if country code is empty.
 		if ( empty( $country_state_code ) ) {
 			wp_send_json_error(
 				array(
-					'code'    => 'country-state-code-empty',
-					'message' => __( 'Country state code is empty.', 'marketingops' ),
+					'code'         => 'country-state-code-empty',
+					'message'      => __( 'Country state code is empty.', 'marketingops' ),
+					'major_metros' => $major_metros_list,
 				),
 				400
 			);
@@ -6769,8 +6769,7 @@ class Marketing_Ops_Core_Public {
 		}
 
 		// Get the major metros based on the country state code.
-		$major_metros      = get_field( 'major_metros', 'option' );
-		$major_metros_list = array();
+		$major_metros = get_field( 'major_metros', 'option' );
 
 		// Prepare the major metros list based on the location.
 		if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
