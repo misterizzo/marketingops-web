@@ -82,7 +82,7 @@ if ( $chapter_members->get_results() ) : ?>
 			<?php
 			foreach ( $chapter_members->get_results() as $member_id ) :
 				// If the member is the current user, skip.
-				if ( $member_id === $user_id ) {
+				if ( $member_id == $user_id ) {
 					continue;
 				}
 
