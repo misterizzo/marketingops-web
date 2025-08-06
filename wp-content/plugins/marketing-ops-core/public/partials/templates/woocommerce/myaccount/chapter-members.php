@@ -49,6 +49,7 @@ if ( false !== strpos( $chapter_location, ':' ) ) {
 }
 
 $chapter_members_query_args = array();
+$chapter_members_query_args['fields'] = 'ids';
 $chapter_members_query_args['meta_query']['relation'] = 'AND';
 $chapter_members_query_args['meta_query'][] = array(
 	'key'     => 'country',
