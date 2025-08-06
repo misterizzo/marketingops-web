@@ -17,14 +17,14 @@ $chapter_location = new WP_Query(
 		'meta_query'     => array(
 			array(
 				'key'     => 'primary_leader',
-				'value'   => '"' . $user_id . '"',
-				'compare' => 'LIKE',
+				'value'   => $user_id,
+				'compare' => '=',
 			),
 		),
 	)
 );
 
-debug( $chapter_location );
+debug( $chapter_location->posts );
 
 $my_orders_columns = apply_filters(
 	'woocommerce_my_account_chapter_members_columns',
