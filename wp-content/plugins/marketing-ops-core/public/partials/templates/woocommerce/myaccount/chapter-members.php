@@ -35,7 +35,7 @@ $table_columns      = apply_filters(
 		'picture' => '&nbsp;',
 		'name'    => __( 'Name', 'woocommerce' ),
 		'email'   => __( 'Email', 'woocommerce' ),
-		'actions' => '&nbsp;',
+		'actions' => __( 'Actions', 'woocommerce' ),
 	)
 );
 
