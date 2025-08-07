@@ -12392,3 +12392,10 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
 	line-height: 34px;
 	margin-bottom: 15px;
 }
+
+
+@media (max-width: 767px) 
+{
+	.elementor-234079 .elementor-hidden-desktop .elementor-element.elementor-element-bcbf1df {width: 240px;}
+	.elementor-234079 .elementor-hidden-desktop .elementor-element.elementor-element-6bc0652{width: 240px;}
+}
