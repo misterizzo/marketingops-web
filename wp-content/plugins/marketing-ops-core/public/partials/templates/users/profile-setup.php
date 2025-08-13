@@ -191,7 +191,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 					</div>
 
 					<!-- form row -->
-					<div class="form_row" style="display: none;">
+					<div class="form_row">
 						<!-- input with error -->
 						<div class="content_boxed required">
 							<select id="nearest_major_metro" class="<?php echo esc_attr( $wipm_selected ); ?>">
