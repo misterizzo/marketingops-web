@@ -12420,7 +12420,8 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
     transition: 300ms ease all;
 	z-index: 3;
 }
-
+.profile_setup .content_boxed input,
+.profile_setup .content_boxed select{padding:20px 15px 15px 15px;}
 .profile_setup .content_boxed input:focus ~ span.label, 
 .profile_setup .content_boxed input:valid ~ span.label, 
 .profile_setup .content_boxed textarea:focus ~ span.label, 
