@@ -12421,7 +12421,7 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
 	z-index: 3;
 }
 .profile_setup .content_boxed input,
-.profile_setup .content_boxed select{padding:20px 15px 15px 15px;}
+.profile_setup .content_boxed select{padding:20px 15px 15px 15px !important;}
 .profile_setup .content_boxed input:focus ~ span.label, 
 .profile_setup .content_boxed input:valid ~ span.label, 
 .profile_setup .content_boxed textarea:focus ~ span.label, 
@@ -12429,7 +12429,7 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
 .profile_setup .content_boxed select:focus ~ span.label,
 .profile_setup .content_boxed select:valid ~ span.label
 {
-    top: -6px;
+    top: 5px;
     left: 15px;
     font-size: 12px;
     color: #FA4A7A;
