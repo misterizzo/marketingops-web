@@ -187,6 +187,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 								<option value=""><?php esc_html_e( 'Location', 'marketingops' ); ?></option>
 								<?php WC()->countries->country_dropdown_options( $country, $state ); ?>
 							</select>
+							<span class="label">Location</span>
 							<div class="moc_error moc_location_err">
 								<span></span>
 							</div>
@@ -207,6 +208,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 									<?php } ?>
 								<?php } ?>
 							</select>
+							<span class="label">What metropolitan area you are most near?</span>
 						</div>
 					</div>
 
@@ -232,6 +234,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 								}
 								?>
 							</select>
+							<span class="label">What is your primary MAP?</span>
 						</div>
 					</div>
 
@@ -261,6 +264,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 								}
 								?>
 							</select>
+							<span class="label">Years in Marketing Operation</span>
 						</div>
 					</div>
 
@@ -277,6 +281,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 								}
 								?>
 							</select>
+							<span class="label">Job Seeker Details</span>
 						</div>
 					</div>
 
