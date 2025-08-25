@@ -12424,14 +12424,8 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
 .profile_setup .content_boxed input:valid ~ span.label, 
 .profile_setup .content_boxed textarea:focus ~ span.label, 
 .profile_setup .content_boxed textarea:valid ~ span.label {
-    top: -14px;
+    top: -13px;
+	left:15px;
     font-size: 12px;
-    background: #FA4A7A;
-    background: -webkit-linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
-    background: -moz-linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
-    background: linear-gradient(90deg, #FA4A7A -2.36%, #9C2296 159.05%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+    color: #FA4A7A;
 }
