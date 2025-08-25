@@ -113,7 +113,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							<div class="form_row">
 								<!-- input with error -->
 								<div class="content_boxed moc_required_field">
-									<input type="text" class="inputtext" name="moc_first_name" placeholder="" value="<?php echo esc_html( $first_name ); ?>">
+									<input type="text" class="inputtext" name="moc_first_name" placeholder="" value="<?php echo esc_html( $first_name ); ?>" required="required">
 									<span class="label">First Name</span>
 									<div class="moc_error moc_first_name_err">
 										<span></span>
@@ -125,7 +125,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							<div class="form_row">
 								<!-- input with error -->
 								<div class="content_boxed moc_required_field">
-									<input type="text" class="inputtext" name="moc_last_name" placeholder="" value="<?php echo esc_html( $last_name ); ?>">
+									<input type="text" class="inputtext" name="moc_last_name" placeholder="" value="<?php echo esc_html( $last_name ); ?>" required="required">
 									<span class="label">Last name</span>
 									<div class="moc_error moc_last_name_err">
 										<span></span>
@@ -137,7 +137,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 							<div class="form_row">
 								<!-- input with error -->
 								<div class="content_boxed">
-									<input type="text" class="inputtext" name="moc_name_pronunciation" placeholder="" value="<?php echo esc_html( $pronunciation ); ?>">
+									<input type="text" class="inputtext" name="moc_name_pronunciation" placeholder="" value="<?php echo esc_html( $pronunciation ); ?>" required="required">
 									<span class="label">He/Him/She/Her</span>
 								</div>
 							</div>
@@ -216,7 +216,7 @@ if ( ! empty( $member_plan_obj[0]->plan_id ) ) {
 					<div class="form_row">
 						<!-- input with error -->
 						<div class="content_boxed">
-							<input type="text" class="inputtext" name="moc_pro_text" placeholder=""  value="<?php echo esc_html( $profetional_title ); ?>">
+							<input type="text" class="inputtext" name="moc_pro_text" placeholder=""  value="<?php echo esc_html( $profetional_title ); ?>" required="required">
 							<span class="label">Professional title</span>
 						</div>
 					</div>
