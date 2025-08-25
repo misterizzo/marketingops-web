@@ -79,6 +79,52 @@ jQuery( document ).ready( function( $ ) {
 		$( '.moc_paid_content_dynamic_restriction_modal .moc_popup_close' ).remove();
 	}
 
+	// Search members.
+	if ( $( '.my_account_chapter_members' ).length ) {
+		$( document ).on( 'keyup', '.chapter-member-directory-keyword', function( evt ) {
+			var input_feld      = $( this );
+			var keyword         = input_feld.val();
+			var country         = input_feld.siblings( 'input[name=search_chapter_country]' ).val();
+			var state           = input_feld.siblings( 'input[name=search_chapter_state]' ).val();
+			var metro_name      = input_feld.siblings( 'input[name=search_chapter_chapter_name]' ).val();
+			var current_user_id = input_feld.siblings( 'input[name=search_chapter_current_user_id]' ).val();
+			var key_pressed     = 'which' in evt ? evt.which : evt.keyCode;
+
+			// If the enter key is pressed.
+			if ( 13 === key_pressed ) {
+				moc_search_chapter_members( input_feld, keyword, country, state, metro_name, current_user_id );
+			}
+		} );
+
+		/**
+		 * Search chapter members.
+		 */
+		function moc_search_chapter_members( input_feld, keyword, country, state, metro_name, current_user_id ) {
+			// Fire the ajax to fetch the videos.
+			$.ajax( {
+				dataType: 'json',
+				url: ajaxurl,
+				type: 'POST',
+				data: {
+					'action': 'search_chapter_members',
+					'keyword': keyword,
+					'country': country,
+					'state': state,
+					'metro_name': metro_name,
+					'current_user_id': current_user_id,
+				},
+				beforeSend: function() {
+					$( '.loader_bg' ).css( 'display', 'flex' );
+				},
+				success: function( response ) {
+					if ( 'videos-found' === response.data.code ) {
+						
+					}
+				}
+			} );
+		}
+	}
+
 	// Conference load more.
 	if ( $( '.confernceloadmore' ).length ) {
 		// Click on load more to fetch more videos.

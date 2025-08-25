@@ -397,6 +397,7 @@ class Marketing_Ops_Core {
 		$this->loader->add_action( 'wp_ajax_filter_agencies', $plugin_public, 'mops_filter_agencies_callback' );
 		$this->loader->add_action( 'wp_ajax_nopriv_filter_agencies', $plugin_public, 'mops_filter_agencies_callback' );
 		$this->loader->add_action( 'wp_ajax_get_major_metros', $plugin_public, 'mops_get_major_metros_callback' );
+		$this->loader->add_action( 'wp_ajax_search_chapter_members', $plugin_public, 'mops_search_chapter_members_callback' );
 	}
 
 	/**

@@ -392,7 +392,6 @@ class Marketing_Ops_Core_Public {
 	public function set_custom_post_types_and_taxonomies() {
 		moc_custom_taxonomy_job_listings(); // Register Taxonomy for Job Listings.
 		moc_workshop_custom_post_type(); // Register workshop custom post type.
-		moc_chapter_custom_post_type(); // Register chapter custom post type.
 		moc_training_platform(); // Register Taxonomy as platform for Workshop.
 		moc_training_skill_level(); // Register Taxonomy as skill level for Workshop.
 		moc_training_strategy_type(); // Register Taxonomy as strategy type for Workshop.
@@ -6786,5 +6785,62 @@ class Marketing_Ops_Core_Public {
 			200
 		);
 		wp_die();
+	}
+
+	/**
+	 * Search chapter members.
+	 *
+	 * @since 1.0.0
+	 */
+	public function mops_search_chapter_members_callback() {
+		$keyword         = filter_input( INPUT_POST, 'keyword', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+		$country         = filter_input( INPUT_POST, 'country', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+		$state           = filter_input( INPUT_POST, 'state', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+		$metro_name      = filter_input( INPUT_POST, 'metro_name', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+		$current_user_id = filter_input( INPUT_POST, 'current_user_id', FILTER_SANITIZE_NUMBER_INT );
+
+		// Find all the members that are from the nearby chapters.
+		$members_query_args                           = array();
+		$members_query_args['fields']                 = 'ids';
+		$members_query_args['exclude']                = array( $current_user_id );
+		$members_query_args['meta_query']['relation'] = 'AND';
+		$members_query_args['meta_query'][]           = array(
+			'key'     => 'country',
+			'value'   => $country,
+			'compare' => '=',
+		);
+		$members_query_args['meta_query'][]           = array(
+			'key'     => 'nearest_metro',
+			'value'   => $metro_name,
+			'compare' => '=',
+		);
+
+		// If the chapter leader current residing state is available.
+		if ( ! empty( $state ) ) :
+			$members_query_args['meta_query'][] = array(
+				'key'     => 'state',
+				'value'   => $state,
+				'compare' => '=',
+			);
+		endif;
+
+		// If the search keyword is available.
+		if ( ! empty( $keyword ) ) :
+			$members_query_args['meta_query'][] = array(
+				'key'     => 'first_name',
+				'value'   => '%' . $keyword . '%',
+				'compare' => 'LIKE',
+			);
+			$members_query_args['meta_query'][] = array(
+				'key'     => 'last_name',
+				'value'   => '%' . $keyword . '%',
+				'compare' => 'LIKE',
+			);
+		endif;
+
+		$members = new WP_User_Query( $members_query_args );
+
+		debug( $members->get_results() );
+		die;
 	}
 }

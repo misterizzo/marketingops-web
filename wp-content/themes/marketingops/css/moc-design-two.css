@@ -9649,14 +9649,14 @@ body .checkout_page_box .cart_page_container .cart_page_box .box_content .box_bo
 	bottom: 0;
 	background-color: #ccc;
 	width: 40px;
-    height: 20px;
+	height: 20px;
 }
 
 .job-manager-form.moc_edit_job_posts fieldset.fieldset-type-checkbox .field .description:before {
 	height: 14px;
-    width: 14px;
-    left: 4px;
-    bottom: 3px;
+	width: 14px;
+	left: 4px;
+	bottom: 3px;
 	background-color: white;
 	z-index: 1;
 	border-radius: 3px;
@@ -12481,8 +12481,8 @@ body .checkout_page_box .cart_page_container .cart_page_box .box_content .box_bo
 
 .moc_is_job_post_form form fieldset .select2 .select2-selection{
 	background-color: #fff;
-    border: 1px solid #F0F2F3;
-    padding: 5px 5px 0;
+	border: 1px solid #F0F2F3;
+	padding: 5px 5px 0;
 }
 
 .user_profile_blog .user_profile_right_side .blog_box_container .tabbing_content_details .form_column_row form .form_row .select2 .select2-selection .select2-selection__choice:first-of-type,
@@ -15335,89 +15335,68 @@ body.job_listing-template-default .job_listing {max-width: 100%;overflow: initia
 
 
 .woocommerce-chapter-members .woocommerce-MyAccount-content {
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .03);
-    border-radius: 20px;
-    border: 1px solid rgb(231 239 239 / 75%);
-    background: #fff;
+	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .03);
+	border-radius: 20px;
+	border: 1px solid rgb(231 239 239 / 75%);
+	background: #fff;
 }
 
 
 .woocommerce-chapter-members .woocommerce table.shop_table.shop_table_responsive.my_account_chapter_members {
-    border: 0;
-    margin: 20px 0;
+	border: 0;
+	margin: 20px 0;
 }
 
 .woocommerce-chapter-members .woocommerce table.shop_table.shop_table_responsive.my_account_chapter_members th {
-    border: none;
-    border-bottom: 1px solid #EDF3F3 !important;
+	border: none;
+	border-bottom: 1px solid #EDF3F3 !important;
 	border-top: 0px solid #EDF3F3 !important;
 }
 
 .woocommerce-chapter-members .chapter-members-filter input {
-    border: 1px solid #EDF3F3 !important;
-    margin: 15px 0;
-    padding-right: 55px;
-    border-radius: 30px;
+	border: 1px solid #EDF3F3 !important;
+	margin: 15px 0;
+	padding-right: 55px;
+	border-radius: 30px;
 }
 
 .woocommerce-chapter-members .woocommerce table.shop_table td {
-    border-top: 0 !important;
-    background-color: transparent;
+	border-top: 0 !important;
+	background-color: transparent;
 	border: none;
 	border-bottom:1px solid #EDF3F3 !important
 }
 .woocommerce-chapter-members .woocommerce table.shop_table.shop_table_responsive.my_account_chapter_members tr {
-    border-bottom: 1px solid #EDF3F3 !important;
+	border-bottom: 1px solid #EDF3F3 !important;
 }
 
-.woocommerce-chapter-members .woocommerce table.shop_table td.picture img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    border-radius: 100%;
-    position: relative;
-    top: 2px;
-    border: 2px solid #FFFFFF;
-    font-size: 12px;
-}
-
-.woocommerce-chapter-members .chapter-members-filter {
-    position: relative;
-}
-
-.woocommerce-chapter-members .chapter-members-filter i.search {
-    position: absolute;
-    top: 23px;
-    right: 10px;
-    width: 40px;
-    height: 25px;
-    cursor: pointer;
-}
-
-
+.woocommerce-chapter-members .woocommerce table.shop_table td.picture img {padding: 2px; object-fit: contain;border-radius: 100%;position: relative;top: 2px;border: 1px solid #b2b2b2;font-size: 12px;max-width: 60%;}
+.woocommerce-chapter-members .chapter-members-filter {position: relative;}
+.woocommerce-chapter-members .chapter-members-filter i.search {position: absolute;top: 23px;right: 10px;width: 40px;height: 25px;cursor: pointer;}
+.nearby-chapter-0 {margin-top: 40px;}
 .woocommerce-chapter-members .chapter-members-filter i.search svg {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .woocommerce-chapter-members .chapter-members-filter i.search svg path {
-    stroke: gray;
+	stroke: gray;
 }
 
 .woocommerce-chapter-members .woocommerce .woocommerce-MyAccount-content a.button:last-of-type {
-    margin-bottom: 0;
-    background: #F1F3F4;
-    color: #45474F;
-    padding: 6px 12px;
+	margin-bottom: 0;
+	background: #F1F3F4;
+	color: #45474F;
+	padding: 6px 12px;
 }
 
 
 .woocommerce-chapter-members .woocommerce-MyAccount-content h2{
-    background: -webkit-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
-    background: -moz-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
-    background: -o-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
-    background: linear-gradient(102deg, #FD4B7A 20%, #4D00AE 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background: -webkit-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
+	background: -moz-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
+	background: -o-linear-gradient(270deg, #4E01AE 0%, #E74281 93.98%);
+	background: linear-gradient(102deg, #FD4B7A 20%, #4D00AE 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

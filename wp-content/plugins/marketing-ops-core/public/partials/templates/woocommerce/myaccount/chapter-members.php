@@ -10,26 +10,43 @@ defined( 'ABSPATH' ) || exit;
 
 // Get the chapter members.
 $user_id            = get_current_user_id();
-$chapter_post_query = new WP_Query(
-	array(
-		'post_type'      => 'chapter',
-		'posts_per_page' => 1,
-		'post_status'    => 'publish',
-		'fields'         => 'ids',
-		'meta_query'     => array(
-			array(
-				'key'     => 'primary_leader',
-				'value'   => $user_id,
-				'compare' => '=',
-			),
-		),
-	)
+$nearest_metro      = get_user_meta( $user_id, 'nearest_metro', true );
+$country            = get_user_meta( $user_id, 'country', true );
+$state              = get_user_meta( $user_id, 'state', true );
+
+// Find all the members that are from the locations where our chapter leader is from.
+$members_query_args                           = array();
+$members_query_args['fields']                 = 'ids';
+$members_query_args['exclude']                = array( $user_id );
+$members_query_args['meta_query']['relation'] = 'AND';
+$members_query_args['meta_query'][]           = array(
+	'key'     => 'country',
+	'value'   => $country,
+	'compare' => '=',
 );
-$chapter_post_id    = ( ! empty( $chapter_post_query->posts[0] ) ) ? $chapter_post_query->posts[0] : 0;
-$chapter_post_title = get_the_title( $chapter_post_id );
-$heading            = sprintf( __( 'Chapter members from %s', 'marketingops' ), $chapter_post_title );
-$chapter_location   = ( 0 !== $chapter_post_id ) ? get_post_meta( $chapter_post_id, 'country_state_code', true ) : '';
-$table_columns      = apply_filters(
+
+// If the chapter leader current residing state is available.
+if ( ! empty( $state ) ) :
+	$members_query_args['meta_query'][] = array(
+		'key'     => 'state',
+		'value'   => $state,
+		'compare' => '=',
+	);
+endif;
+
+// If the chapter leader current residing nearest metro is available.
+if ( ! empty( $nearest_metro ) ) :
+	$members_query_args['meta_query'][] = array(
+		'key'     => 'nearest_metro',
+		'value'   => $nearest_metro,
+		'compare' => '=',
+	);
+endif;
+
+$members        = new WP_User_Query( $members_query_args );
+$heading        = sprintf( __( 'Members from %s, %s, %s', 'marketingops' ), $nearest_metro, $state, $country );
+$default_avatar = get_field( 'moc_user_default_image', 'option' );
+$table_columns  = apply_filters(
 	'woocommerce_my_account_chapter_members_columns',
 	array(
 		'picture'    => '&nbsp;',
@@ -40,71 +57,41 @@ $table_columns      = apply_filters(
 		'actions'    => __( 'Actions', 'woocommerce' ),
 	)
 );
+?>
+<h2><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', $heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
 
-// Get the chapter location data.
-if ( false !== strpos( $chapter_location, ':' ) ) {
-	$chapter_location_data = explode( ':', $chapter_location );
-	$chapter_country_code           = isset( $chapter_location_data[0] ) ? $chapter_location_data[0] : '';
-	$chapter_state_code             = isset( $chapter_location_data[1] ) ? $chapter_location_data[1] : '';
-} else {
-	$chapter_country_code = $chapter_location;
-	$chapter_state_code  = '';
-}
-
-// Get the chapter members.
-$chapter_members_query_args                           = array();
-$chapter_members_query_args['fields']                 = 'ids';
-$chapter_members_query_args['meta_query']['relation'] = 'AND';
-$chapter_members_query_args['meta_query'][]           = array(
-	'key'     => 'country',
-	'value'   => $chapter_country_code,
-	'compare' => '=',
-);
-
-if ( ! empty( $chapter_state_code ) ) {
-	$chapter_members_query_args['meta_query'][] = array(
-		'key'     => 'state',
-		'value'   => $chapter_state_code,
-		'compare' => '=',
-	);
-}
-
-$chapter_members    = new WP_User_Query( $chapter_members_query_args );
-$default_author_img = get_field( 'moc_user_default_image', 'option' );
-
-if ( $chapter_members->get_results() ) : ?>
-	<h2><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', $heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
-
-	<div class="chapter-members-filter">
+<?php if ( $members->get_results() ) : ?>
+	<div class="chapter-members-filter" style="display: none;">
 		<input type="text" placeholder="<?php esc_attr_e( 'Search your favourite chapter members...', 'marketingops' ); ?>" />
-		<i class="search"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></i>
+		<input type="hidden" name="search_chapter_country" value="<?php echo esc_attr( $country ); ?>" />
+		<input type="hidden" name="search_chapter_state" value="<?php echo esc_attr( $state ); ?>" />
+		<input type="hidden" name="search_chapter_chapter_name" value="<?php echo esc_attr( $nearest_metro ); ?>" />
+		<input type="hidden" name="search_chapter_current_user_id" value="<?php echo esc_attr( $user_id ); ?>" />
+		<i class="search search-chapter-members"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></i>
 	</div>
-	<table class="shop_table shop_table_responsive my_account_chapter_members">
-		<thead>
-			<tr>
-				<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
-					<th class="<?php echo esc_attr( $column_id ); ?>"><span class="nobr"><?php echo esc_html( $column_name ); ?></span></th>
-				<?php endforeach; ?>
-			</tr>
-		</thead>
+<?php endif; ?>
 
-		<tbody>
-			<?php
-			foreach ( $chapter_members->get_results() as $member_id ) :
-				// If the member is the current user, skip.
-				if ( $member_id == $user_id ) {
-					continue;
-				}
+<table class="shop_table shop_table_responsive my_account_chapter_members">
+	<thead>
+		<tr>
+			<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
+				<th class="<?php echo esc_attr( $column_id ); ?>"><span class="nobr"><?php echo esc_html( $column_name ); ?></span></th>
+			<?php endforeach; ?>
+		</tr>
+	</thead>
 
-				$chapter_member_profile_url = get_author_posts_url( $member_id );
-				$chapter_member_profession  = get_user_meta( $member_id, 'profetional_title', true );
-				$chapter_member_experience  = get_user_meta( $member_id, 'experience_years', true );
-				$chapter_member_first_name  = get_user_meta( $member_id, 'first_name', true );
-				$chapter_member_last_name   = get_user_meta( $member_id, 'last_name', true );
-				$chapter_member_data        = get_userdata( $member_id );
-				$chapter_member_avatar_id   = ( ! empty( get_user_meta( $member_id, 'wp_user_avatar', true ) ) ) ? get_user_meta( $member_id, 'wp_user_avatar', true ) : '';
-				$chapter_member_avatar_url  = ( ! empty( $chapter_member_avatar_id ) ) ? get_post_meta( $chapter_member_avatar_id, '_wp_attached_file', true ) : '';
-				$chapter_member_avatar_url  = ( ! empty( $chapter_member_avatar_url ) ) ?  $upload_url['baseurl'] . '/' . $chapter_member_avatar_url : $default_author_img;
+	<tbody>
+		<?php
+		if ( $members->get_results() ) :
+			foreach ( $members->get_results() as $member_id ) :
+				$member_profile_url = get_author_posts_url( $member_id );
+				$member_profession  = get_user_meta( $member_id, 'profetional_title', true );
+				$member_experience  = get_user_meta( $member_id, 'experience_years', true );
+				$member_first_name  = get_user_meta( $member_id, 'first_name', true );
+				$member_last_name   = get_user_meta( $member_id, 'last_name', true );
+				$member_data        = get_userdata( $member_id );
+				$member_avatar_id   = get_user_meta( $member_id, 'wp_user_avatar', true );
+				$member_avatar_url  = ( ! empty( $member_avatar_id ) ) ? wp_get_attachment_url( $member_avatar_id ) : $default_avatar;
 				?>
 				<tr class="order">
 					<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
@@ -113,82 +100,106 @@ if ( $chapter_members->get_results() ) : ?>
 								<?php do_action( 'woocommerce_my_account_chapter_members_column_' . $column_id, $order ); ?>
 
 							<?php elseif ( 'picture' === $column_id ) : ?>
-								<img src="<?php echo esc_url( $chapter_member_avatar_url ); ?>" alt="Mike Rizzo">
+								<img src="<?php echo esc_url( $member_avatar_url ); ?>" alt="Mike Rizzo">
 
 							<?php elseif ( 'name' === $column_id ) :
-								echo esc_html( $chapter_member_first_name . ' ' . $chapter_member_last_name );
+								echo esc_html( $member_first_name . ' ' . $member_last_name );
 								?>
 
 							<?php elseif ( 'email' === $column_id ) : ?>
-								<?php echo ( ! empty( $chapter_member_data->data->user_email ) ? '<a href="mailto:' . esc_attr( $chapter_member_data->data->user_email ) . '">' . esc_html( $chapter_member_data->data->user_email ) . '</a>' : '' ); ?>
+								<?php echo ( ! empty( $member_data->data->user_email ) ? '<a href="mailto:' . esc_attr( $member_data->data->user_email ) . '">' . esc_html( $member_data->data->user_email ) . '</a>' : '' ); ?>
 
 							<?php elseif ( 'profession' === $column_id ) : ?>
-								<?php echo esc_html( $chapter_member_profession ); ?>
+								<?php echo esc_html( $member_profession ); ?>
 
 							<?php elseif ( 'experience' === $column_id ) : ?>
-								<?php echo esc_html( $chapter_member_experience ) . ' years in the marketing industry!'; ?>
+								<?php echo esc_html( $member_experience ) . ' years in the marketing industry!'; ?>
 
 							<?php elseif ( 'actions' === $column_id ) : ?>
-								<a href="<?php echo esc_url( $chapter_member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
+								<a href="<?php echo esc_url( $member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
 							<?php endif; ?>
 						</td>
 					<?php endforeach; ?>
 				</tr>
 			<?php endforeach; ?>
-		</tbody>
-	</table>
-<?php endif;
+		<?php else : ?>
+			<tr><td colspan="<?php echo count( $table_columns ); ?>"><?php esc_html_e( 'No members found residing around your chapter.', 'marketingops' ); ?></td></tr>
+		<?php endif; ?>
+	</tbody>
+</table>
+<?php
 
 // Nearby chapters.
-if ( '119.252.199.172' === $_SERVER['REMOTE_ADDR'] ) :
-	$nearby_chapters = get_post_meta( $chapter_post_id, 'nearby_chapters', true );
+$major_metros                = get_field( 'major_metros', 'option' );
+$major_metros_country_states = ( ! empty( $major_metros ) && is_array( $major_metros ) ) ? array_column( $major_metros, 'country_code' ) : array();
+$to_find_country_state_code  = '';
 
+if ( ! empty( $country ) && ! empty( $state ) ) :
+	$to_find_country_state_code = $country . ':' . $state;
+elseif ( ! empty( $country ) ) :
+	$to_find_country_state_code = $country;
+elseif ( ! empty( $state ) ) :
+	$to_find_country_state_code = $state;
+endif;
+
+// Current chapter index from major metros.
+$current_chapter_index = array_search( $to_find_country_state_code, $major_metros_country_states );
+
+// Find the near chapters.
+$current_chapter_data   = ( isset( $major_metros[ $current_chapter_index ] ) && ! empty( $major_metros[ $current_chapter_index ] ) ) ? $major_metros[ $current_chapter_index ] : array();
+$current_chapter_metros = ( ! empty( $current_chapter_data['metros'] ) ? $current_chapter_data['metros'] : array() );
+$nearby_chapters_index  = array_search( $nearest_metro, array_column( $current_chapter_metros, 'metro_name' ) );
+$nearby_chapters_string = ( ! empty( $current_chapter_metros[ $nearby_chapters_index ]['nearby_metros'] ) ) ? $current_chapter_metros[ $nearby_chapters_index ]['nearby_metros'] : '';
+
+if ( ! empty( $nearby_chapters_string ) ) :
+	$nearby_chapters = explode( ',', $nearby_chapters_string );
 
 	if ( ! empty( $nearby_chapters ) && is_array( $nearby_chapters ) ) :
 		// Loop through the nearby chapters.
-		foreach ( $nearby_chapters as $nearby_chapter_post_id ) :
-			$nearby_chapter_post_title = get_the_title( $nearby_chapter_post_id );
-			$nearby_chapter_heading    = sprintf( __( 'Nearby: Chapter members from %s', 'marketingops' ), $nearby_chapter_post_title );
-			$nearby_chapter_location   = ( 0 !== $nearby_chapter_post_id ) ? get_post_meta( $nearby_chapter_post_id, 'country_state_code', true ) : '';
+		foreach ( $nearby_chapters as $nearby_chapter_key => $nearby_chapter ) :
+			// Trim the unwanted spaces.
+			$nearby_chapter = trim( $nearby_chapter );
 
-			// Get the chapter location data.
-			if ( false !== strpos( $nearby_chapter_location, ':' ) ) {
-				$nearby_chapter_location_data = explode( ':', $nearby_chapter_location );
-				$nearby_chapter_country_code           = isset( $nearby_chapter_location_data[0] ) ? $nearby_chapter_location_data[0] : '';
-				$nearby_chapter_state_code             = isset( $nearby_chapter_location_data[1] ) ? $nearby_chapter_location_data[1] : '';
-			} else {
-				$nearby_chapter_country_code = $nearby_chapter_location;
-				$nearby_chapter_state_code  = '';
-			}
-
-			// Get the chapter members.
-			$nearby_chapter_members_query_args                           = array();
-			$nearby_chapter_members_query_args['fields']                 = 'ids';
-			$nearby_chapter_members_query_args['meta_query']['relation'] = 'AND';
-			$nearby_chapter_members_query_args['meta_query'][]           = array(
+			// Find all the members that are from the nearby chapters.
+			$members_query_args                           = array();
+			$members_query_args['fields']                 = 'ids';
+			$members_query_args['exclude']                = array( $user_id );
+			$members_query_args['meta_query']['relation'] = 'AND';
+			$members_query_args['meta_query'][]           = array(
 				'key'     => 'country',
-				'value'   => $nearby_chapter_country_code,
+				'value'   => $country,
+				'compare' => '=',
+			);
+			$members_query_args['meta_query'][]           = array(
+				'key'     => 'nearest_metro',
+				'value'   => $nearby_chapter,
 				'compare' => '=',
 			);
 
-			if ( ! empty( $nearby_chapter_state_code ) ) {
-				$nearby_chapter_members_query_args['meta_query'][] = array(
+			// If the chapter leader current residing state is available.
+			if ( ! empty( $state ) ) :
+				$members_query_args['meta_query'][] = array(
 					'key'     => 'state',
-					'value'   => $nearby_chapter_state_code,
+					'value'   => $state,
 					'compare' => '=',
 				);
-			}
+			endif;
 
-			$nearby_chapter_members    = new WP_User_Query( $nearby_chapter_members_query_args );
+			$members = new WP_User_Query( $members_query_args );
+			$heading = sprintf( __( 'Members from %s, %s, %s', 'marketingops' ), $nearby_chapter, $state, $country );
 
-			if ( $nearby_chapter_members->get_results() ) :
-				?>
-				<h2><?php echo apply_filters( 'woocommerce_my_account_nearby_chapter_members_title', $nearby_chapter_heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
-				<div class="chapter-members-filter">
-					<input type="text" placeholder="<?php esc_attr_e( 'Search your favourite chapter members...', 'marketingops' ); ?>" />
-					<i class="search"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></i>
+			// If the members from nearby chapters are available.
+			if ( $members->get_results() ) : ?>
+				<h2 class="nearby-chapter-<?php echo esc_attr( $nearby_chapter_key ); ?>"><?php echo apply_filters( 'woocommerce_my_account_chapter_members_title', $heading ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
+				<div class="chapter-members-filter" style="display: none;">
+					<input type="text" class="chapter-member-directory-keyword" placeholder="<?php esc_attr_e( 'Search your favourite chapter members...', 'marketingops' ); ?>" />
+					<input type="hidden" name="search_chapter_country" value="<?php echo esc_attr( $country ); ?>" />
+					<input type="hidden" name="search_chapter_state" value="<?php echo esc_attr( $state ); ?>" />
+					<input type="hidden" name="search_chapter_chapter_name" value="<?php echo esc_attr( $nearby_chapter ); ?>" />
+					<input type="hidden" name="search_chapter_current_user_id" value="<?php echo esc_attr( $user_id ); ?>" />
+					<i class="search search-chapter-members"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></i>
 				</div>
-
+				<div class="loader_bg"></div>
 				<table class="shop_table shop_table_responsive my_account_chapter_members">
 					<thead>
 						<tr>
@@ -200,54 +211,49 @@ if ( '119.252.199.172' === $_SERVER['REMOTE_ADDR'] ) :
 
 					<tbody>
 						<?php
-						foreach ( $nearby_chapter_members->get_results() as $member_id ) :
-							// If the member is the current user, skip.
-							if ( $member_id == $user_id ) {
-								continue;
-							}
-
-							$chapter_member_profile_url = get_author_posts_url( $member_id );
-							$chapter_member_profession  = get_user_meta( $member_id, 'profetional_title', true );
-							$chapter_member_experience  = get_user_meta( $member_id, 'experience_years', true );
-							$chapter_member_first_name  = get_user_meta( $member_id, 'first_name', true );
-							$chapter_member_last_name   = get_user_meta( $member_id, 'last_name', true );
-							$chapter_member_data        = get_userdata( $member_id );
-							$chapter_member_avatar_id   = ( ! empty( get_user_meta( $member_id, 'wp_user_avatar', true ) ) ) ? get_user_meta( $member_id, 'wp_user_avatar', true ) : '';
-							$chapter_member_avatar_url  = ( ! empty( $chapter_member_avatar_id ) ) ? get_post_meta( $chapter_member_avatar_id, '_wp_attached_file', true ) : '';
-							$chapter_member_avatar_url  = ( ! empty( $chapter_member_avatar_url ) ) ?  $upload_url['baseurl'] . '/' . $chapter_member_avatar_url : $default_author_img;
+						foreach ( $members->get_results() as $member_id ) :
+							$member_profile_url = get_author_posts_url( $member_id );
+							$member_profession  = get_user_meta( $member_id, 'profetional_title', true );
+							$member_experience  = get_user_meta( $member_id, 'experience_years', true );
+							$member_first_name  = get_user_meta( $member_id, 'first_name', true );
+							$member_last_name   = get_user_meta( $member_id, 'last_name', true );
+							$member_data        = get_userdata( $member_id );
+							$member_avatar_id   = get_user_meta( $member_id, 'wp_user_avatar', true );
+							$member_avatar_url  = ( ! empty( $member_avatar_id ) ) ? wp_get_attachment_url( $member_avatar_id ) : $default_avatar;
 							?>
 							<tr class="order">
 								<?php foreach ( $table_columns as $column_id => $column_name ) : ?>
 									<td class="<?php echo esc_attr( $column_id ); ?>" data-title="<?php echo esc_attr( $column_name ); ?>">
-										<?php if ( has_action( 'woocommerce_my_account_nearby_chapter_members_column_' . $column_id ) ) : ?>
-											<?php do_action( 'woocommerce_my_account_nearby_chapter_members_column_' . $column_id, $order ); ?>
+										<?php if ( has_action( 'woocommerce_my_account_chapter_members_column_' . $column_id ) ) : ?>
+											<?php do_action( 'woocommerce_my_account_chapter_members_column_' . $column_id, $order ); ?>
 
 										<?php elseif ( 'picture' === $column_id ) : ?>
-											<img src="<?php echo esc_url( $chapter_member_avatar_url ); ?>" alt="Mike Rizzo">
+											<img src="<?php echo esc_url( $member_avatar_url ); ?>" alt="<?php echo esc_html( $member_first_name . ' ' . $member_last_name ); ?>">
 
 										<?php elseif ( 'name' === $column_id ) :
-											echo esc_html( $chapter_member_first_name . ' ' . $chapter_member_last_name );
+											echo esc_html( $member_first_name . ' ' . $member_last_name );
 											?>
 
 										<?php elseif ( 'email' === $column_id ) : ?>
-											<?php echo ( ! empty( $chapter_member_data->data->user_email ) ? '<a href="mailto:' . esc_attr( $chapter_member_data->data->user_email ) . '">' . esc_html( $chapter_member_data->data->user_email ) . '</a>' : '' ); ?>
+											<?php echo ( ! empty( $member_data->data->user_email ) ? '<a href="mailto:' . esc_attr( $member_data->data->user_email ) . '">' . esc_html( $member_data->data->user_email ) . '</a>' : '' ); ?>
 
 										<?php elseif ( 'profession' === $column_id ) : ?>
-											<?php echo esc_html( $chapter_member_profession ); ?>
+											<?php echo esc_html( $member_profession ); ?>
 
 										<?php elseif ( 'experience' === $column_id ) : ?>
-											<?php echo esc_html( $chapter_member_experience ) . ' years in the marketing industry!'; ?>
+											<?php echo esc_html( $member_experience ) . ' years in the marketing industry!'; ?>
 
 										<?php elseif ( 'actions' === $column_id ) : ?>
-											<a href="<?php echo esc_url( $chapter_member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
+											<a href="<?php echo esc_url( $member_profile_url ); ?>" target="_blank" class="button <?php echo sanitize_html_class( $key ); ?>"><?php esc_html_e( 'Profile', 'marketingops' ); ?></a>
 										<?php endif; ?>
 									</td>
 								<?php endforeach; ?>
 							</tr>
 						<?php endforeach; ?>
+						
 					</tbody>
 				</table>
-				<?php
+			<?php
 			endif;
 		endforeach;
 	endif;
