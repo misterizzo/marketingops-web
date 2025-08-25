@@ -12415,10 +12415,10 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 5px;
-    top: 10px;
+    left: 15px;
+    top: 16px;
     transition: 300ms ease all;
-	z-index: 3;
+    z-index: 3;
 }
 .profile_setup .content_boxed input,
 .profile_setup .content_boxed select{padding:20px 15px 15px 15px !important;}
