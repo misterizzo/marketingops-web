@@ -12420,7 +12420,13 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
     transition: 300ms ease all;
 }
 
-.profile_setup .content_boxed input:focus ~ span.label, .profile_setup .content_boxed input:valid ~ span.label, .profile_setup .content_boxed textarea:focus ~ span.label, .profile_setup .content_boxed textarea:valid ~ span.label {
+.profile_setup .content_boxed input:focus ~ span.label, 
+.profile_setup .content_boxed input:valid ~ span.label, 
+.profile_setup .content_boxed textarea:focus ~ span.label, 
+.profile_setup .content_boxed textarea:valid ~ span.label,
+.profile_setup .content_boxed select:focus ~ span.label,
+.profile_setup .content_boxed select:valid ~ span.label
+{
     top: -6px;
     left: 15px;
     font-size: 12px;
@@ -12429,3 +12435,4 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
     padding: 0;
     line-height: 12px;
 }
+
