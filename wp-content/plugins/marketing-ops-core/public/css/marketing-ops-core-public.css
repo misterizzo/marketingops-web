@@ -12418,6 +12418,7 @@ section.loginformnew .register_page .register_content.login_content .elementor-w
     left: 5px;
     top: 10px;
     transition: 300ms ease all;
+	z-index: 3;
 }
 
 .profile_setup .content_boxed input:focus ~ span.label, 
