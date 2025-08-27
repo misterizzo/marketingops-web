@@ -5737,6 +5737,8 @@ class Marketing_Ops_Core_Public {
 	 * @since 1.0.0
 	 */
 	public function mops_woocommerce_account_menu_items_callback( $endpoints = array() ) {
+		global $current_user;
+
 		/**
 		 * Prepare new set of endpoints.
 		 * The code below add the endpoints after the "Dashboard" endpoint.
@@ -5775,7 +5777,7 @@ class Marketing_Ops_Core_Public {
 				}
 
 				// Add the "chapter-members" endpoint.
-				if ( current_user_can( 'administrator' ) ) {
+				if ( in_array( 'chapter_leader', (array) $current_user->roles, true ) || in_array( 'administrator', (array) $current_user->roles, true ) ) {
 					if ( ! array_key_exists( 'chapter-members', $endpoints ) ) {
 						$new_endpoints['chapter-members'] = __( 'Chapter Members', 'marketingops' );
 					}

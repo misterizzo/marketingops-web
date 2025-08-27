@@ -44,7 +44,8 @@ function get_members_directory( $country_code, $state_code, $metro_name, $user_i
 }
 
 function get_members_directory_html( $members_from_chapter, $country_code, $state_code, $major_metro_name, $table_columns ) {
-	$heading = sprintf( __( 'Members from %s, %s, %s', 'marketingops' ), $major_metro_name, $state_code, $country_code );
+	$heading        = sprintf( __( 'Members from %s, %s, %s', 'marketingops' ), $major_metro_name, $state_code, $country_code );
+	$default_avatar = get_field( 'moc_user_default_image', 'option' );
 
 	ob_start();
 	?>
@@ -90,7 +91,7 @@ function get_members_directory_html( $members_from_chapter, $country_code, $stat
 									<?php do_action( 'woocommerce_my_account_chapter_members_column_' . $column_id, $order ); ?>
 
 								<?php elseif ( 'picture' === $column_id ) : ?>
-									<img src="<?php echo esc_url( $member_avatar_url ); ?>" alt="Mike Rizzo">
+									<img src="<?php echo esc_url( $member_avatar_url ); ?>" alt="<?php echo esc_html( $member_first_name . ' ' . $member_last_name ); ?>">
 
 								<?php elseif ( 'name' === $column_id ) :
 									echo esc_html( $member_first_name . ' ' . $member_last_name );
@@ -126,7 +127,7 @@ function get_members_directory_html( $members_from_chapter, $country_code, $stat
 $user_id         = get_current_user_id();
 $major_metros    = get_field( 'major_metros', 'option' );
 $assigned_metros = array();
-$default_avatar  = get_field( 'moc_user_default_image', 'option' );
+$nearby_metros   = array();
 $table_columns   = apply_filters(
 	'woocommerce_my_account_chapter_members_columns',
 	array(
@@ -156,6 +157,7 @@ if ( ! empty( $major_metros ) && is_array( $major_metros ) ) {
 				// If the current user is assigned to this metro, store the metro data.
 				if ( ! empty( $metro_data['chapter_leaders'] ) && is_array( $metro_data['chapter_leaders'] ) && in_array( $user_id, $metro_data['chapter_leaders'], true ) ) {
 					$assigned_metros[ $country_state ][] = $metro_data['metro_name'];
+					$nearby_metros[ $country_state ]     = array_merge( $nearby_metros, array_filter( array_map( 'trim', explode( ',', $metro_data['nearby_metros'] ) ) ) );
 				}
 			}
 		}
@@ -173,6 +175,23 @@ if ( ! empty( $assigned_metros ) && is_array( $assigned_metros ) ) {
 			$members_directory_html = get_members_directory_html( $members_from_chapter, $country_code, $state_code, $major_metro_name, $table_columns );
 			echo $members_directory_html;
 		}
+	}
+
+	// Print the member directory from the nearby chapters.
+	if ( ! empty( $nearby_metros ) && is_array( $nearby_metros ) ) {
+		foreach ( $nearby_metros as $nearby_metro_country_state => $nearby_metro_arr ) {
+
+			if ( ! empty( $nearby_metro_arr ) && is_array( $nearby_metro_arr ) ) {
+				foreach ( $nearby_metro_arr as $nearby_metro_name ) {
+					$exploded_country_state = explode( ':', $nearby_metro_country_state );
+					$country_code           = ! empty( $exploded_country_state[0] ) ? $exploded_country_state[0] : '';
+					$state_code             = ! empty( $exploded_country_state[1] ) ? $exploded_country_state[1] : '';
+					$members_from_chapter   = get_members_directory( $country_code, $state_code, $nearby_metro_name, $user_id );
+					$members_directory_html = get_members_directory_html( $members_from_chapter, $country_code, $state_code, $nearby_metro_name, $table_columns );
+					echo $members_directory_html;
+				}
+			}
+		};
 	}
 } else {
 	// Show the error message here.
