@@ -512,6 +512,10 @@ if ( ! function_exists( 'moc_get_posts_query_by_dynamic_conditions' ) ) {
 			}
 		}
 		if ( ! empty( $taxonomy ) ) {
+			  // Ensure $categories is always an array
+    if ( ! is_array( $categories ) ) {
+        $categories = (array) $categories;
+    }
 			if ( ! in_array( "0", $categories, true ) ) {
 				$args[ 'tax_query' ] =
 				array(
@@ -9599,6 +9603,8 @@ if ( ! function_exists( 'mops_is_user_agency_partner' ) ) {
 			if ( $is_paid_agency && in_array( 'mo-pros-agency-monthly-membership', $user_active_memberships_arr, true ) ) {
 				return true;
 			} elseif ( ! $is_paid_agency && in_array( 'free-agency-membership', $user_active_memberships_arr, true ) ) {
+				return true;
+			} elseif ( ! $is_paid_agency && in_array( 'mo-pros-agency-monthly-membership', $user_active_memberships_arr, true ) ) {
 				return true;
 			}
 		}
