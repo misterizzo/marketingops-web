@@ -6845,4 +6845,41 @@ class Marketing_Ops_Core_Public {
 		debug( $members->get_results() );
 		die;
 	}
+
+	/**
+	 * Check if user has capability.
+	 *
+	 * @since 1.0.0
+	 */
+	public function mops_user_has_cap_callback( $allcaps, $caps, $args, $user ) {
+		if ( mops_is_user_ambassador( $user->ID ) ) {
+			$allcaps['upload_files'] = true;
+			$allcaps['read']         = true;
+
+			// Grant edit_posts only for media upload contexts.
+			if ( ( defined( 'DOING_AJAX' ) && DOING_AJAX && isset( $_REQUEST['action'] ) && strpos( $_REQUEST['action'], 'upload' ) !== false ) ||
+				( defined( 'REST_REQUEST' ) && REST_REQUEST ) ) {
+				$allcaps['edit_posts'] = true;
+			}
+		}
+
+		return $allcaps;
+	}
+
+	/**
+	 * Filter the ajax query attachments args.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param array $query Query arguments.
+	 *
+	 * @return array
+	 */
+	public function mops_ajax_query_attachments_args_callback( $query ) {
+		if ( mops_is_user_ambassador( get_current_user_id() ) && ! current_user_can( 'edit_others_posts' ) ) {
+			$query['author'] = get_current_user_id();
+		}
+
+		return $query;
+	}
 }
